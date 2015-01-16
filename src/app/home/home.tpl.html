@@ -1,0 +1,13 @@
+<h1>Home of Ngbp test</h1>
+
+<p>Code it up</p>
+
+<p>
+    <span ng-bind="home.someVar" />
+    <ul>
+        <li ng-repeat="item in home.someList">{{item}}</li>
+    </ul>
+    <button class="btn btn-primary" ng-click="home.someFunctionUsedByTheHomePage()">Click Me</button>
+    <span class="glyphicon glyphicon-search" aria-hidden="false" ng-show="true"></span>
+    <datepicker ng-model="dt" min-date="dt" data="data" show-weeks="true" class="well well-sm"></datepicker>
+</p>

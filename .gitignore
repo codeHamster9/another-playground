@@ -1,0 +1,7 @@
+*.scssc
+/node_modules
+/build
+/vendor
+/*.sublime-project
+/*.sublime-workspace
+/.sublime-grunt.cache
