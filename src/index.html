@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="ngbp-test" ng-controller="AppController">
+<html ng-app="ngbp">
 <head>
     <title ng-bind="pageTitle"></title>
 
@@ -7,30 +7,34 @@
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
     <!-- compiled CSS --><% styles.forEach( function ( file ) { %>
-    <link rel="stylesheet" type="text/css" href="<%= file %>" /><% }); %>
+    <link rel="stylesheet" type="text/css" href="<%= file %>"/>
+    <% }); %>
 
     <!-- compiled JavaScript --><% scripts.forEach( function ( file ) { %>
-    <script type="text/javascript" src="<%= file %>"></script><% }); %>
+    <script type="text/javascript" src="<%= file %>"></script>
+    <% }); %>
 </head>
 <body>
+<div class="container">
     <header>
-        <nav class="container navbar-default">
-            <ul class="nav navbar-nav">
+        <nav class="navbar-default ">
+            <ul class="nav nav-tabs">
                 <li ui-sref-active="active">
-                    <a ui-sref="home">Home</a>
+                    <a ui-sref="home">Builder</a>
                 </li>
                 <li ui-sref-active="active">
-                    <a ui-sref="about">About</a>
+                    <a ui-sref="login">Login</a>
                 </li>
-            
+                <li ui-sref-active="active">
+                    <a ui-sref="tables">Tables</a>
+                </li>
             </ul>
         </nav>
     </header>
-
-    <div class="container" ui-view="main"></div>
-
-    <footer class="container">
+    <div class="body-film" ui-view="main"></div>
+    <footer>
         (c) <%= date %> <%= author %>
     </footer>
+</div>
 </body>
 </html>

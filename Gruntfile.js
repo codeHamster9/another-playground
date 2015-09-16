@@ -5,20 +5,24 @@ module.exports = function(grunt) {
     // Load required Grunt tasks. These are installed based on the versions listed
     // * in 'package.json' when you do 'npm install' in this directory.
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('jasmine-given');
+    grunt.loadNpmTasks('grunt-connect-prism');
+    grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-coffee');
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-conventional-changelog');
-    grunt.loadNpmTasks('grunt-coffeelint');
+    grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-bump');
     grunt.loadNpmTasks('grunt-ng-annotate');
     grunt.loadNpmTasks('grunt-html2js');
-    grunt.loadNpmTasks('grunt-express');
+    grunt.loadNpmTasks("grunt-bower-install-simple");
+    grunt.loadNpmTasks('grunt-sonar-runner');
+    grunt.loadNpmTasks('grunt-githooks');
+    grunt.loadNpmTasks('grunt-nexus-deployer');
+    grunt.loadNpmTasks('grunt-contrib-compress');
 
     /** ********************************************************************************* */
     /** **************************** File Config **************************************** */
@@ -32,21 +36,21 @@ module.exports = function(grunt) {
          * build tasks. 'js' is all project javascript, except tests.
          * 'commonTemplates' contains our reusable components' ('src/common')
          * template HTML files, while 'appTemplates' contains the templates for
-         * our app's code. 'html' is just our main HTML file. 'less' is our main
+         * our app's code. 'html' is just our main HTML file. 'scss' is our main
          * stylesheet, and 'unit' contains our app's unit tests.
          */
         app_files: {
-            js: ['src/**/*.js', '!src/**/*.spec.js', '!src/assets/**/*.js'],
+            js: ['./src/**/*.module.js', 'src/**/*.js',
+                '!src/**/*.spec.js', '!src/assets/**/*.js'
+            ],
             jsunit: ['src/**/*.spec.js'],
-
-            coffee: ['src/**/*.coffee', '!src/**/*.spec.coffee'],
-            coffeeunit: ['src/**/*.spec.coffee'],
 
             appTemplates: ['src/app/**/*.tpl.html'],
             commonTemplates: ['src/common/**/*.tpl.html'],
 
             html: ['src/index.html'],
             scss: 'src/scss/main.scss'
+
         },
 
         /**
@@ -78,24 +82,20 @@ module.exports = function(grunt) {
          */
         vendor_files: {
             js: [
-                'vendor/jquery/dist/jquery.js',
                 'vendor/angular/angular.js',
+                'vendor/angular-animate/angular-animate.js',
+                'vendor/angular-sanitize/angular-sanitize.js',
+                'vendor/angular-bootstrap/ui-bootstrap.js',
                 'vendor/angular-bootstrap/ui-bootstrap-tpls.js',
-                'vendor/placeholders/placeholders-0.0.1-SNAPSHOT.min.js',
                 'vendor/angular-ui-router/release/angular-ui-router.js',
-                'vendor/angular-ui-utils/modules/route/route.js',
-                'vendor/ng-table/ng-table.js',
-                'vendor/ng-grid/ng-grid-2.0.14.debug.js',
-                'vendor/ng-stats/dist/ng-stats.js'
-
+                'vendor/js-data/dist/js-data.js',
+                'vendor/js-data-angular/dist/js-data-angular.js',
+                'vendor/lodash/lodash.js',
+                'vendor/angular-smart-table/dist/smart-table.js',
+                'vendor/angular-loading-bar/build/loading-bar.js',
             ],
-            css: ['vendor/ng-grid/ng-grid.css'],
-            assets: [
-                'vendor/bootstrap/fonts/glyphicons-halflings-regular.eot',
-                'vendor/bootstrap/fonts/glyphicons-halflings-regular.svg',
-                'vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf',
-                'vendor/bootstrap/fonts/glyphicons-halflings-regular.woff'
-            ]
+            css: [],
+            assets: []
         }
     };
 
@@ -111,20 +111,10 @@ module.exports = function(grunt) {
          */
         meta: {
             banner: '/**\n' +
-                ' * <%= pkg.name %> - v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %>\n' +
-                ' *\n' +
-                ' * Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
-                ' */\n'
-        },
-
-        /**
-         * Creates a changelog on a new version.
-         */
-        changelog: {
-            options: {
-                dest: 'CHANGELOG.md',
-                template: 'changelog.tpl'
-            }
+            ' * <%= pkg.name %> - v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %>\n' +
+            ' *\n' +
+            ' * Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
+            ' */\n'
         },
 
         /**
@@ -153,10 +143,16 @@ module.exports = function(grunt) {
         /**
          * The directories to delete when 'grunt clean' is executed.
          */
-        clean: [
-            '<%= build_dir %>',
-            '<%= compile_dir %>'
-        ],
+        clean: {
+            all: [
+                '<%= build_dir %>',
+                '<%= compile_dir %>'
+            ],
+            vendor: [
+                '<%= build_dir %>/vendor/'
+            ],
+            index: ['<%= build_dir %>/index.html']
+        },
 
         /**
          * The 'copy' task just copies files from A to B. We use it here to copy
@@ -197,17 +193,9 @@ module.exports = function(grunt) {
                     expand: true
                 }]
             },
-            build_vendorcss: {
-                files: [{
-                    src: ['<%= vendor_files.css %>'],
-                    dest: '<%= build_dir %>/',
-                    cwd: '.',
-                    expand: true
-                }]
-            },
             compile_assets: {
                 files: [{
-                    src: ['**'],
+                    src: ['**', '!**.css.map', '!**.md'],
                     dest: '<%= compile_dir %>/assets',
                     cwd: '<%= build_dir %>/assets',
                     expand: true
@@ -227,40 +215,32 @@ module.exports = function(grunt) {
                 ],
                 dest: '<%= build_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.css'
             },
-            // The 'compile_js' target concatenates app and vendor js code together.
+            // The 'compile_js' target concatenates app js code.
             compile_js: {
                 options: {
                     banner: '<%= meta.banner %>'
                 },
                 src: [
-                    '<%= vendor_files.js %>',
                     'module.prefix',
+                    '<%= build_dir %>/src/**/*.module.js',
                     '<%= build_dir %>/src/**/*.js',
                     '<%= html2js.app.dest %>',
                     '<%= html2js.common.dest %>',
                     'module.suffix'
                 ],
                 dest: '<%= compile_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.js'
-            }
-        },
+            },
 
-        /**
-         * 'grunt coffee' compiles the CoffeeScript sources. To work well with the
-         * rest of the build, we have a separate compilation task for sources and
-         * specs so they can go to different places. For example, we need the
-         * sources to live with the rest of the copied JavaScript so we can include
-         * it in the final build, but we don't want to include our specs there.
-         */
-        coffee: {
-            source: {
+            // The 'compile_vendor' target concatenates vendor js code.
+            compile_vendor: {
                 options: {
-                    bare: true
+                    banner: '<%= meta.banner %>'
                 },
-                expand: true,
-                cwd: '.',
-                src: ['<%= app_files.coffee %>'],
-                dest: '<%= build_dir %>',
-                ext: '.js'
+                src: [
+                    '!**.min.js.map',
+                    '<%= vendor_files.js %>',
+                ],
+                dest: '<%= compile_dir %>/assets/vendor-<%= pkg.version %>.js'
             }
         },
 
@@ -278,7 +258,7 @@ module.exports = function(grunt) {
                     cwd: '<%= build_dir %>',
                     dest: '<%= build_dir %>',
                     expand: true
-                }, ]
+                },]
             },
         },
 
@@ -291,47 +271,36 @@ module.exports = function(grunt) {
                     banner: '<%= meta.banner %>'
                 },
                 files: {
-                    '<%= concat.compile_js.dest %>': '<%= concat.compile_js.dest %>'
+                    '<%= concat.compile_js.dest %>': '<%= concat.compile_js.dest %>',
+                    '<%= concat.compile_vendor.dest %>': '<%= concat.compile_vendor.dest %>'
                 }
             }
         },
 
         /**
-         * `grunt-contrib-less` handles our LESS compilation and uglification automatically.
-         * Only our 'main.less' file is included in compilation; all other files
+         * `grunt-sass` handles our sass compilation and uglification automatically.
+         * Only our 'main.sass' file is included in compilation; all other files
          * must be imported from this file.
          */
-        less: {
-            build: {
-                files: {
-                    '<%= build_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.css': '<%= app_files.less %>'
-                }
-            },
-            compile: {
-                files: {
-                    '<%= build_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.css': '<%= app_files.less %>'
-                },
-                options: {
-                    cleancss: true,
-                    compress: true
-                }
-            }
-        },
         sass: {
             build: {
                 files: {
                     '<%= build_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.css': '<%= app_files.scss %>'
                 },
                 options: {
-                    compass: false
+                    sourceMap: true,
+                    lineNumbers: true,
+                    style: 'nested'
+
                 }
             },
             compile: {
                 options: {
+                    sourceMap: false,
                     style: 'compressed'
                 },
                 files: {
-                    '<%= build_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.css': '<%= app_files.scss %>'
+                    '<%= build_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.css': '.css'
                 }
             }
         },
@@ -346,42 +315,17 @@ module.exports = function(grunt) {
          */
         jshint: {
             src: [
+                '!src/**/**.spec.js',
                 '<%= app_files.js %>'
             ],
             test: [
                 '<%= app_files.jsunit %>'
             ],
-            gruntfile: [
-                'Gruntfile.js'
-            ],
             options: {
-                curly: true,
-                immed: true,
-                newcap: true,
-                noarg: true,
-                sub: true,
-                boss: true,
-                eqnull: true
-            },
-            globals: {}
-        },
-
-        /**
-         * 'coffeelint' does the same as 'jshint', but for CoffeeScript.
-         * CoffeeScript is not the default in ngBoilerplate, so we're just using
-         * the defaults here.
-         */
-        coffeelint: {
-            src: {
-                files: {
-                    src: ['<%= app_files.coffee %>']
-                }
-            },
-            test: {
-                files: {
-                    src: ['<%= app_files.coffeeunit %>']
-                }
+                jshintrc: '.jshintrc',
+                reporter: require('jshint-stylish')
             }
+
         },
 
         /**
@@ -426,6 +370,7 @@ module.exports = function(grunt) {
                 dir: '<%= build_dir %>',
                 src: [
                     '<%= vendor_files.js %>',
+                    '<%= build_dir %>/src/**/*.module.js',
                     '<%= build_dir %>/src/**/*.js',
                     '<%= html2js.common.dest %>',
                     '<%= html2js.app.dest %>',
@@ -442,6 +387,7 @@ module.exports = function(grunt) {
             compile: {
                 dir: '<%= compile_dir %>',
                 src: [
+                    '<%= concat.compile_vendor.dest %>',
                     '<%= concat.compile_js.dest %>',
                     '<%= vendor_files.css %>',
                     '<%= build_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.css'
@@ -449,15 +395,90 @@ module.exports = function(grunt) {
             }
         },
 
-        express: {
-            devServer: {
-                options: {
-                    port: 9000,
-                    hostname: 'localhost',
-                    serverreload: false,
-                    bases: 'build',
-                    livereload: true
+        connect: {
+            options: {
+                port: 9000,
+                // Change this to '0.0.0.0' to access the server from outside.
+                hostname: 'localhost',
+
+                middleware: function(connect) {
+                    return [
+                        require('grunt-connect-prism/middleware'),
+                        connect.static('./' + fileConfig.build_dir)
+                    ];
                 }
+            },
+            livereload: {
+                options: {
+                    open: false,
+                    livereload: 35729
+                }
+            },
+            test: {
+                options: {
+                    hostname: 'localhost',
+                    port: 9000,
+                    middleware: function(connect) {
+                        return [
+                            require('grunt-connect-prism/middleware'),
+                            connect.static('./' + fileConfig.compile_dir)
+                        ];
+                    },
+                    livereload: false,
+                    keepalive: true,
+                    base: '<%= compile_dir %>'
+
+                }
+            },
+            e2e: {
+                options: {
+                    open: true,
+                    base: '<%= build_dir %>'
+                }
+            }
+        },
+
+        /**
+         * Mock endpoints and proxy
+         */
+        prism: {
+            options: {
+                mode: 'proxy',
+                host: 'localhost',
+                https: false,
+                delay: 'fast',
+                port: 8080,
+                mocksPath: './mocks',
+                mockFilenameGenerator: function(config, req) {
+                    var crypto = require('crypto');
+                    var path = require('path');
+                    var shasum = crypto.createHash('sha1');
+                    shasum.update(req.url);
+
+                    var method = req.method;
+                    var url = req.url.replace(/\/|\_|\?|w\>|\\|\:|\*|\||\"/g, '_');
+
+                    return method + url + '_' + shasum.digest('hex') + '.json';
+                }
+
+                ,
+                ignoreParameters: false,
+                //changeOrigin: true,
+                hashFullRequest: false,
+                context: '/api',
+                //rewrite: {
+                //    '^/api': ''
+                //}
+            }
+            ,
+            dev: {
+                options: {
+                    mode: 'mock'
+                }
+            }
+            ,
+            e2e: {
+                options: {}
             }
         },
 
@@ -467,11 +488,13 @@ module.exports = function(grunt) {
         karma: {
             options: {
                 configFile: '<%= build_dir %>/karma-unit.js'
-            },
+            }
+            ,
             unit: {
                 runnerPort: 9019,
                 background: true
-            },
+            }
+            ,
             continuous: {
                 singleRun: true
             }
@@ -494,6 +517,71 @@ module.exports = function(grunt) {
         },
 
         /**
+         * getting dependencies (bower install)
+         */
+        'bower-install-simple': {
+            options: {
+                color: true
+            }
+            ,
+            dev: {
+                options: {
+                    production: false
+                }
+            }
+            ,
+            prod: {
+                options: {
+                    production: true
+                }
+            }
+        },
+
+        /**
+         *  grunt-sonar-runner config
+         */
+        sonarRunner: {
+            analysis: {
+                options: {
+                    debug: true,
+                    separator: '\n',
+                    sonar: {
+                        host: {
+                            url: 'http://10.10.20.79:9000'
+                        }
+                        ,
+                        jdbc: {
+                            url: 'jdbc:postgresql://10.10.20.23/sonar',
+                            username: 'sonar',
+                            password: 'sonar'
+                        }
+                        ,
+
+                        projectKey: 'sonar:grunt-sonar-runner:0.1.0',
+                        projectName: 'self-packager-client',
+                        projectVersion: grunt.config('pkg.version'), // group:artifactId:version ?
+                        sources: ['src'].join(','),
+                        language: 'js',
+                        sourceEncoding: 'UTF-8'
+                    }
+                }
+            }
+        },
+
+        /**
+         * Bump version before push
+         */
+
+        githooks: {
+            options: {
+                dest: '../.git/hooks'
+            },
+            all: {
+                'pre-push': 'bump'
+            }
+        },
+
+        /**
          * And for rapid development, we have a watch set up that checks to see if
          * any of the files listed below change, and then to execute the listed
          * tasks when they do. This just saves us from having to type "grunt" into
@@ -512,19 +600,25 @@ module.exports = function(grunt) {
              */
             options: {
                 livereload: true
-            },
+            }
+            ,
 
             /**
              * When the Gruntfile changes, we just want to lint it. In fact, when
              * your Gruntfile changes, it will automatically be reloaded!
+             * We also want to copy vendor files and rebuild index.html in case
+             * vendor_files.js was altered (list of 3rd party vendor files installed by bower)
              */
             gruntfile: {
                 files: 'Gruntfile.js',
-                tasks: ['jshint:gruntfile'],
+                tasks: ['jshint:gruntfile', 'clean:vendor',
+                    'copy:build_vendorjs', 'index:build'
+                ],
                 options: {
                     livereload: false
                 }
-            },
+            }
+            ,
 
             /**
              * When our JavaScript source files change, we want to run lint them and
@@ -534,8 +628,11 @@ module.exports = function(grunt) {
                 files: [
                     '<%= app_files.js %>'
                 ],
-                tasks: ['jshint:src', 'karma:unit:run', 'copy:build_appjs', 'index:build']
-            },
+                tasks: ['jshint:src', 'karma:unit:run',
+                    'copy:build_appjs', 'index:build'
+                ]
+            }
+            ,
 
             /**
              * When assets are changed, copy them. Note that this will *not* copy new
@@ -546,7 +643,8 @@ module.exports = function(grunt) {
                     'src/assets/**/*'
                 ],
                 tasks: ['copy:build_app_assets']
-            },
+            }
+            ,
 
             /**
              * When index.html changes, we need to compile it.
@@ -554,7 +652,8 @@ module.exports = function(grunt) {
             html: {
                 files: ['<%= app_files.html %>'],
                 tasks: ['index:build']
-            },
+            }
+            ,
 
             /**
              * When our templates change, we only rewrite the template cache.
@@ -565,7 +664,8 @@ module.exports = function(grunt) {
                     '<%= app_files.commonTemplates %>'
                 ],
                 tasks: ['html2js']
-            },
+            }
+            ,
 
             /**
              * When the CSS files change, we need to compile and minify them.
@@ -574,16 +674,16 @@ module.exports = function(grunt) {
                 files: ['src/**/*.scss'],
                 tasks: ['sass:build'],
                 options: {
-                    livereload : false,
-                    update:true
+                    livereload: false
                 }
-            },
+            }
+            ,
+
             css: {
-                files: ['build/**/*.css'],
+                files: ['<%= build_dir %>/assets/*.css'],
                 tasks: []
-            },
-
-
+            }
+            ,
             /**
              * When a JavaScript unit test file changes, we only want to lint it and
              * run the unit tests. We don't want to do any live reloading.
@@ -597,104 +697,192 @@ module.exports = function(grunt) {
                     livereload: false
                 }
             }
-        }
-    };
+        },
 
+        output_archive: 'web-app-<%= pkg.version %>.zip',
+
+        compress: {
+            main: {
+                options: {
+                    archive: 'bin/<%= output_archive %>',
+                },
+                expand: true,
+                cwd: 'bin/',
+                src: ['**/*'],
+                dest: ""
+            }
+        },
+
+        nexusDeployer: {
+            release: {
+                options: {
+                    groupId: "",
+                    artifactId: "web-client",
+                    version: "<%= pkg.version %>",
+                    packaging: 'zip',
+                    auth: {
+                        username: 'deployment',
+                        password: 'deployment'
+                    },
+                    pomDir: '',
+                    url: '',
+                    artifact: 'bin/<%= output_archive %>',
+                    cwd: ''
+                }
+            }
+        }
+
+    };
 
     /** ********************************************************************************* */
     /** **************************** Project Configuration ****************************** */
     grunt.initConfig(_.extend(taskConfig, fileConfig));
 
-    // In order to make it safe to just compile or copy *only* what was changed,
-    // we need to ensure we are starting from a clean, fresh build. So we rename
-    // the 'watch' task to 'delta' (that's why the configuration var above is
-    // 'delta') and then add a new task called 'watch' that does a clean build
-    // before watching for changes.
+// In order to make it safe to just compile or copy *only* what was changed,
+// we need to ensure we are starting from a clean, fresh build. So we rename
+// the 'watch' task to 'delta' (that's why the configuration var above is
+// 'delta') and then add a new task called 'watch' that does a clean build
+// before watching for changes.
     grunt.renameTask('watch', 'delta');
-    grunt.registerTask('watch', ['build', 'karma:unit', 'express', 'delta']);
+    grunt.registerTask('watch', function(target, prismMode) {
+        if (!target) {
+            target = 'dev';
+            prismMode = 'mock';
+        }
+        grunt.task.run(['build',
+            'karma:unit',
+            'prism:' + target + ':' + prismMode,
+            'connect:livereload',
+            'delta']);
+    });
 
-    // The default task is to build and compile.
+// The default task is to build and compile.
     grunt.registerTask('default', ['build', 'compile']);
 
-    // The 'build' task gets your app ready to run for development and testing.
+// The 'build' task gets your app ready to run for development and testing.
     grunt.registerTask('build', [
-        'clean', 'html2js', 'jshint', 'sass:build',
-        'concat:build_css', 'copy:build_app_assets', 'copy:build_vendor_assets',
-        'copy:build_appjs', 'copy:build_vendorjs', 'copy:build_vendorcss',
-        'ngAnnotate:build', 'index:build', 'karmaconfig',
+        'bower-install-simple:dev',
+        'clean:all',
+        'html2js',
+        'jshint',
+        'sass:build',
+        'concat:build_css',
+        'copy:build_app_assets',
+        'copy:build_vendor_assets',
+        'copy:build_appjs',
+        'copy:build_vendorjs',
+        'ngAnnotate:build',
+        'index:build',
+        'karmaconfig',
         'karma:continuous'
     ]);
 
-    // The 'compile' task gets your app ready for deployment by concatenating and minifying your code.
-    // Note - compile builds off of the build dir (look at concat:compile_js), so run grunt build before grunt compile
+// The 'compile' task gets your app ready fors deployment by concatenating and minifying your code.
+// Note - compile builds off of the build dir (look at concat:compile_js), so run grunt build before grunt compile
     grunt.registerTask('compile', [
-        'sass:compile', 'copy:compile_assets', 'concat:compile_js', 'uglify', 'index:compile'
+        'copy:compile_assets',
+        'concat:compile_vendor',
+        'concat:compile_js',
+        'uglify',
+        'index:compile'
     ]);
 
-    // A utility function to get all app JavaScript sources.
+    grunt.registerTask('run-compiled', function(target, prismMode) {
+
+        if (!target) {
+            target = 'dev';
+            prismMode = 'mock';
+        }
+        grunt.task.run(['build',
+            'compile',
+            'prism:' + target + ':' + prismMode,
+            'connect:test']);
+    });
+
+    grunt.registerTask('update-sonar', ['sonarRunner:analysis']);
+
+    grunt.registerTask('git-hooks');
+
+    grunt.registerTask('archive', ['compress']);
+
+    grunt.registerTask('nexus', ['nexusDeployer']);
+
+// A utility function to get all app JavaScript sources.
     function filterForJS(files) {
         return files.filter(function(file) {
             return file.match(/\.js$/);
         });
     }
 
-    // A utility function to get all app CSS sources.
+// A utility function to get all app CSS sources.
     function filterForCSS(files) {
         return files.filter(function(file) {
             return file.match(/\.css$/);
         });
     }
 
-    // The index.html template includes the stylesheet and javascript sources
-    // based on dynamic names calculated in this Gruntfile. This task assembles
-    // the list into variables for the template to use and then runs the
-    // compilation.
-    grunt.registerMultiTask('index', 'Process index.html template', function() {
-        var dirRE = new RegExp('^(' + grunt.config('build_dir') + '|' + grunt.config('compile_dir') + ')\/', 'g');
+// The index.html template includes the stylesheet and javascript sources
+// based on dynamic names calculated in this Gruntfile. This task assembles
+// the list into variables for the template to use and then runs the
+// compilation.
+    grunt.registerMultiTask('index', 'Process index.html template',
+        function() {
+            var dirRE = new RegExp('^(' + grunt.config('build_dir') +
+                '|' + grunt.config('compile_dir') + ')\/',
+                'g');
 
-        // this.fileSrc comes from either build:src, compile:src, or karmaconfig:src in the index config defined above
-        // see - http://gruntjs.com/api/inside-tasks#this.filessrc for documentation
-        var jsFiles = filterForJS(this.filesSrc).map(function(file) {
-            return file.replace(dirRE, '');
-        });
-        var cssFiles = filterForCSS(this.filesSrc).map(function(file) {
-            return file.replace(dirRE, '');
+            // this.fileSrc comes from either build:src, compile:src, or karmaconfig:src in the index config defined above
+            // see - http://gruntjs.com/api/inside-tasks#this.filessrc for documentation
+            var jsFiles = filterForJS(this.filesSrc)
+                .map(function(file) {
+                    return file.replace(dirRE, '');
+                });
+            var cssFiles = filterForCSS(this.filesSrc)
+                .map(function(file) {
+                    return file.replace(dirRE, '');
+                });
+
+            // this.data.dir comes from either build:dir, compile:dir, or karmaconfig:dir in the index config defined above
+            // see - http://gruntjs.com/api/inside-tasks#this.data for documentation
+            grunt.file.copy('src/index.html', this.data.dir +
+                '/index.html', {
+                process: function(contents, path) {
+                    // These are the variables looped over in our index.html exposed as "scripts", "styles", and "version"
+                    return grunt.template.process(contents, {
+                        data: {
+                            scripts: jsFiles,
+                            styles: cssFiles,
+                            version: grunt.config(
+                                'pkg.version'),
+                            author: grunt.config(
+                                'pkg.author'),
+                            date: grunt.template.today(
+                                "yyyy")
+                        }
+                    });
+                }
+            });
         });
 
-        // this.data.dir comes from either build:dir, compile:dir, or karmaconfig:dir in the index config defined above
-        // see - http://gruntjs.com/api/inside-tasks#this.data for documentation
-        grunt.file.copy('src/index.html', this.data.dir + '/index.html', {
-            process: function(contents, path) {
-                // These are the variables looped over in our index.html exposed as "scripts", "styles", and "version"
-                return grunt.template.process(contents, {
-                    data: {
-                        scripts: jsFiles,
-                        styles: cssFiles,
-                        version: grunt.config('pkg.version'),
-                        author: grunt.config('pkg.author'),
-                        date: grunt.template.today("yyyy")
+// In order to avoid having to specify manually the files needed for karma to
+// run, we use grunt to manage the list for us. The 'karma/*' files are
+// compiled as grunt templates for use by Karma. Yay!
+    grunt.registerMultiTask('karmaconfig', 'Process karma config templates',
+        function() {
+            var jsFiles = filterForJS(this.filesSrc);
+
+            grunt.file.copy('karma/karma-unit.tpl.js',
+                grunt.config(
+                    'build_dir') + '/karma-unit.js',
+                {
+                    process: function(contents, path) {
+                        // This is the variable looped over in the karma template of our index.html exposed as "scripts"
+                        return grunt.template.process(contents, {
+                            data: {
+                                scripts: jsFiles
+                            }
+                        });
                     }
                 });
-            }
         });
-    });
-
-    // In order to avoid having to specify manually the files needed for karma to
-    // run, we use grunt to manage the list for us. The 'karma/*' files are
-    // compiled as grunt templates for use by Karma. Yay!
-    grunt.registerMultiTask('karmaconfig', 'Process karma config templates', function() {
-        var jsFiles = filterForJS(this.filesSrc);
-
-        grunt.file.copy('karma/karma-unit.tpl.js', grunt.config('build_dir') + '/karma-unit.js', {
-            process: function(contents, path) {
-                // This is the variable looped over in the karma template of our index.html exposed as "scripts"
-                return grunt.template.process(contents, {
-                    data: {
-                        scripts: jsFiles
-                    }
-                });
-            }
-        });
-    });
-
 };

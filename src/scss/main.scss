@@ -7,26 +7,21 @@
  * First, we include the Twitter Bootstrap LESS files. Only the ones used in the
  * project should be imported as the rest are just wasting space.
  */
-
-$icon-font-path: "./";
-@import '../../vendor/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss';
-// @import "compass/css3";
-/**
- * This is our main variables file. We must include it last so we can overwrite any variable
- * definitions in our imported stylesheets.
- */
-
+@import '../../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap';
 @import 'variables';
+@import '../app/home/home';
+
 /**
  * Typography
  */
 
 @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 10;
-    src: local('Roboto Regular'), local('Roboto-Regular'), url(fonts/Roboto-Regular.woff) format('woff');
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), local('Roboto-Regular'), url(fonts/Roboto-Regular.woff) format('woff');
 }
+
 /**
  * Now that all app-wide styles have been applied, we can load the styles for
  * all the submodules and components we are using. 
@@ -34,5 +29,36 @@ $icon-font-path: "./";
  * TODO: In a later version of this boilerplate, I'd like to automate this.
  */
 
-@import '../app/home/home';
-@import '../app/boot-grid/boot-grid';
+html, body {
+  height: 100%;
+}
+
+.navbar-default {
+  background: #fff;
+}
+
+.container {
+  height: 100%;
+  overflow-y: hidden;
+
+}
+
+.body-film {
+  min-height: calc(100% - 62px);
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-bottom: none;
+}
+
+.form-builder {
+  width: 60%;
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+
+
+
+

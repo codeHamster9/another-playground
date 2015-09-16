@@ -4,23 +4,10 @@
  * build process will exclude all '.spec.js' files from the build
  * automatically.
  */
-describe('home section', function() {
+describe('home section', function () {
+  beforeEach(module('ngbp'));
 
-    var HomeCtrl, $location, $scope;
-
-    beforeEach(module('ngbp-test.home'));
-
-    beforeEach(inject(function($controller, _$location_, $rootScope) {
-        $location = _$location_;
-        $scope = $rootScope.$new();
-        HomeCtrl = $controller('HomeController', {
-            $location: $location,
-            $scope: $scope 
-        });
-        // spyOn(HomeCtrl, 'init');
-    }));
-
-    it('should be Defined', inject(function() {
-        expect(HomeCtrl).toBeDefined();
-    }));  
+  it('should have a dummy test', inject(function () {
+    expect(true).toBeTruthy();
+  }));
 });
