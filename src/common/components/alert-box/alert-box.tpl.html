@@ -1,0 +1,8 @@
+<div>
+    <ul>
+        <li ng-repeat="(key, val) in vm.alerts">
+            <alert close="vm.closeAlert(key)">
+                <b>{{key}}:</b>  {{val}}</alert>
+        </li>
+    </ul>
+</div>

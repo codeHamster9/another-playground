@@ -1,6 +1,14 @@
-<h1 class="text-center">Dynamic Form Builder</h1>
+<div class="row">
+    <h1 class="text-center">Dynamic Form Builder</h1>
+</div>
+<div class="row">
+    <alert-box class="col-md-4" alerts="vm.state"
+               alert-remove="vm.removeAlert(alert)">
+    </alert-box>
 
-<d-builder data-collection="vm.items"
-           data-service="buildRecipe"
-           data-delay="2000">
-</d-builder>
+    <d-builder class="col-md-8" data-collection="vm.state"
+               data-service="buildRecipe"
+               data-delay="2000"
+               data-change="vm.changeRdy(key,data)">
+    </d-builder>
+</div>

@@ -10,17 +10,17 @@
 @import '../../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap';
 @import 'variables';
 @import '../app/home/home';
+@import 'modules/round-icons';
+//@import 'modules/ui-switch';
 
-/**
- * Typography
- */
+//Typography
 
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto Regular'), local('Roboto-Regular'), url(fonts/Roboto-Regular.woff) format('woff');
-}
+//@font-face {
+//  font-family: 'Roboto';
+//  font-style: normal;
+//  font-weight: 400;
+//  src: local('Roboto Regular'), local('Roboto-Regular'), url(fonts/Roboto-Regular.woff) format('woff');
+//}
 
 /**
  * Now that all app-wide styles have been applied, we can load the styles for
@@ -29,35 +29,42 @@
  * TODO: In a later version of this boilerplate, I'd like to automate this.
  */
 
-html, body {
+html,
+body {
   height: 100%;
+  font-family: $sansFontFamily;
 }
 
 .navbar-default {
   background: #fff;
 }
 
-.container {
+.container-fluid {
   height: 100%;
   overflow-y: hidden;
+  padding: 0 50px;
 
 }
 
 .body-film {
-  min-height: calc(100% - 62px);
+  height: calc(100% - 62px);
   overflow-y: auto;
   border: 1px solid #ddd;
-  border-top: none;
-  border-bottom: none;
+  border-top: 0;
+  border-bottom: 0;
+  padding: 10px 50px;
 }
 
 .form-builder {
   width: 60%;
   margin: 0 auto;
 }
+
 .text-center {
   text-align: center;
 }
+
+
 
 
 

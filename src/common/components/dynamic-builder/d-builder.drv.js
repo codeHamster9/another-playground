@@ -11,7 +11,9 @@
 
       var buildRecipe = $injector.get(tAttrs.service);
 
-      //todo:configuarbale root element
+      tAttrs.delay = angular.isDefined(tAttrs.delay) ? tAttrs.delay : 0;
+
+      //todo:configurable root element
       var root = angular.element('<form class="form-builder"></form>');
 
       //recipe API should have :
@@ -20,32 +22,36 @@
       //3.model name
 
       buildRecipe.items.forEach(function (item, idx) {
-        var template = $templateCache.get(item.templateKey);
+        var template = $templateCache.get(item.templateKey),
+            jElem, wrapper;
 
         if (!template) {
           template = item.templateKey;
         }
 
-        var jTemplate = angular.element(template);
-
-        jTemplate
-            .find('LABEL')
-            .text(item.title);
+        jElem = angular.element(template);
 
         if (!tAttrs.prop) {
-          tAttrs.prop = 'ng-model';
+          tAttrs.prop = 'model';
         }
 
-        jTemplate
-            .find('INPUT')
-            .attr(tAttrs.prop, tAttrs.collection + '.' + item.fieldName);
+        var modelLocation = tAttrs.collection + '.' + item.fieldName;
+        jElem
+            .attr(tAttrs.prop, modelLocation)
+            .attr('ng-model-options', '{debounce:' + tAttrs.delay + '}')
+            .attr('placeholder', item.fieldName)
+            .attr('change', tAttrs.change);
 
-        if (tAttrs.delay) {
-          jTemplate
-              .find('INPUT')
-              .attr('ng-model-options', '{debounce:' + tAttrs.delay + '}');
+        if (item.configObj) {
+          jElem.attr('config-obj', item.configObj);
         }
-        root.append(jTemplate);
+
+
+        wrapper = angular.element('<div class="form-group"></div>');
+
+        wrapper.append(jElem);
+
+        root.append(wrapper);
       });
       tElem.append(root);
     }

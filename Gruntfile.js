@@ -85,7 +85,6 @@ module.exports = function(grunt) {
                 'vendor/angular/angular.js',
                 'vendor/angular-animate/angular-animate.js',
                 'vendor/angular-sanitize/angular-sanitize.js',
-                'vendor/angular-bootstrap/ui-bootstrap.js',
                 'vendor/angular-bootstrap/ui-bootstrap-tpls.js',
                 'vendor/angular-ui-router/release/angular-ui-router.js',
                 'vendor/js-data/dist/js-data.js',
@@ -93,6 +92,7 @@ module.exports = function(grunt) {
                 'vendor/lodash/lodash.js',
                 'vendor/angular-smart-table/dist/smart-table.js',
                 'vendor/angular-loading-bar/build/loading-bar.js',
+                'vendor/angular-smart-table/dist/smart-table.js'
             ],
             css: [],
             assets: []

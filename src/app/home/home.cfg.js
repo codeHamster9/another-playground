@@ -11,14 +11,20 @@
       resolve: {
         meta: function (buildRecipe) {
           buildRecipe.items = [{
-            templateKey: 'components/my-input/my-input.tpl.html',
+            templateKey: '<my-input></my-input>',
             title: 'First Name',
             fieldName: 'name'
           },
             {
-              templateKey: 'components/my-input/my-input.tpl.html',
+              templateKey: '<my-input></my-input>',
               title: 'Last Name',
               fieldName: 'last'
+            },
+            {
+              templateKey: '<multi-checkbox></multi-checkbox>',
+              title: 'priority',
+              fieldName: 'priority',
+              configObj: ['low', 'mid', 'heavy']
             }];
         }
       },
@@ -29,7 +35,7 @@
       url: '/login',
       views: {
         'main': {
-          template: '<home-section></home-section>'
+          template: '<div></div>'
         }
       },
       data: {

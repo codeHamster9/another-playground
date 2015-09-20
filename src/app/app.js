@@ -12,4 +12,6 @@
   'templates-common',
   'ui.router.state',
   'ui.router',
+  'ui.bootstrap',
+  'smart-table'
 ])));
