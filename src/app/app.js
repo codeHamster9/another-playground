@@ -1,7 +1,8 @@
 (function (app) {
 
-  app.config(function ($stateProvider, $urlRouterProvider) {
+  app.config(function ($stateProvider, $urlRouterProvider, $compileProvider) {
     $urlRouterProvider.otherwise('/home');
+    $compileProvider.debugInfoEnabled(false);
   });
 
   app.run(function () {

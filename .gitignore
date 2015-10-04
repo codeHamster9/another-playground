@@ -1,3 +1,5 @@
+/src/app/*-compiled.js.map
+/src/app/*-compiled.js
 *.scssc
 /node_modules
 /build

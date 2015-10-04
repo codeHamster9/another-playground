@@ -14,7 +14,7 @@
 
     function onChange() {
       vm.change({
-        key: vm.placeholder,
+        key : vm.placeholder,
         data: vm.model
       });
     }

@@ -23,6 +23,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-githooks');
     grunt.loadNpmTasks('grunt-nexus-deployer');
     grunt.loadNpmTasks('grunt-contrib-compress');
+    grunt.loadNpmTasks('grunt-babel');
 
     /** ********************************************************************************* */
     /** **************************** File Config **************************************** */
@@ -40,7 +41,7 @@ module.exports = function(grunt) {
          * stylesheet, and 'unit' contains our app's unit tests.
          */
         app_files: {
-            js: ['./src/**/*.module.js', 'src/**/*.js',
+            js: ['src/**/*.js','src/**/*.es6',
                 '!src/**/*.spec.js', '!src/assets/**/*.js'
             ],
             jsunit: ['src/**/*.spec.js'],
@@ -179,10 +180,13 @@ module.exports = function(grunt) {
             },
             build_appjs: {
                 files: [{
-                    src: ['<%= app_files.js %>'],
+                    src: ['<%= app_files.js %>','!src/**/*es6'],
                     dest: '<%= build_dir %>/',
                     cwd: '.',
-                    expand: true
+                    expand: true,
+                    rename: function(dest, src) {
+                        return dest + src.replace('-compiled','');
+                    }
                 }]
             },
             build_vendorjs: {
@@ -305,6 +309,23 @@ module.exports = function(grunt) {
             }
         },
 
+        babel: {
+            options: {
+                sourceMap: true
+            },
+            dist: {
+                files: [{
+                    expand: true,
+                    //cwd: '<%= build_dir %>',
+                    cwd:'src',
+                    src: ['**/*.es6'],
+                    dest: '<%= build_dir %>/src',
+                    ext: '.js',
+                    //extDot: 'first'
+                }]
+            }
+        },
+
         /**
          * 'jshint' defines the rules of our linter as well as which files we
          * should check. This file, all javascript sources, and all our unit tests
@@ -315,7 +336,6 @@ module.exports = function(grunt) {
          */
         jshint: {
             src: [
-                '!src/**/**.spec.js',
                 '<%= app_files.js %>'
             ],
             test: [
@@ -600,8 +620,7 @@ module.exports = function(grunt) {
              */
             options: {
                 livereload: true
-            }
-            ,
+            },
 
             /**
              * When the Gruntfile changes, we just want to lint it. In fact, when
@@ -609,16 +628,16 @@ module.exports = function(grunt) {
              * We also want to copy vendor files and rebuild index.html in case
              * vendor_files.js was altered (list of 3rd party vendor files installed by bower)
              */
-            gruntfile: {
-                files: 'Gruntfile.js',
-                tasks: ['jshint:gruntfile', 'clean:vendor',
-                    'copy:build_vendorjs', 'index:build'
-                ],
-                options: {
-                    livereload: false
-                }
-            }
-            ,
+            //gruntfile: {
+            //    files: 'Gruntfile.js',
+            //    tasks: ['jshint:gruntfile', 'clean:vendor',
+            //        'copy:build_vendorjs', 'index:build'
+            //    ],
+            //    options: {
+            //        livereload: false
+            //    }
+            //}
+            //,
 
             /**
              * When our JavaScript source files change, we want to run lint them and
@@ -629,10 +648,9 @@ module.exports = function(grunt) {
                     '<%= app_files.js %>'
                 ],
                 tasks: ['jshint:src', 'karma:unit:run',
-                    'copy:build_appjs', 'index:build'
+                        'copy:build_appjs','babel:dist', 'index:build'
                 ]
-            }
-            ,
+            },
 
             /**
              * When assets are changed, copy them. Note that this will *not* copy new
@@ -652,8 +670,7 @@ module.exports = function(grunt) {
             html: {
                 files: ['<%= app_files.html %>'],
                 tasks: ['index:build']
-            }
-            ,
+            },
 
             /**
              * When our templates change, we only rewrite the template cache.
@@ -771,6 +788,7 @@ module.exports = function(grunt) {
         'copy:build_vendor_assets',
         'copy:build_appjs',
         'copy:build_vendorjs',
+        'babel:dist',
         'ngAnnotate:build',
         'index:build',
         'karmaconfig',
