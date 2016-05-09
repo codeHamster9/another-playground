@@ -1,4 +1,5 @@
 (function (module) {
+  'use strict';
 
   module.config(function ($stateProvider) {
     $stateProvider.state('home', {

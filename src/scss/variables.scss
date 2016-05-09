@@ -1,12 +1,4 @@
-/**
- * These are the variables used throughout the application. This is where
- * overwrites that are not specific to components should be maintained.
- */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-
-/**
- * Typography-related.
- */
-
-$sansFontFamily: 'Roboto', sans-serif;
+$sans-font-family: 'Roboto', sans-serif;
+$icon-font-path: './';

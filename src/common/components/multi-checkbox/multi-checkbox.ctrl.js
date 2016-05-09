@@ -10,7 +10,6 @@
 
     init();
 
-
     function init() {
       vm.innerState = _.map(vm.configObj.split(','),
           function (item) {

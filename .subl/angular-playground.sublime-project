@@ -1,0 +1,19 @@
+{
+	"folders":
+	[
+		{
+			"folder_exclude_patterns":
+			[
+				".idea",
+				"node_modules"
+			],
+			"path": "C:\\Users\\Idan\\Workspace\\sandbox\\another-playground"
+		}
+	],
+	"settings":
+	{
+		"FuzzyFilePath":
+		{
+		}
+	}
+}

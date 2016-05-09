@@ -5,27 +5,26 @@
 (function(module) {
   'use strict';
   module.factory('modelFactory', modelFactory);
-
+ 
   function modelFactory() {
 
-    var privateVar = 'secret';
+    return function (name) {
 
-    function privateFunc() {
-      return true;
-    }
+      var privateVar = name;
 
-    function getPrivate() {
-      return privateVar;
-    }
+      function getPrivate() {
+        return privateVar;
+      }
 
-    function setPrivate(val) {
-      privateVar = val;
-    }
+      function setPrivate(val) {
+        privateVar = val;
+      }
 
-    return {
-      get: getPrivate,
-      set: setPrivate
-
+      return {
+        get: getPrivate,
+        set: setPrivate
+      };
     };
   }
-})(angular.module('home'));
+})(angular.module('ngbp'));
+

@@ -14,7 +14,7 @@
       controller: 'multiCheckboxController',
       controllerAs: 'vm',
       bindToController: true,
-      templateUrl: 'components/multi-checkbox/multi-checkbox.tpl.html'
+      templateUrl: 'common/components/multi-checkbox/multi-checkbox.tpl.html'
     };
   }
 })(angular.module('ngbp'));

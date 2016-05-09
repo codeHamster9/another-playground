@@ -1,0 +1,1944 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"local",
+				"localStorageService"
+			],
+			[
+				"row",
+				"rowCollection"
+			],
+			[
+				"op",
+				"opacity	opacity()"
+			],
+			[
+				"nav-",
+				"nav-pills	 _navs.scss"
+			],
+			[
+				"btn-",
+				"btn-info	 _theme.scss"
+			],
+			[
+				"boot",
+				"bootstrap-sass-official	(main.scss)"
+			],
+			[
+				"angu",
+				"angular-bootstrap"
+			],
+			[
+				"forn",
+				"form-control	 _forms.scss"
+			],
+			[
+				"birth",
+				"birthDate	(smart-table.ctrl.js)"
+			],
+			[
+				"last",
+				"lastName	(smart-table.ctrl.js)"
+			],
+			[
+				"firs",
+				"firstName	(smart-table.ctrl.js)"
+			],
+			[
+				"Grun",
+				"Gruntfile.js"
+			],
+			[
+				"box-",
+				"box-shadow"
+			],
+			[
+				"tem",
+				"templates-app	(app.js)"
+			],
+			[
+				"P",
+				"p	padding"
+			],
+			[
+				"toggle",
+				"togglePortlet"
+			],
+			[
+				"show",
+				"showGrowlMessage	(instance-details.drv.js)"
+			],
+			[
+				"cu",
+				"cur	cursor: ${pointer};"
+			],
+			[
+				"return",
+				"returnDiff"
+			],
+			[
+				"att",
+				"attachList	(attach-list.drv.js)"
+			],
+			[
+				"imo",
+				"import	@import"
+			],
+			[
+				"data",
+				"data-title	(instance-details.tpl.html)"
+			],
+			[
+				"fin",
+				"finally"
+			],
+			[
+				"loa",
+				"loading"
+			],
+			[
+				"cl",
+				"cloudaccountid"
+			],
+			[
+				"prox",
+				"proxyReq"
+			],
+			[
+				"head",
+				"headers"
+			],
+			[
+				"_for",
+				"_forEach	Iterates over elements of a collection, executing the callback for each element."
+			],
+			[
+				"get",
+				"getPolice"
+			],
+			[
+				"securit",
+				"securityGroups	(instances.service.js)"
+			],
+			[
+				"ex",
+				"externalId"
+			],
+			[
+				"insta",
+				"instances"
+			],
+			[
+				"security",
+				"securityGroupName"
+			],
+			[
+				"secu",
+				"securityGroupId"
+			],
+			[
+				"ins",
+				"instances"
+			],
+			[
+				"sec",
+				"securityGroups"
+			],
+			[
+				"attach",
+				"attached"
+			],
+			[
+				"_isE",
+				"_isEqual	Performs a deep comparison between two values to determine if they are equivalent to each other."
+			],
+			[
+				"teml",
+				"templates	(Gruntfile.js)"
+			],
+			[
+				"exp",
+				"exp	expect"
+			],
+			[
+				"after",
+				"aftereach	After Each"
+			],
+			[
+				"req",
+				"require〔function〕"
+			],
+			[
+				"desc",
+				"desc	describe"
+			],
+			[
+				"root",
+				"$rootScope	AngularJS"
+			],
+			[
+				"befor",
+				"beforeeach	Before Each"
+			],
+			[
+				"sass",
+				"sass_import"
+			],
+			[
+				"ng-mouse",
+				"ng-mouseover	AngularJS"
+			],
+			[
+				"_index",
+				"_indexOf	Gets the index at which the first occurrence of value is found."
+			],
+			[
+				"meta",
+				"metaGroups"
+			],
+			[
+				"func",
+				"function〔keyword〕"
+			],
+			[
+				"policy",
+				"policySrv"
+			],
+			[
+				"polic",
+				"policySrv	(policy-srv.js)"
+			],
+			[
+				"selec",
+				"selected"
+			],
+			[
+				"glyp",
+				"glyphicon-pencil"
+			],
+			[
+				"table-",
+				"table-hover"
+			],
+			[
+				"agent",
+				"agentMetadata	(instance-details.tpl.html)"
+			],
+			[
+				"tables",
+				"tableSettings"
+			],
+			[
+				"des",
+				"destination"
+			],
+			[
+				"templa",
+				"templateUrl	(instances.drv.js)"
+			],
+			[
+				"server",
+				"serverInstanceCtrl	(instances.drv.js)"
+			],
+			[
+				"serve",
+				"serverInstance"
+			],
+			[
+				"feat",
+				"feature"
+			],
+			[
+				"deat",
+				"dome9_feature_blacklist	AngularJS"
+			],
+			[
+				"$state",
+				"$stateProvider"
+			],
+			[
+				"glyphicon-plus",
+				"glyphicon-plus-sign	 _glyphicons.scss"
+			],
+			[
+				"inp",
+				"input-group	 _button-groups.scss"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"co",
+				"control"
+			],
+			[
+				"module",
+				"module"
+			],
+			[
+				"sg",
+				"sgInboundCtrl"
+			],
+			[
+				"rule",
+				"ruleForm"
+			],
+			[
+				"model",
+				"modelThree"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/smart-table.ctrl.js",
+			"settings":
+			{
+				"buffer_size": 2485,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/smart-table.tpl.html",
+			"settings":
+			{
+				"buffer_size": 3083,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 469.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"runc",
+				"Run CSScomb"
+			],
+			[
+				"cssco",
+				"Run CSScomb"
+			],
+			[
+				"git:diff",
+				"Git: Diff Tool Current File"
+			],
+			[
+				"new filrrp",
+				"File: New File Relative to Project Root"
+			],
+			[
+				"newfile",
+				"File: New File Relative to Project Root"
+			],
+			[
+				"git chcf",
+				"Git: Checkout Current File"
+			],
+			[
+				"git difft",
+				"Git: Diff Tool Current File"
+			],
+			[
+				"snippet",
+				"Snippet: Recursively merges own enumerable properties of the source object(s), that don't resolve to undefined into the destination object."
+			],
+			[
+				"git:chf",
+				"Git: Checkout Current File"
+			],
+			[
+				"git:c",
+				"Git: Checkout Current File"
+			],
+			[
+				"gitchf",
+				"Git: Checkout Current File"
+			],
+			[
+				"gitdifftoll",
+				"Git: Diff Tool Current File"
+			],
+			[
+				"gitdifc",
+				"Git: Diff Current File"
+			],
+			[
+				"diable",
+				"Package Control: Disable Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"git:d",
+				"Git: Diff Current File (Ignore Whitespace)"
+			],
+			[
+				"local",
+				"Local History: Compare"
+			],
+			[
+				"history",
+				"Local History: Browse"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"newfileroo",
+				"File: New File Relative to Project Root"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"exit",
+				"Snippet: process.exit"
+			],
+			[
+				"linter",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"git appl",
+				"Git: Stash Apply"
+			],
+			[
+				"git:chef",
+				"Git: Checkout Current File"
+			],
+			[
+				"git checkout",
+				"Git: Checkout Current File"
+			],
+			[
+				"chai",
+				"Snippet: Checks if value is an array."
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"git:check",
+				"Git: Checkout Current File"
+			],
+			[
+				"git:che",
+				"Git: Checkout Current File"
+			],
+			[
+				"gitbla",
+				"Git: Blame"
+			],
+			[
+				"git:amend",
+				"Git: Amend Commit"
+			],
+			[
+				"git:blame",
+				"Git: Blame"
+			],
+			[
+				"git:show",
+				"Git: Show Tags"
+			],
+			[
+				"git:anot",
+				"Git: Toggle Annotations"
+			],
+			[
+				"git ch",
+				"Git: Checkout Current File"
+			],
+			[
+				"git:chec",
+				"Git: Checkout Current File"
+			],
+			[
+				"git:add",
+				"Git: Add Current File"
+			],
+			[
+				"clip",
+				"Clipboard Manager: Choose & Paste"
+			],
+			[
+				"git:change",
+				"Git: Change Branch"
+			],
+			[
+				"git:dele",
+				"Git: Delete Branch"
+			],
+			[
+				"git:branch",
+				"Git: Delete Branch"
+			],
+			[
+				"git:apply",
+				"Git: Stash Apply"
+			],
+			[
+				"git:merge",
+				"Git: Merge Branch"
+			],
+			[
+				"git:p",
+				"Git: Pull"
+			],
+			[
+				"git:app",
+				"Git: Stash Apply"
+			],
+			[
+				"git",
+				"Git: Stash Drop"
+			],
+			[
+				"git:checkc",
+				"Git: Checkout Current File"
+			],
+			[
+				"git:toggle A",
+				"Git: Toggle Annotations"
+			],
+			[
+				"git:toggle",
+				"Git: Toggle Annotations"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"clipboard",
+				"Clipboard Manager: Choose & Paste"
+			],
+			[
+				"clipa",
+				"Clipboard Manager: Paste"
+			],
+			[
+				"css",
+				"CSS Completions: Delete Cache"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"remoce",
+				"Package Control: Remove Channel"
+			],
+			[
+				"git:ap",
+				"Git: Stash Apply"
+			],
+			[
+				"git:am",
+				"Git: Amend Commit"
+			],
+			[
+				"git:reset",
+				"Git: Reset (hard) HEAD"
+			],
+			[
+				"GIT:STASH",
+				"Git: Stash Apply"
+			],
+			[
+				"git changh",
+				"Git: Change Branch"
+			],
+			[
+				"git:unsta",
+				"Git: Reset (unstage) All"
+			],
+			[
+				"stylus",
+				"Set Syntax: Stylus"
+			],
+			[
+				"filehistory:",
+				"File History: Open recently closed file (Current Project)"
+			],
+			[
+				"git:uns",
+				"Git: Reset (unstage) Current File"
+			],
+			[
+				"filehistory",
+				"File History: Open recently closed file (Current Project)"
+			],
+			[
+				"filehis",
+				"File History: Open recently closed file (Current Project)"
+			],
+			[
+				"git diff",
+				"Git: Open Modified Files"
+			],
+			[
+				"git:amm",
+				"Git: Amend Commit"
+			],
+			[
+				"Git: s",
+				"Git: Status"
+			],
+			[
+				"git:ver",
+				"Git (SideBarGit): Status Verbose"
+			],
+			[
+				"git:pull",
+				"Git: Pull"
+			],
+			[
+				"git:bran",
+				"Git: Change Branch"
+			],
+			[
+				"git:diff br",
+				"Git (SideBarGit): Diff: between remote and last local commit (origin/master..)"
+			],
+			[
+				"git:status",
+				"Git (SideBarGit): Status Verbose"
+			],
+			[
+				"function",
+				"Snippet: j - Function"
+			],
+			[
+				"refactor",
+				"Snippet: jr - createFactory"
+			],
+			[
+				"diff",
+				"Git (SideBarGit): Difftool: changes that have not been staged"
+			],
+			[
+				"sidebargit:",
+				"Git (SideBarGit): Diff: changes that have not been staged"
+			],
+			[
+				"git:",
+				"Git: Log All"
+			],
+			[
+				"goto",
+				"Emmet: Go to Matching Pair"
+			],
+			[
+				"git:ch",
+				"Git: Checkout Current File"
+			],
+			[
+				"git am",
+				"Git: Amend Commit"
+			],
+			[
+				"git:amme",
+				"Git: Amend Commit"
+			],
+			[
+				"git:stash",
+				"Git: Stash List"
+			],
+			[
+				"change",
+				"Git: Change Branch"
+			],
+			[
+				"git change",
+				"Git: Change Branch"
+			],
+			[
+				"git chan",
+				"Git: Change Branch"
+			],
+			[
+				"git cha",
+				"Git: Change Branch"
+			],
+			[
+				"chang",
+				"Git: Change Branch"
+			],
+			[
+				"git stash",
+				"Git: Stash List"
+			],
+			[
+				"git:chan",
+				"Git: Change Branch"
+			],
+			[
+				"git:push",
+				"Git: Push"
+			],
+			[
+				"git ame",
+				"Git: Amend Commit"
+			],
+			[
+				"path pro",
+				"File: Copy Path From Project"
+			],
+			[
+				"path",
+				"File: Copy Path From Project"
+			],
+			[
+				"copy path",
+				"File: Copy Path"
+			],
+			[
+				"angul",
+				"AngularJS: Rebuild Search Index"
+			],
+			[
+				"git:log",
+				"Git: Log All"
+			],
+			[
+				"fuzzy",
+				"FuzzyFilePath: Show info"
+			],
+			[
+				"git:cha",
+				"Git: Change Branch"
+			],
+			[
+				"git:stau",
+				"Git: Status"
+			],
+			[
+				"stash",
+				"Git: Stash Changes"
+			],
+			[
+				"remove pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"git:list",
+				"Git: Stash List"
+			],
+			[
+				"gru",
+				"Grunt: Kill Running Tasks"
+			],
+			[
+				"branch",
+				"Git: Change Branch"
+			],
+			[
+				"gruk",
+				"Grunt: Kill Running Tasks"
+			],
+			[
+				"grunt",
+				"Grunt"
+			],
+			[
+				"grunl",
+				"Grunt: Kill Running Tasks"
+			],
+			[
+				"gruntk",
+				"Grunt: Kill Running Tasks"
+			],
+			[
+				"compare",
+				"Snippet: Creates an object composed of keys generated from the results of running each element of a collection through the callback."
+			],
+			[
+				"package:re",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 833.0
+	},
+	"console":
+	{
+		"height": 603.0,
+		"history":
+		[
+			"sublime.active_window().active_view().settings().get('syntax')",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Idan/Workspace/sandbox/another-playground",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/karma",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/mocks",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/mocks/dev",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/common",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tabs",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tabs/master-tab",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tabs/master-tab/tabs-detail",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/assets",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/dynamic-builder",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/scss",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/scss/modules",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/angular-local-storage",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/angular-smart-table",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/angular-smart-table/src",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/ng-table/dist",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/ng-table/test"
+	],
+	"file_history":
+	[
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/tables.ctrl.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/tables.tpl.html",
+		"/C/Users/Idan/.sublime/history/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/2016-05-07_09.07.47.smart-table.tpl.html",
+		"/C/Users/Idan/.sublime/history/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/2016-05-07_09.07.11.smart-table.ctrl.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/bower.json",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/angular-smart-table/bower.json",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/add-row-modal.tpl.html",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/smart-table.tpl.html",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/scss/main.scss",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/app.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tabs/master-tab/master-tab.scss",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/Gruntfile.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/.jshintrc",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/dynamic-builder/d-builder.drv.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.drv.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.ctrl.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tabs/master-tab/master-tab.drv.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tabs/master-tab/master-tab.tpl.html",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tabs/master-tab/tabs-detail/detail-tab.tpl.html",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tabs/master-tab/tabs-detail/tabs-detail.drv.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/angular-smart-table/src/smart-table.module.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/angular-smart-table/src/stConfig.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/angular-smart-table/src/stPagination.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/angular-smart-table/src/stPipe.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/angular-smart-table/src/stSearch.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/angular-smart-table/src/stSelectRow.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/ng-table/dist/ng-table.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/smart-table.drv.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/index.html",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.scss",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/scss/modules/ui-switch.scss",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/scss/modules/round-icons.scss",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/scss/variables.scss",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/angular-bootstrap/ui-bootstrap-tpls.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/smart-table.ctrl.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.spec.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/angular-bootstrap/ui-bootstrap.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/angular-ui-router/src/resolve.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/tables.drv.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/ui-select-master/dist/select.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/package.json",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/multi-checkbox/multi-checkbox.ctrl.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/src/app/home/home.cfg.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/.gitignore",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/angular-ui-select3/src/select3.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/multi-checkbox/multi-checkbox.spec.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/assets/ngbp-0.0.2.css",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/multi-checkbox/multi-checkbox.tpl.html",
+		"/C/Users/Idan/AppData/Roaming/Sublime Text 3/Packages/User/CSScomb.sublime-settings",
+		"/C/Users/Idan/AppData/Roaming/Sublime Text 3/Packages/CSScomb/CSScomb.sublime-settings",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/.sass-lint.yml",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/bootstrap-sass-official/bower.json",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/.scss-lint.yml",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/multi-checkbox/multi-checkbox.drv.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/karma/karma-unit.tpl.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/node_modules/time-grunt/package.json",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/node_modules/time-grunt/package.json",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/common/services/pureFactory.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/templates-app.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/src/app/app.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/.babelrc",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/src/app/common/services/es6-factory.js",
+		"/C/Users/Idan/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/.jsbeautifyrc",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.tpl.html",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/alert-box/alert-box.drv.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/my-input/my-input.ctrl.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/alert-box/alert-box.ctrl.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/alert-box/alert-box.tpl.html",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/common/services/model-factory.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/common/services/es6-factory.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tabs/tabs.module.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/karma/karma-unit.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/karma-unit.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/.bowerrc",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/README.md",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/.subl/angular-playground.sublime-project",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/common/components/attach-policy/attach-policy.scss",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/common/components/attach-list/attach-list.test.js",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/common/components/attach-policy/attach-policy.drv.js",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/common/components/attach-policy/attach-policy.tpl.html",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/common/components/attach-list/attach-list.tpl.html",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/mocks/dev/GET_api_customization_component=sg-filter-state_45a7b668b1f171e61a8122311464319d44e157e4.json",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/mocks/dev/GET_api_CloudInstance_85205f6e533567d085a92bfc36fc4971ff0c18f8.json",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/mocks/dev/GET_api_customization_component=server-filter-state_e638c38306ca457d19ffc2684f3cc47d59199874.json",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/mocks/dev/GET_api_CloudInstance_cloudaccountid=5afc97c8-36aa-4061-b5a1-3bb8feb7ab68&instanceid=i-f9cdeed6&region=us_east_1_a7bad5a51037d0ef4e16136294453913525c6702.json",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/mocks/dev/GET_api_CloudInstance_cloudaccountid=5afc97c8-36aa-4061-b5a1-3bb8feb7ab68&instanceid=i-7b9b1192&region=us_east_1_ef999e3a67cccc35eb645dc7dc2d4ee28cfa1993.json.404",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/mocks/dev/GET_api_CloudInstance_cloudaccountid=5afc97c8-36aa-4061-b5a1-3bb8feb7ab68&instanceid=i-c3ea7d2a&region=us_east_1_0b4d780d6b1d9092f56b7e111089ff176ff0f590.json",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/mocks/dev/GET_api_clouddbinstance_7411395abb60f6bdfcea37b4adbb8efa0d09f2aa.json",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/mocks/dev/GET_api_CloudLoadBalancer_e246c423def52a1db2a8524d8ae937e3558eec2b.json",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/common/components/attach-policy/attach-policy.test.js",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/server-index/server-index.ctrl.js",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/instance-details/instance-details.tpl.html",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/common/components/details-form/instance-details-form.tpl.html",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/instance-details/server-instance.scss",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/.gitignore",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/.sass-lint.yml",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/common/components/details-form/instance-details.drv.js",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/common/components/policy-table/policy-table.drv.js",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/common/components/policy-table/policy-table.tpl.html",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/mocks/dev/GET_api_CloudInstance_cloudaccountid=5afc97c8-36aa-4061-b5a1-3bb8feb7ab68&instanceid=i-f9cdeed6&region=us_east_1_a7bad5a51037d0ef4e16136294453913525c6702.json.404",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/mocks/dev/GET_api_CloudInstance_cloudaccountid=711fbc7b-2bc4-4a07-8e8d-7c0900153607&instanceid=i-c39e2be0&region=us_east_1_5052ed37f099d46864e2859f91656e60a1e65a2a.json",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/Gruntfile.js",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/instance-details/instance-details.drv.js",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/scss/index.scss",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/package.json",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/common/components/attach-list/attach-list.scss",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/security-group/security-group-details/sg-details.scss",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/common/components/attach-list/attach-list.drv.js",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/common/services/policy-srv.js",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/vendor/bootstrap-sass/assets/stylesheets/bootstrap/_glyphicons.scss",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/build/v2/assets/css/scss-compiled.css",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/scss/metronic/scss/admin/layout/layout/_header.scss",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/scss/metronic/css/components.css",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/security-group/security-group-details/sg-details-ctrl.js",
+		"/C/Users/Idan/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/C/Users/Idan/AppData/Roaming/Sublime Text 3/Packages/CSS3/CSS3.sublime-settings",
+		"/C/Users/Idan/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/scss/main.scss",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/home/home.styl",
+		"/C/Users/Idan/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/karma/karma-unit.tpl.js",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/build/v2/templates-app.js",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/karma/karma-unit.js",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/common/services/d9-modal-service.js",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/.subl/dome9-webapp.sublime-project",
+		"/C/Users/Idan/Workspace/Dome9/webapp-master/server.js"
+	],
+	"find":
+	{
+		"height": 46.0
+	},
+	"find_in_files":
+	{
+		"height": 126.0,
+		"where_history":
+		[
+			"-*/build*,*.html",
+			"-*/build*",
+			"-/src*",
+			"-*/src",
+			"-*/src*",
+			"-/src*",
+			"-src*",
+			"-build*",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"displatcollection",
+			"rowCollection",
+			"| currency : '₪'",
+			"downpaymnet",
+			"item",
+			"email",
+			"balance",
+			"birthDate",
+			"lastName",
+			"innerText",
+			"\"",
+			"span",
+			"center",
+			"1.4.4",
+			"exampleInputEmail1",
+			"modal",
+			"promiseChain",
+			"class=\"input-sm form-control\"",
+			"gruntfile:",
+			"indent",
+			"build_dir",
+			"delta",
+			"~",
+			"html2",
+			"('build",
+			"commonTemplates",
+			"watch:",
+			"babel:",
+			"copy:",
+			"babel:",
+			"commonTemplates",
+			"html2js",
+			"html2js\n",
+			"html2js",
+			"html2js.common.dest",
+			"dome9.templates",
+			"\"",
+			"components",
+			"babel",
+			"test:",
+			"style",
+			"{",
+			"url.",
+			"Url",
+			"url",
+			"Url",
+			"url",
+			"Url",
+			"url",
+			"Url",
+			"url",
+			"vendor",
+			"hide",
+			"inbound",
+			"stateParams",
+			"instanceP",
+			"instanceDetailsFormCtrl",
+			"vm.",
+			"vm",
+			"agentMetadata",
+			"class=\"          dome9",
+			"class=\"dome9",
+			"\"dome9",
+			"\"dome9\"",
+			"dome9\"",
+			"dome9",
+			"securityGroupName",
+			"external",
+			"plus",
+			"glypgicon",
+			"g",
+			"%",
+			".portlet.box > .portlet-title > .tools > a.expand",
+			".",
+			"glyphicon",
+			"ng-class=\"vm.togg",
+			"$event",
+			"!important",
+			"expand",
+			"collapse",
+			"loading",
+			"}",
+			"{",
+			"-",
+			"SG",
+			"returnDiff",
+			", agent",
+			"SG",
+			"loading",
+			"type",
+			"sub",
+			"payload",
+			"sub",
+			"head",
+			"('build",
+			"Chrome",
+			"<web-",
+			"<d3",
+			"<d3-tree",
+			"<d3-tree-map",
+			"phantom",
+			"ng-class",
+			"complex",
+			"escape",
+			"attach",
+			"attach\n\n",
+			"attach",
+			"<attach-list",
+			"attach-list",
+			"\"",
+			"list-",
+			"data",
+			"dataObj",
+			"objData",
+			"dataObj",
+			"list",
+			"vm.list",
+			"list",
+			"List",
+			"list",
+			"actionTitle",
+			"list",
+			"action",
+			"vm.list",
+			"policy",
+			"ctrl",
+			"removeItem",
+			"karmaconfig"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/smart-table.ctrl.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2485,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								617,
+								617
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"bs_sintax": "javascriptnext",
+							"buffer_scroll_name": "c692c5fc",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.scan":
+							{
+								"current_ext": ".js",
+								"current_syntax": "JavaScriptNext - ES6 Syntax/JavaScriptNext",
+								"enabled": false,
+								"last_updated": 1462600515.18
+							},
+							"spell_check": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/smart-table.tpl.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3083,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2377,
+								2388
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"bs_sintax": "html",
+							"buffer_scroll_name": "f44e7c61",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.scan":
+							{
+								"allowed_colors":
+								[
+									"hex",
+									"webcolors",
+									"hsl",
+									"hsla",
+									"rgb",
+									"hex_compressed",
+									"rgba"
+								],
+								"compress_hex_output": true,
+								"current_ext": ".html",
+								"current_syntax": "HTML/HTML",
+								"enabled": true,
+								"last_updated": 1462600515.18,
+								"scan_completion_scopes":
+								[
+								],
+								"scan_scopes":
+								[
+									"meta.property-value.css -comment -string",
+									"meta.value.css -comment -string",
+									"meta.tag.inline.any.html string.quoted",
+									"meta.tag.any.html meta.attribute-with-value.style.html"
+								],
+								"use_hex_argb": false
+							},
+							"spell_check": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 48.0,
+						"translation.y": 761.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 46.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.CSS Extended Completions":
+	{
+		"height": 0.0
+	},
+	"output.clipboard_manager":
+	{
+		"height": 674.0
+	},
+	"output.exec":
+	{
+		"height": 313.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 484.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 415.0
+	},
+	"pinned_build_system": "",
+	"project": "angular-playground.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"grunt",
+				"Gruntfile.js"
+			],
+			[
+				"app",
+				"src\\app\\app.js"
+			],
+			[
+				"mai",
+				"src\\scss\\main.scss"
+			],
+			[
+				"index",
+				"src\\index.html"
+			],
+			[
+				"main",
+				"src\\scss\\main.scss"
+			],
+			[
+				"grut",
+				"Gruntfile.js"
+			],
+			[
+				"tales",
+				"src\\app\\tables\\tables.tpl.html"
+			],
+			[
+				"va",
+				"src\\scss\\variables.scss"
+			],
+			[
+				"karma",
+				"karma\\karma-unit.tpl.js"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"home.s",
+				"src\\app\\home\\home.scss"
+			],
+			[
+				"tabs",
+				"src\\app\\tabs\\master-tab\\tabs-detail\\tabs-detail.drv.js"
+			],
+			[
+				"pac",
+				"package.json"
+			],
+			[
+				"pure",
+				"src\\app\\common\\services\\pureFactory.js"
+			],
+			[
+				"app.js",
+				"src\\app\\app.js"
+			],
+			[
+				"instance-form",
+				"src\\app\\server\\common\\components\\details-form\\instance-details-form.tpl.html"
+			],
+			[
+				"attapol",
+				"src\\app\\server\\common\\components\\attach-policy\\attach-policy.tpl.html"
+			],
+			[
+				"attach-polict",
+				"src\\app\\server\\common\\components\\attach-policy\\attach-policy.scss"
+			],
+			[
+				"attach",
+				"src\\app\\server\\common\\components\\attach-list\\attach-list.tpl.html"
+			],
+			[
+				"serverindex",
+				"src\\app\\server\\server-index\\server-index.ctrl.js"
+			],
+			[
+				"giti",
+				".gitignore"
+			],
+			[
+				"sass",
+				".sass-lint.yml"
+			],
+			[
+				"grun",
+				"Gruntfile.js"
+			],
+			[
+				"server-index",
+				"src\\app\\server\\server-index\\server-index.ctrl.js"
+			],
+			[
+				"pa",
+				"package.json"
+			],
+			[
+				"policy",
+				"src\\app\\server\\common\\services\\policy-srv.js"
+			],
+			[
+				"instance-det",
+				"src\\app\\server\\instance-details\\instance-details.drv.js"
+			],
+			[
+				"inde",
+				"src\\scss\\index.scss"
+			],
+			[
+				"instance",
+				"src\\app\\server\\instance-details\\server-instance.scss"
+			],
+			[
+				"sg-det.sc",
+				"src\\app\\security-group\\security-group-details\\sg-details.scss"
+			],
+			[
+				"sg-details",
+				"src\\app\\security-group\\security-group-details\\sg-details-ctrl.js"
+			],
+			[
+				"policysrv",
+				"src\\app\\server\\common\\services\\policy-srv.js"
+			],
+			[
+				"attpo.tp",
+				"src\\app\\server\\common\\components\\attach-policy\\attach-policy.tpl.html"
+			],
+			[
+				"attach.htm",
+				"src\\app\\server\\common\\components\\attach-list\\attach-list.tpl.html"
+			],
+			[
+				"atta.scss",
+				"src\\app\\server\\common\\components\\attach-list\\attach-list.scss"
+			],
+			[
+				".scss",
+				"src\\scss\\main.scss"
+			],
+			[
+				".styl",
+				"src\\app\\home\\home.styl"
+			],
+			[
+				"scss",
+				"src\\scss\\index.scss"
+			],
+			[
+				"attac",
+				"src\\app\\server\\common\\components\\attach-policy\\attach-policy.drv.js"
+			],
+			[
+				"d9modal",
+				"src\\app\\common\\services\\d9-modal-service.js"
+			],
+			[
+				"attahc",
+				"src\\app\\server\\common\\components\\attach-list\\attach-list.scss"
+			],
+			[
+				"karam",
+				"karma\\karma-unit.tpl.js"
+			],
+			[
+				"api",
+				"src\\app\\common\\components\\api-key\\apiKey.directive.js"
+			],
+			[
+				"server.js",
+				"server.js"
+			],
+			[
+				"server",
+				"server.js"
+			],
+			[
+				"ser",
+				"src\\app\\server\\server.tpl.html"
+			],
+			[
+				"serve",
+				"src\\app\\server\\server.tpl.html"
+			],
+			[
+				"instanceser",
+				"src\\app\\common\\services\\instances.service.js"
+			],
+			[
+				"ip-table",
+				"src\\app\\common\\components\\ip-table\\ip.table.ctrl.test.js"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"attach-policy",
+				"src\\app\\server\\common\\components\\attach-policy\\attach-policy.drv.js"
+			],
+			[
+				"atta",
+				"src\\app\\server\\common\\components\\attach-policy\\attach-policy.test.js"
+			],
+			[
+				"jshint",
+				".jshintrc"
+			],
+			[
+				"index.sc",
+				"src\\scss\\index.scss"
+			],
+			[
+				"bower",
+				"bower.json"
+			],
+			[
+				"gru",
+				"Gruntfile.js"
+			],
+			[
+				"user.mana",
+				"src\\app\\users-management\\users.management.styl"
+			],
+			[
+				"locals",
+				"src\\app\\common\\services\\local-storage-lru.js"
+			],
+			[
+				"tags",
+				"src\\app\\security-group\\security-group-details\\sg-edit-tags\\sg-edit-tags.drv.js"
+			],
+			[
+				"table.",
+				"src\\scss\\stylus\\components\\table.styl"
+			],
+			[
+				"sg-dea",
+				"src\\app\\security-group\\security-group-details\\sg-details-tpl.html"
+			],
+			[
+				"base",
+				"Base64-srv.js"
+			],
+			[
+				"inst",
+				"src\\app\\common\\services\\instances.service.js"
+			],
+			[
+				"server-details",
+				"src\\app\\server\\instance-details\\instance-details.drv.js"
+			],
+			[
+				"server-de",
+				"src\\app\\server\\instance-details\\instance-details.drv.js"
+			],
+			[
+				"sg-detils",
+				"src\\app\\security-group\\security-group-details\\sg-details-ctrl.js"
+			],
+			[
+				"server-i",
+				"src\\app\\server\\server-index\\server-index.ctrl.js"
+			],
+			[
+				"account.",
+				"src\\app\\account\\account.ctrl.js"
+			],
+			[
+				"comlex",
+				"src\\app\\common\\components\\complex-filter-panel\\complex-filter-panel.tpl.html"
+			],
+			[
+				"complex",
+				"src\\app\\common\\components\\complex-filter-panel\\complex-filter-panel.drv.js"
+			],
+			[
+				"serverinde",
+				"src\\app\\server\\server-index\\server-index.ctrl.js"
+			],
+			[
+				"jshintr",
+				".jshintrc"
+			],
+			[
+				"instanc",
+				"src\\app\\instance\\instance-details\\instances.tpl.html"
+			],
+			[
+				"intsna.tpl",
+				"src\\app\\instance\\instance-details\\instances.tpl.html"
+			],
+			[
+				"instance-de",
+				"src\\app\\instance\\instance-details\\instances.tpl.html"
+			],
+			[
+				"sg-de",
+				"src\\app\\security-group\\security-group-details\\sg-details-ctrl.js"
+			],
+			[
+				"instance-details",
+				"src\\app\\instance\\instance-details\\instance-details.drv.js"
+			],
+			[
+				"instance-detai",
+				"src\\app\\instance\\instance-details\\instances.tpl.html"
+			],
+			[
+				"instance.tpl",
+				"src\\app\\instance\\instance-details\\instances.tpl.html"
+			],
+			[
+				"insta",
+				"src\\app\\instance\\instance.tpl.html"
+			],
+			[
+				"instanc-de",
+				"src\\app\\instance\\instance-details\\instance-details.drv.js"
+			],
+			[
+				"intsance.drv",
+				"src\\app\\instance\\instance-details\\instance-details.drv.js"
+			],
+			[
+				"instances",
+				"src\\app\\instance\\instance-details\\instances.tpl.html"
+			],
+			[
+				"gruntfile",
+				"Gruntfile.js"
+			],
+			[
+				"sg-",
+				"src\\app\\security-group\\security-group-details\\sg-details.scss"
+			],
+			[
+				"mains",
+				"src\\scss\\main.scss"
+			],
+			[
+				".orig",
+				"src\\app\\instances\\instances.tpl.html.orig"
+			],
+			[
+				"instancesind",
+				"src\\app\\instances\\index.js"
+			],
+			[
+				"color",
+				"src\\scss\\stylus\\general\\colors.styl"
+			],
+			[
+				"sg-detai",
+				"src\\app\\security-group\\security-group-details\\sg-details-ctrl.js"
+			],
+			[
+				"instanctabl",
+				"src\\app\\instances\\services\\ instancesDataTables.srv.js"
+			],
+			[
+				"sg-detais",
+				"src\\app\\security-group\\security-group-details\\sg-details-ctrl.js"
+			],
+			[
+				"homeindex",
+				"src\\app\\home\\index.js"
+			],
+			[
+				"securitygroupdetailsctrl",
+				"src\\app\\security-group\\security-group-details\\sg-details-ctrl.js"
+			],
+			[
+				"modalse",
+				"src\\app\\common\\services\\d9-modal-service.js"
+			],
+			[
+				"sg-detail",
+				"src\\app\\security-group\\security-group-details\\sg-details-ctrl.js"
+			],
+			[
+				"index.html",
+				"src\\index.html"
+			],
+			[
+				"welcome",
+				"src\\app\\welcome\\welcome.html"
+			],
+			[
+				"main.scss",
+				"src\\scss\\main.scss"
+			],
+			[
+				"sg-deta",
+				"src\\app\\security-group\\security-group-details\\sg-details-ctrl.js"
+			],
+			[
+				"packs",
+				"package.json"
+			],
+			[
+				"sg-modal",
+				"src\\app\\security-group\\security-group-details\\sg-modal-add\\sg-modal-add.drv.js"
+			],
+			[
+				"scope",
+				"src\\app\\common\\components\\scope-editor\\scope.editor.html"
+			],
+			[
+				"service",
+				"src\\app\\service-port\\service.port.html"
+			],
+			[
+				"eme",
+				"src\\app\\emergency-policy\\emergency.policy.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 625.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\Idan\\Workspace\\Dome9\\webapp-master\\.subl\\dome9-webapp.sublime-project"
+			],
+			[
+				"a",
+				"C:\\Users\\Idan\\Workspace\\another-playground\\angular-playground.sublime-project"
+			]
+		],
+		"width": 475.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 332.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

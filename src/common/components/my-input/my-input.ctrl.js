@@ -1,22 +1,22 @@
-(function (module) {
-  'use strict';
-  module.controller('myInputController', myInputController);
+// (function(module) {
+//   'use strict';
+//   module.controller('myInputController', myInputController);
 
-  function myInputController() {
+//   function myInputController() {
 
-    var vm = this;
-    vm.onChange = onChange;
+//     var vm = this;
+//     vm.onChange = onChang;e
 
-    init();
+//     init();
 
-    function init() {
-    }
+//     function init() {}
 
-    function onChange() {
-      vm.change({
-        key : vm.placeholder,
-        data: vm.model
-      });
-    }
-  }
-})(angular.module('ngbp'));
+//     function onChange() {
+//       vm.change({
+//         key: vm.placeholder,
+//         data: vm.model
+//       });
+//     }
+//   }
+// })(angular.module('ngbp'));
+

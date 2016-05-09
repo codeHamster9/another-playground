@@ -10,9 +10,33 @@ module.exports = function(karma) {
          * This is the list of file patterns to load into the browser during testing.
          */
         files: ['vendor/jasmine-given/dist/jasmine-given.js',
-            <% scripts.forEach(function(file) { %>
-            '<%= file %>',
-            <% }); %>
+            
+            'vendor/angular/angular.js',
+            
+            'vendor/angular-animate/angular-animate.js',
+            
+            'vendor/angular-sanitize/angular-sanitize.js',
+            
+            'vendor/angular-bootstrap/ui-bootstrap-tpls.js',
+            
+            'vendor/angular-ui-router/release/angular-ui-router.js',
+            
+            'vendor/js-data/dist/js-data.js',
+            
+            'vendor/js-data-angular/dist/js-data-angular.js',
+            
+            'vendor/lodash/lodash.js',
+            
+            'vendor/angular-smart-table/dist/smart-table.js',
+            
+            'vendor/angular-loading-bar/build/loading-bar.js',
+            
+            'vendor/ui-select-master/dist/select.js',
+            
+            'build/templates-app.js',
+            
+            'vendor/angular-mocks/angular-mocks.js',
+            
             'src/**/*.module.js',
             'src/app/app.js',
             'src/**/*.js',
