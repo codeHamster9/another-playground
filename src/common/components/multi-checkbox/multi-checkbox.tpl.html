@@ -4,7 +4,7 @@
         <li ng-repeat="item in vm.innerState track by $index">
             <input type="checkbox" ng-model="item.value"
                    ng-click="vm.setValue(item.label ,$index)"
-                   ng-class="{'btn-danger': !vm.model}"/>
+                   ng-class="{'btn-danger': !vm.model}/">
             <span>{{item.label}}</span>
         </li>
     </ul>

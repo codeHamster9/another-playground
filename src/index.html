@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html ng-app="ngbp">
-
+<html>
+<base href="/">
 <head>
     <title ng-bind="pageTitle"></title>
     <!-- font awesome from BootstrapCDN -->
@@ -30,6 +30,9 @@
             </div>
             <div class="collapse navbar-collapse" ng-class="{'in':master}">
                 <ul class="nav navbar-nav navbar-right">
+                    <li ui-sref-active="active">
+                        <a ui-sref="yfiles">yFiles</a>
+                    </li>
                     <li ui-sref-active="active">
                         <a ui-sref="home">Builder</a>
                     </li>

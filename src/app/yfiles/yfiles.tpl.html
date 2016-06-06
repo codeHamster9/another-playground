@@ -1,0 +1,91 @@
+<div>
+<script type="text/yfiles-template">
+  <g id="nodeTemplate">
+      <defs data-referencesafe="true">
+      <linearGradient x1="0.5" y1="0" x2="0.5" y2="1" spreadMethod="pad" id="node_background">
+      <stop stop-color="#FFA500" stop-opacity="1" offset="0"></stop>
+      <stop stop-color="#FFEDCC" stop-opacity="1" offset="1"></stop>
+      </linearGradient>
+      </defs>
+      <rect fill="url(#node_background)" stroke="DarkOrange" stroke-width="1" rx="8" ry="8" width="{TemplateBinding width}" height="{TemplateBinding height}">
+      </rect>
+      <text transform="translate(10 20)" data-content="{Binding name}" style="font-size:18px; font-family:Arial; fill:#000; text-anchor: left; dominant-baseline: central;"></text>
+      <text transform="translate(10 40)" data-content="{Binding position}" style="font-size:18px; font-family:Arial; fill:#000; text-anchor: left; dominant-baseline: central;"></text>
+      </g>
+</script>
+
+  <script type="text/yfiles-template">
+    <g id="NodeStyleTemplate">
+      <rect stroke="none" fill="red" rx="7" ry="4" width="{TemplateBinding width}"
+          height="{TemplateBinding height}"></rect>
+      <text data-content="{Binding name}"></text>
+    </g>
+  </script>
+</div>
+<div>
+  <div id="right" class="sidebar">
+    <div class="sidebar-content">
+      <div class="demo-collapsible-pane-header">Employee Details</div>
+
+      <div id="node-view" ng-cloak="">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="-10 -10 270 120">
+          <rect fill="url(#nodeGradient)" stroke="#0f0" stroke-width="6" rx="8" ry="8" width="250" height="100"></rect>
+          <g ng-if="currentNode">
+            <image ng-href="{{currentNode.icon}}" transform="translate(5 15)" width="58px" height="66px" xlink:href="resources/usericon_female1.svg"></image>
+            <text transform="translate(80 20)" style="font-size:10px; font-family:Arial; fill:#505050">{{currentNode.name}}</text>
+            <text transform="translate(80 38)" style="font-size:8px; font-family:Arial; fill:#505050">{{currentNode.position}}</text>
+            <text transform="translate(80 56)" style="font-size:10px; font-family:Arial; fill:#505050">{{currentNode.email}}</text>
+            <text transform="translate(80 74)" style="font-size:10px; font-family:Arial; fill:#505050">{{currentNode.phone}}</text>
+            <text transform="translate(80 92)" style="font-size:10px; font-family:Arial; fill:#505050">{{currentNode.fax}}</text>
+          </g>
+        </svg>
+      </div>
+
+      <div class="demo-collapsible-pane-header">Employees</div>
+
+      <div class="demo-collapsible-pane-content" style="padding: 0;">
+        <div id="node-filter">
+          <label for="nodeFilter">Filter</label> <input id="nodeFilter" type="text" data-ng-model="nodesFilter.name">
+        </div>
+      </div>
+
+      <div id="nodes-list" ng-cloak="">
+          <ul>
+            <li ng-repeat="node in nodesModel | filter: nodesFilter | orderBy: 'name'" ng-class="{'item-selected': node===currentNode}" ng-click="$parent.currentNode=node" style="position:relative;">
+              <span ng-if="!editing || node !== currentNode">{{node.name}}</span>
+              <button ng-if="!editing && node === currentNode" ng-click="$parent.editing=!$parent.editing" ng-disabled="!currentNode">Edit
+              </button>
+              <input type="text" ng-if="editing && node === currentNode" ng-model="node.name" enter-press="$parent.editing=false">
+            </li>
+          </ul>
+        </div>
+
+    </div>
+  </div>
+
+  <div id="center">
+
+    <div id="graphContainer">
+      <!-- the graphControl directive -->
+      <graph-control id="graphControl"
+                      nodes-source="nodesModel"
+                      edges-source="edgesModel"
+                      nodes-filter="nodesFilter"
+                      current-node="currentNode"
+                      node-id-binding="name"
+                      source-node-binding="from"
+                      target-node-binding="to">
+      </graph-control>
+    </div>
+  </div>
+
+  <!-- a hidden SVG that stores the gradients used in the node templates -->
+  <svg style="visibility: hidden" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <lineargradient id="nodeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style="stop-color:rgb(75,255,255);"></stop>
+        <stop offset="25%" style="stop-color:rgb(150,150,255);"></stop>
+      </lineargradient>
+    </defs>
+  </svg>
+</div>

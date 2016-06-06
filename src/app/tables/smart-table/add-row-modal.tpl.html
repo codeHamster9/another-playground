@@ -3,18 +3,28 @@
     <h3> Add Row ?</h3>
 </div>
 <div class="modal-body">
-    <form action="" name="vm.form" ng-submit="$uibModalInstance.dismiss()">
+    <form action="submit" name="vm.form" ng-submit="$uibModalInstance.dismiss()">
         <div class="form-group">
             <label for="firstNameInput">First Name</label>
-            <input type="email" class="form-control" id="firstNameInput" placeholder="First Name">
+            <input type="text" name="firstname" class="form-control" ng-model="vm.formdata.firstname" id="firstNameInput" placeholder="First Name" autocomplete="off" autofocus>
         </div>
         <div class="form-group">
             <label for="lastNameInput">Last Name</label>
-            <input type="email" class="form-control" id="lastNameInput" placeholder="Last Name">
+            <input class="form-control"
+                   type="text"
+                   name="lastname"
+                   id="lastNameInput"
+                   placeholder="Last Name"
+                   ng-model="vm.formdata.lastname"
+                   ng-model-options="{ debounce: 1000 }"
+                   required
+                   autocomplete="off" >
+            <br />
+            <div ng-show="vm.form.lastname.$touched && vm.form.lastname.$error.required">Required.</div>
         </div>
         <div class="form-group">
             <label for="dateInput">Birth Date</label>
-            <input type="email" class="form-control" id="dateInput" placeholder="Birth Date">
+            <input type="email" class="form-control" id="dateInput" name="date" ng-model="vm.formdata.date" placeholder="Birth Date" required>
         </div>
         <div class="input-group">
             <input type="email" class="form-control" aria-describedby="basic-addon1" placeholder="Email">

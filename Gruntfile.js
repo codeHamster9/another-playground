@@ -7,7 +7,6 @@ module.exports = function(grunt) {
     prism: 'grunt-connect-prism'
   });
 
-
   /** ********************************************************************************* */
   /** **************************** File Config **************************************** */
   var fileConfig = {
@@ -64,20 +63,20 @@ module.exports = function(grunt) {
      */
     vendor_files: {
       js: [
+
+        'vendor/yfiles/require.js',
         'vendor/angular/angular.js',
         'vendor/angular-animate/angular-animate.js',
         'vendor/angular-sanitize/angular-sanitize.js',
         'vendor/angular-bootstrap/ui-bootstrap-tpls.js',
         'vendor/angular-ui-router/release/angular-ui-router.js',
-        'vendor/js-data/dist/js-data.js',
-        'vendor/js-data-angular/dist/js-data-angular.js',
         'vendor/lodash/lodash.js',
         'vendor/angular-smart-table/dist/smart-table.js',
         'vendor/angular-loading-bar/build/loading-bar.js',
-        'vendor/angular-smart-table/dist/smart-table.js',
         'vendor/ui-select-master/dist/select.js',
-        'vendor/angular-local-storage/dist/angular-local-storage.js'
-        //'vendor/angular-ui-select3/src/select3.js'
+        'vendor/angular-local-storage/dist/angular-local-storage.js',
+        'vendor/yfiles/getYfiles.js'
+
       ],
       css: [],
       assets: ['vendor/bootstrap-sass-official/assets/fonts/**/*']
@@ -173,6 +172,14 @@ module.exports = function(grunt) {
       build_vendorjs: {
         files: [{
           src: ['<%= vendor_files.js %>'],
+          dest: '<%= build_dir %>/',
+          cwd: '.',
+          expand: true
+        }]
+      },
+      copy_yfiles: {
+        files: [{
+          src: ['vendor/yfiles/lib/yfiles/*.*'],
           dest: '<%= build_dir %>/',
           cwd: '.',
           expand: true
@@ -323,7 +330,7 @@ module.exports = function(grunt) {
       ],
       gruntfile: [],
       options: {
-        jshintrc: '.jshintrc',
+        jshintrc: './.subl/.jshintrc',
         reporter: require('jshint-stylish')
       }
 
@@ -543,12 +550,12 @@ module.exports = function(grunt) {
       gruntfile: {
         files: 'Gruntfile.js',
         tasks: ['clean:vendor',
-                'copy:build_vendorjs',
-                'index:build'
+          'copy:build_vendorjs',
+          'index:build'
         ],
         options: {
           livereload: true,
-          reload:true
+          reload: true
         }
       },
 
@@ -560,7 +567,7 @@ module.exports = function(grunt) {
         files: [
           '<%= app_files.js %>'
         ],
-        tasks: ['jshint:src', 'copy:build_appjs', 'babel:dist', 'index:build']
+        tasks: ['copy:build_appjs', 'babel:dist', 'index:build']
       },
 
       /**
@@ -613,7 +620,7 @@ module.exports = function(grunt) {
        * run the unit tests. We don't want to do any live reloading.
        */
       jsunit: {
-        files: [ '<%= app_files.jsunit %>'],
+        files: ['<%= app_files.jsunit %>'],
         tasks: ['jshint:test', 'karma:unit:run'],
         options: { livereload: false }
       }
@@ -642,18 +649,18 @@ module.exports = function(grunt) {
 
   grunt.registerTask('test', ['karmaconfig', 'karma:continuous']);
 
-
   // The 'build' task gets your app ready to run for development and testing.
   grunt.registerTask('build', [
     'clean:all',
     'html2js',
-    'jshint:src',
+    //'jshint:src',
     'sass:build',
     'concat:build_css',
     'copy:build_app_assets',
     'copy:build_vendor_assets',
     'copy:build_appjs',
     'copy:build_vendorjs',
+    'copy:copy_yfiles',
     'babel:dist',
     'ngAnnotate:build',
     'index:build'
@@ -747,14 +754,14 @@ module.exports = function(grunt) {
       var jsFiles = filterForJS(this.filesSrc);
 
       grunt.file.copy('karma/karma-unit.tpl.js', 'karma/karma-unit.js', {
-          process: function(contents, path) {
-            // This is the variable looped over in the karma template of our index.html exposed as "scripts"
-            return grunt.template.process(contents, {
-              data: {
-                scripts: jsFiles
-              }
-            });
-          }
-        });
+        process: function(contents, path) {
+          // This is the variable looped over in the karma template of our index.html exposed as "scripts"
+          return grunt.template.process(contents, {
+            data: {
+              scripts: jsFiles
+            }
+          });
+        }
+      });
     });
 };

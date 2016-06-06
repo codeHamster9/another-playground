@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"graph",
+				"graphControl"
+			],
+			[
+				"nodeS",
+				"nodesSource"
+			],
+			[
+				"changes",
+				"changesObj"
+			],
+			[
+				"text",
+				"textModel"
+			],
+			[
+				"Scope",
+				"ScopeTreeSource	(ScopeGraphSource.js)"
+			],
+			[
+				"compl",
+				"complete	(licence.js)"
+			],
+			[
 				"local",
 				"localStorageService"
 			],
@@ -296,26 +320,10 @@
 	"buffers":
 	[
 		{
-			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/smart-table.ctrl.js",
+			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/yfiles-graph-control.drv.js",
 			"settings":
 			{
-				"buffer_size": 2485,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/smart-table.tpl.html",
-			"settings":
-			{
-				"buffer_size": 3302,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/index.html",
-			"settings":
-			{
-				"buffer_size": 2192,
+				"buffer_size": 27252,
 				"line_ending": "Windows"
 			}
 		}
@@ -331,6 +339,18 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"cssc",
+				"Run CSScomb"
+			],
+			[
+				"trailc",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
 			[
 				"list",
 				"Package Control: List Packages"
@@ -410,10 +430,6 @@
 			[
 				"history",
 				"Local History: Browse"
-			],
-			[
-				"remove",
-				"Package Control: Remove Package"
 			],
 			[
 				"instal",
@@ -804,9 +820,13 @@
 	},
 	"console":
 	{
-		"height": 603.0,
+		"height": 718.0,
 		"history":
 		[
+			"view.fold(view.find_by_selector('comment'))",
+			"view.settings().get('syntax')",
+			"console.clear()",
+			"console",
 			"sublime.active_window().active_view().settings().get('syntax')",
 			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
 		]
@@ -823,49 +843,116 @@
 	"expanded_folders":
 	[
 		"/C/Users/Idan/Workspace/sandbox/another-playground",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/karma",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/mocks",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/mocks/dev",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/assets",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/assets/bootstrap",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/src/common",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/src/common/components",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/vendor",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/vendor/yfiles",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/common",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tabs",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tabs/master-tab",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tabs/master-tab/tabs-detail",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/assets",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/dynamic-builder",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/scss",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/scss/modules",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/bootstrap-sass-official",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/bootstrap-sass-official/assets",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/bootstrap-sass-official/assets/stylesheets",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/bootstrap-sass-official/assets/stylesheets/bootstrap"
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib"
 	],
 	"file_history":
 	[
-		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/_component-animations.scss",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/getYfiles.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/vendor/yfiles/getYfiles.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/yfiles-graph-control.drv.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/assets/sample.graphml",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/LabelSizeConstraintProvider.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/src/common/components/yfiles-angular/LabelInsetsProvider.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/LevelOfDetailNodeStyle.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/LabelInsetsProvider.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/ScopeGraphSource.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/test.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/yfiles-layout.srv.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/resources/sample.graphml",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib/yfiles/algorithms.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/sample.graphml",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/.subl/.jshintrc",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/check-box/check-box.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/smart-table.tpl.html",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/tables.ctrl.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/smart-table.ctrl.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/scss/modules/checkbox.scss",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/.subl/.sass-lint.yml",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/multi-checkbox/multi-checkbox.tpl.html",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/.subl/.htmlhintrc",
+		"/C/Users/Idan/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/Gruntfile.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/.jshintignore",
+		"/C/Users/Idan/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/vendor/yfiles/lib/yfiles/licence.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/license.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib/yfiles/licence.js",
+		"/C/Users/Idan/AppData/Roaming/Sublime Text 3/Packages/CSScomb/CSScomb.sublime-settings",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/.npmignore",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/.subl/jscs.json",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib/yfiles/canvas-core.impl.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/.yo-rc.json",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/.czrc",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/csscomb.json",
+		"/C/Users/Idan/AppData/Roaming/Sublime Text 3/Packages/CSScomb/README.md",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/vendor/yfiles/licence.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/scss/main.scss",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/data.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/.jshintrc",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/tables.tpl.html",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/smart-table.drv.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/index.html",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/yfiles.tpl.html",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/app.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib/yfiles/complete.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/vendor/yfiles/lib/yfiles/complete.mapping.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/vendor/yfiles/lib/yfiles/complete.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/vendor/yfiles/license.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib/license.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/yfiles-utils.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/yfiles/license.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/index.html",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/index.html",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/yfiles-angular.js",
+		"/C/Users/Idan/.sublime/history/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/2016-05-25_14.21.45.LevelOfDetailNodeStyle.js",
+		"/C/Users/Idan/.sublime/history/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/2016-05-25_13.49.28.ScopeGraphSource.js",
+		"/C/Users/Idan/.sublime/history/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/2016-05-25_16.19.09.ScopeGraphSource.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/yfiles/licence.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/yfiles.cfg.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.cfg.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/yfiles.ctrl.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/vendor/yfiles/require.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/resources/data.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.scss",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/yfiles/lang.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib/yfiles/es5-shim.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/require.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib/yfiles/core-lib.js",
+		"/C/Users/Idan/.sublime/history/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib/2016-05-25_12.40.35.licence.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.drv.js",
+		"/C/Users/Idan/.sublime/history/C/Users/Idan/Workspace/sandbox/another-playground/2016-05-25_12.43.00.Gruntfile.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib/licence.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.ctrl.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/tables.ctrl.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib/yfiles/complete-mapping.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib/yfiles/graph-graphml.impl.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib/yfiles/complete.mapping.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/.jsbeautifyrc",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/_component-animations.scss",
 		"/C/Users/Idan/.sublime/history/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/2016-05-07_09.07.47.smart-table.tpl.html",
 		"/C/Users/Idan/.sublime/history/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/2016-05-07_09.07.11.smart-table.ctrl.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/bower.json",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/angular-smart-table/bower.json",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/add-row-modal.tpl.html",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/scss/main.scss",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/app.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tabs/master-tab/master-tab.scss",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/Gruntfile.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/.jshintrc",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/dynamic-builder/d-builder.drv.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.drv.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.ctrl.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tabs/master-tab/master-tab.drv.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tabs/master-tab/master-tab.tpl.html",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tabs/master-tab/tabs-detail/detail-tab.tpl.html",
@@ -877,14 +964,10 @@
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/angular-smart-table/src/stSearch.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/angular-smart-table/src/stSelectRow.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/ng-table/dist/ng-table.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/smart-table.drv.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/index.html",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.scss",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/scss/modules/ui-switch.scss",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/scss/modules/round-icons.scss",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/scss/variables.scss",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/angular-bootstrap/ui-bootstrap-tpls.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/smart-table.ctrl.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.spec.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/angular-bootstrap/ui-bootstrap.js",
@@ -898,9 +981,7 @@
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/angular-ui-select3/src/select3.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/multi-checkbox/multi-checkbox.spec.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/build/assets/ngbp-0.0.2.css",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/multi-checkbox/multi-checkbox.tpl.html",
 		"/C/Users/Idan/AppData/Roaming/Sublime Text 3/Packages/User/CSScomb.sublime-settings",
-		"/C/Users/Idan/AppData/Roaming/Sublime Text 3/Packages/CSScomb/CSScomb.sublime-settings",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/.sass-lint.yml",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/bootstrap-sass-official/bower.json",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/.scss-lint.yml",
@@ -911,82 +992,18 @@
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/common/services/pureFactory.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/build/templates-app.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/build/src/app/app.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/.babelrc",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/build/src/app/common/services/es6-factory.js",
-		"/C/Users/Idan/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/.jsbeautifyrc",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.tpl.html",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/alert-box/alert-box.drv.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/my-input/my-input.ctrl.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/alert-box/alert-box.ctrl.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/alert-box/alert-box.tpl.html",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/common/services/model-factory.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/common/services/es6-factory.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tabs/tabs.module.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/karma/karma-unit.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/build/karma-unit.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/.bowerrc",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/README.md",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/.subl/angular-playground.sublime-project",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/common/components/attach-policy/attach-policy.scss",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/common/components/attach-list/attach-list.test.js",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/common/components/attach-policy/attach-policy.drv.js",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/common/components/attach-policy/attach-policy.tpl.html",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/common/components/attach-list/attach-list.tpl.html",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/mocks/dev/GET_api_customization_component=sg-filter-state_45a7b668b1f171e61a8122311464319d44e157e4.json",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/mocks/dev/GET_api_CloudInstance_85205f6e533567d085a92bfc36fc4971ff0c18f8.json",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/mocks/dev/GET_api_customization_component=server-filter-state_e638c38306ca457d19ffc2684f3cc47d59199874.json",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/mocks/dev/GET_api_CloudInstance_cloudaccountid=5afc97c8-36aa-4061-b5a1-3bb8feb7ab68&instanceid=i-f9cdeed6&region=us_east_1_a7bad5a51037d0ef4e16136294453913525c6702.json",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/mocks/dev/GET_api_CloudInstance_cloudaccountid=5afc97c8-36aa-4061-b5a1-3bb8feb7ab68&instanceid=i-7b9b1192&region=us_east_1_ef999e3a67cccc35eb645dc7dc2d4ee28cfa1993.json.404",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/mocks/dev/GET_api_CloudInstance_cloudaccountid=5afc97c8-36aa-4061-b5a1-3bb8feb7ab68&instanceid=i-c3ea7d2a&region=us_east_1_0b4d780d6b1d9092f56b7e111089ff176ff0f590.json",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/mocks/dev/GET_api_clouddbinstance_7411395abb60f6bdfcea37b4adbb8efa0d09f2aa.json",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/mocks/dev/GET_api_CloudLoadBalancer_e246c423def52a1db2a8524d8ae937e3558eec2b.json",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/common/components/attach-policy/attach-policy.test.js",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/server-index/server-index.ctrl.js",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/instance-details/instance-details.tpl.html",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/common/components/details-form/instance-details-form.tpl.html",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/instance-details/server-instance.scss",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/.gitignore",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/.sass-lint.yml",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/common/components/details-form/instance-details.drv.js",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/common/components/policy-table/policy-table.drv.js",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/common/components/policy-table/policy-table.tpl.html",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/mocks/dev/GET_api_CloudInstance_cloudaccountid=5afc97c8-36aa-4061-b5a1-3bb8feb7ab68&instanceid=i-f9cdeed6&region=us_east_1_a7bad5a51037d0ef4e16136294453913525c6702.json.404",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/mocks/dev/GET_api_CloudInstance_cloudaccountid=711fbc7b-2bc4-4a07-8e8d-7c0900153607&instanceid=i-c39e2be0&region=us_east_1_5052ed37f099d46864e2859f91656e60a1e65a2a.json",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/Gruntfile.js",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/instance-details/instance-details.drv.js",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/scss/index.scss",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/package.json",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/common/components/attach-list/attach-list.scss",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/security-group/security-group-details/sg-details.scss",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/common/components/attach-list/attach-list.drv.js",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/server/common/services/policy-srv.js",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/vendor/bootstrap-sass/assets/stylesheets/bootstrap/_glyphicons.scss",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/build/v2/assets/css/scss-compiled.css",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/scss/metronic/scss/admin/layout/layout/_header.scss",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/scss/metronic/css/components.css",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/security-group/security-group-details/sg-details-ctrl.js",
-		"/C/Users/Idan/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings",
-		"/C/Users/Idan/AppData/Roaming/Sublime Text 3/Packages/CSS3/CSS3.sublime-settings",
-		"/C/Users/Idan/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/scss/main.scss",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/home/home.styl",
-		"/C/Users/Idan/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/karma/karma-unit.tpl.js",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/build/v2/templates-app.js",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/karma/karma-unit.js",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/src/app/common/services/d9-modal-service.js",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/.subl/dome9-webapp.sublime-project"
+		"/C/Users/Idan/Workspace/sandbox/another-playground/.babelrc"
 	],
 	"find":
 	{
-		"height": 46.0
+		"height": 47.0
 	},
 	"find_in_files":
 	{
 		"height": 126.0,
 		"where_history":
 		[
+			"-*/build*",
 			"-*/build*,*.html",
 			"-*/build*",
 			"-/src*",
@@ -1003,6 +1020,110 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"currentLayouter",
+			"lorraine",
+			"loraine",
+			"hintsFactory",
+			"HintsFactory",
+			"hintsFactory",
+			"HierarchicGroupLayouter ",
+			"overview",
+			"addChainLink",
+			".model",
+			"applylayout",
+			"afterParsing",
+			"readGraph",
+			"graphControl.graph",
+			"incrementalNodes",
+			"graphsource",
+			"layoutAfterReading",
+			"readGraph",
+			"this.",
+			"setupLA",
+			":",
+			"'",
+			":",
+			"'",
+			":",
+			"'",
+			"this.graphControl",
+			"newPolylineEdgeStyle",
+			"binding",
+			"($attrs",
+			"vm",
+			"jshint:",
+			"\\",
+			"max",
+			"col",
+			"semi",
+			"copy:",
+			"\"args\": [],",
+			"value",
+			"$ctrl",
+			"ScopeGraphSource",
+			"addNodeCreatedListener",
+			"copiedLayoutGraph",
+			"CopiedLayoutGraph",
+			"fitGraphBounds",
+			"this.treeSource",
+			"graphSource",
+			"setNodePlacers",
+			"HierarchicLayout",
+			"hierarchicLayout",
+			"morphLayout",
+			"morph",
+			"templateMode",
+			" this.templates",
+			"nodeTemplate",
+			"script",
+			"template",
+			"6",
+			"nodeDefaults",
+			"treeSource",
+			"GroupNode",
+			"nodesSource",
+			"Layout",
+			"treeLayout",
+			"hierarchicLayout",
+			"layout",
+			"createTreeLayout",
+			"GroupNode",
+			"groupNode",
+			"GroupNode",
+			"layout",
+			"increamental",
+			"nodesSource",
+			"graphControl.graph",
+			"ctx",
+			"this",
+			"require",
+			"bootstrap",
+			"detailTemplate",
+			"\"",
+			"style",
+			"NodeStyleDecorationInstaller",
+			"layout",
+			"ScopeGraphSource",
+			"demo.",
+			"yfiles/",
+			"commands",
+			"copy:",
+			"createTreeLayout",
+			"sass",
+			"lang",
+			"lang.js",
+			"lang",
+			"locationProvider",
+			"vendor/yfiles/lib/",
+			"vendor/yFiles/lib/",
+			"lang",
+			"body",
+			"head",
+			"tablesController",
+			",",
+			"true",
+			"',\n",
+			"jshint",
 			"2",
 			"md",
 			"button",
@@ -1026,111 +1147,7 @@
 			"class=\"input-sm form-control\"",
 			"gruntfile:",
 			"indent",
-			"build_dir",
-			"delta",
-			"~",
-			"html2",
-			"('build",
-			"commonTemplates",
-			"watch:",
-			"babel:",
-			"copy:",
-			"babel:",
-			"commonTemplates",
-			"html2js",
-			"html2js\n",
-			"html2js",
-			"html2js.common.dest",
-			"dome9.templates",
-			"\"",
-			"components",
-			"babel",
-			"test:",
-			"style",
-			"{",
-			"url.",
-			"Url",
-			"url",
-			"Url",
-			"url",
-			"Url",
-			"url",
-			"Url",
-			"url",
-			"vendor",
-			"hide",
-			"inbound",
-			"stateParams",
-			"instanceP",
-			"instanceDetailsFormCtrl",
-			"vm.",
-			"vm",
-			"agentMetadata",
-			"class=\"          dome9",
-			"class=\"dome9",
-			"\"dome9",
-			"\"dome9\"",
-			"dome9\"",
-			"dome9",
-			"securityGroupName",
-			"external",
-			"plus",
-			"glypgicon",
-			"g",
-			"%",
-			".portlet.box > .portlet-title > .tools > a.expand",
-			".",
-			"glyphicon",
-			"ng-class=\"vm.togg",
-			"$event",
-			"!important",
-			"expand",
-			"collapse",
-			"loading",
-			"}",
-			"{",
-			"-",
-			"SG",
-			"returnDiff",
-			", agent",
-			"SG",
-			"loading",
-			"type",
-			"sub",
-			"payload",
-			"sub",
-			"head",
-			"('build",
-			"Chrome",
-			"<web-",
-			"<d3",
-			"<d3-tree",
-			"<d3-tree-map",
-			"phantom",
-			"ng-class",
-			"complex",
-			"escape",
-			"attach",
-			"attach\n\n",
-			"attach",
-			"<attach-list",
-			"attach-list",
-			"\"",
-			"list-",
-			"data",
-			"dataObj",
-			"objData",
-			"dataObj",
-			"list",
-			"vm.list",
-			"list",
-			"List",
-			"list",
-			"actionTitle",
-			"list",
-			"action",
-			"vm.list",
-			"policy"
+			"build_dir"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1148,24 +1165,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/smart-table.ctrl.js",
+					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/yfiles-graph-control.drv.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2485,
+						"buffer_size": 27252,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								211,
-								211
+								23718,
+								23718
 							]
 						],
 						"settings":
@@ -1180,92 +1197,68 @@
 								{
 									"characters": ".#",
 									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
 								}
 							],
 							"bh_regions":
 							[
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content"
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
 							],
 							"bs_sintax": "javascriptnext",
-							"buffer_scroll_name": "c692c5fc",
+							"buffer_scroll_name": "c78031c5",
 							"color_helper.file_palette":
 							[
 							],
@@ -1274,7 +1267,7 @@
 								"current_ext": ".js",
 								"current_syntax": "JavaScriptNext - ES6 Syntax/JavaScriptNext",
 								"enabled": false,
-								"last_updated": 1463298142.16
+								"last_updated": 1465068389.64
 							},
 							"spell_check": false,
 							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
@@ -1282,280 +1275,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/smart-table.tpl.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3302,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1534,
-								1534
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								}
-							],
-							"bh_regions":
-							[
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content"
-							],
-							"bs_sintax": "html",
-							"buffer_scroll_name": "f44e7c61",
-							"color_helper.file_palette":
-							[
-							],
-							"color_helper.scan":
-							{
-								"allowed_colors":
-								[
-									"hex",
-									"webcolors",
-									"hsl",
-									"hsla",
-									"rgb",
-									"rgba",
-									"hex_compressed"
-								],
-								"compress_hex_output": true,
-								"current_ext": ".html",
-								"current_syntax": "HTML/HTML",
-								"enabled": true,
-								"last_updated": 1463298142.16,
-								"scan_completion_scopes":
-								[
-								],
-								"scan_scopes":
-								[
-									"meta.property-value.css -comment -string",
-									"meta.value.css -comment -string",
-									"meta.tag.inline.any.html string.quoted",
-									"meta.tag.any.html meta.attribute-with-value.style.html"
-								],
-								"use_hex_argb": false
-							},
-							"spell_check": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 6709.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2192,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1305,
-								1305
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								}
-							],
-							"bh_regions":
-							[
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content"
-							],
-							"bs_sintax": "html",
-							"buffer_scroll_name": "10b7797f",
-							"color_helper.file_palette":
-							[
-							],
-							"color_helper.scan":
-							{
-								"allowed_colors":
-								[
-									"hex",
-									"webcolors",
-									"hsl",
-									"hsla",
-									"rgb",
-									"rgba",
-									"hex_compressed"
-								],
-								"compress_hex_output": true,
-								"current_ext": ".html",
-								"current_syntax": "HTML/HTML",
-								"enabled": true,
-								"last_updated": 1463298142.16,
-								"scan_completion_scopes":
-								[
-								],
-								"scan_scopes":
-								[
-									"meta.property-value.css -comment -string",
-									"meta.value.css -comment -string",
-									"meta.tag.inline.any.html string.quoted",
-									"meta.tag.any.html meta.attribute-with-value.style.html"
-								],
-								"use_hex_argb": false
-							},
-							"spell_check": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 56.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1630,12 +1353,68 @@
 		"selected_items":
 		[
 			[
+				"jshint",
+				".subl\\.jshintrc"
+			],
+			[
+				"check",
+				"src\\common\\components\\check-box\\check-box.js"
+			],
+			[
 				"grunt",
+				"Gruntfile.js"
+			],
+			[
+				"grun",
 				"Gruntfile.js"
 			],
 			[
 				"app",
 				"src\\app\\app.js"
+			],
+			[
+				"data",
+				"src\\common\\components\\yfiles-angular\\resources\\data.js"
+			],
+			[
+				"scss",
+				"src\\scss\\main.scss"
+			],
+			[
+				"smart",
+				"src\\app\\tables\\smart-table\\smart-table.ctrl.js"
+			],
+			[
+				"scopegraphsource",
+				"src\\common\\components\\yfiles-angular\\ScopeGraphSource.js"
+			],
+			[
+				"yfile-",
+				"src\\common\\components\\yfiles-angular\\yfiles-angular.js"
+			],
+			[
+				"level",
+				"src\\common\\components\\yfiles-angular\\LevelOfDetailNodeStyle.js"
+			],
+			[
+				"yfiles-a",
+				"src\\common\\components\\yfiles-angular\\yfiles-angular.js"
+			],
+			[
+				"scope",
+				"src\\common\\components\\yfiles-angular\\ScopeGraphSource.js"
+			],
+			[
+				"angular",
+				"src\\common\\components\\yfiles-angular\\yfiles-angular.js"
+			],
+			[
+				"g",
+				"Gruntfile.js"
+			],
+			[
+				"home",
+				"src\\app\\home\\home.scss"
 			],
 			[
 				"mai",
@@ -1718,10 +1497,6 @@
 				".sass-lint.yml"
 			],
 			[
-				"grun",
-				"Gruntfile.js"
-			],
-			[
 				"server-index",
 				"src\\app\\server\\server-index\\server-index.ctrl.js"
 			],
@@ -1778,10 +1553,6 @@
 				"src\\app\\home\\home.styl"
 			],
 			[
-				"scss",
-				"src\\scss\\index.scss"
-			],
-			[
 				"attac",
 				"src\\app\\server\\common\\components\\attach-policy\\attach-policy.drv.js"
 			],
@@ -1836,10 +1607,6 @@
 			[
 				"atta",
 				"src\\app\\server\\common\\components\\attach-policy\\attach-policy.test.js"
-			],
-			[
-				"jshint",
-				".jshintrc"
 			],
 			[
 				"index.sc",
@@ -2038,10 +1805,6 @@
 				"src\\app\\security-group\\security-group-details\\sg-modal-add\\sg-modal-add.drv.js"
 			],
 			[
-				"scope",
-				"src\\app\\common\\components\\scope-editor\\scope.editor.html"
-			],
-			[
 				"service",
 				"src\\app\\service-port\\service.port.html"
 			],
@@ -2086,9 +1849,10 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 332.0,
+	"side_bar_width": 459.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
+		"max_columns": 1
 	}
 }

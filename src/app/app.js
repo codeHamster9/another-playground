@@ -1,9 +1,13 @@
 (function(app) {
   'use strict';
 
+
+
   app.config(function($stateProvider, $urlRouterProvider, $compileProvider) {
-    $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/yfiles');
     $compileProvider.debugInfoEnabled(true);
+
+
   });
 
   function decoratorTab($delegate, $controller) {
