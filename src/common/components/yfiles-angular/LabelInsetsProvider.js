@@ -28,6 +28,39 @@
  ***************************************************************************/
 (typeof define=='function'?define:(function(dependencies, fn){fn();}))(['vendor/yfiles/lib/yfiles/lang'],function(){
 yfiles.module("demo", function(exports) {
+  exports.IComboBox = new yfiles.InterfaceDefinition(function() {
+    /** @lends {demo.IComboBox.prototype} */
+    return {
+      '$with': [demo.ICommandComponent],
+
+      /** @return {string} */
+      'elementAt': yfiles.lang.Abstract,
+
+      /** @type {yfiles.collections.IEnumerable.<string>} */
+      'items': {
+        'get': yfiles.lang.Abstract,
+        'set': yfiles.lang.Abstract
+      },
+
+      /** @type {number} */
+      'length': {
+        'get': yfiles.lang.Abstract
+      },
+
+      /** @type {number} */
+      'selectedIndex': {
+        'get': yfiles.lang.Abstract,
+        'set': yfiles.lang.Abstract
+      },
+
+      /** @type {string} */
+      'selectedItem': {
+        'get': yfiles.lang.Abstract,
+        'set': yfiles.lang.Abstract
+      }
+
+    };
+  })
   /**
    * Provides insets for node instances via the insets suggested by the labels.
    * @class demo.LabelInsetsProvider

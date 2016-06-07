@@ -1,5 +1,5 @@
 <div>
-<script type="text/yfiles-template">
+<!-- <script type="text/yfiles-template">
   <g id="nodeTemplate">
       <defs data-referencesafe="true">
       <linearGradient x1="0.5" y1="0" x2="0.5" y2="1" spreadMethod="pad" id="node_background">
@@ -12,14 +12,70 @@
       <text transform="translate(10 20)" data-content="{Binding name}" style="font-size:18px; font-family:Arial; fill:#000; text-anchor: left; dominant-baseline: central;"></text>
       <text transform="translate(10 40)" data-content="{Binding position}" style="font-size:18px; font-family:Arial; fill:#000; text-anchor: left; dominant-baseline: central;"></text>
       </g>
-</script>
+</script> -->
 
-  <script type="text/yfiles-template">
+<!--   <script type="text/yfiles-template">
     <g id="NodeStyleTemplate">
       <rect stroke="none" fill="red" rx="7" ry="4" width="{TemplateBinding width}"
           height="{TemplateBinding height}"></rect>
       <text data-content="{Binding name}"></text>
     </g>
+  </script> -->
+  <script type="text/yfiles-template">
+      <!-- Elements stored in the 'global' defs section are copied to the main SVG's defs section       -->
+      <!-- and can be referenced in the templates. In this case, this happens via converters.           -->
+      <defs>
+          <linearGradient id="innerGradient_checked" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color:rgb(255,204,0);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:rgb(255,153,0);stop-opacity:1" />
+          </linearGradient>
+          <linearGradient id="innerGradient_unchecked" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color:rgb(204,255,255);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:rgb(153,204,255);stop-opacity:1" />
+          </linearGradient>
+          <linearGradient id="leafGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color:rgb(204,255,153);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:rgb(153,204,51);stop-opacity:1" />
+          </linearGradient>
+          <g id="expand_icon" transform="translate(21 6)">
+              <g>
+                  <polygon stroke="#FFFFFF" stroke-width="3" fill="none" points="6,17 6,12 1,12 1,6 6,6 6,1 12,1 12,6 17,6 17,12 12,12 12,17" />
+                  <polygon stroke="none" fill="#999999" points="6,17 6,12 1,12 1,6 6,6 6,1 12,1 12,6 17,6 17,12 12,12 12,17" />
+              </g>
+          </g>
+          <g id="collapse_icon" transform="translate(21 6)">
+              <g>
+                  <rect x="1" y="6" fill="none" stroke="#FFFFFF" stroke-width="3" width="16" height="6" />
+                  <rect x="1" y="6" fill="#999999" stroke="none" width="16" height="6" />
+              </g>
+          </g>
+      </defs>
+      <g id="InnerNodeStyleTemplate">
+          <rect stroke="none" fill="{TemplateBinding styleTag, Converter=collapsedemo.backgroundconverter}" rx="4" ry="4" width="60" height="30"></rect>
+          <use xlink:href="{TemplateBinding styleTag, Converter=collapsedemo.iconconverter}" style="pointer-events:none"></use>
+      </g>
+      <g id="LeafNodeStyleTemplate">
+          <rect stroke="none" fill="url(#leafGradient)" rx="4" ry="4" width="58" height="28" transform="translate(1 1)"></rect>
+      </g>
+  </script>
+
+  <script type="text/javascript">
+      // create an object to store the converter functions
+      var store = window.collapsedemo = {}
+          // converter function for node background
+      store.backgroundconverter = function(value, parameter) {
+              if (yfiles.lang.Boolean.isInstance(value)) {
+                  return value ? "url(#innerGradient_checked)" : "url(#innerGradient_unchecked)";
+              }
+              return "#FFF";
+          }
+          // converter function for node icon
+      store.iconconverter = function(value, parameter) {
+          if (yfiles.lang.Boolean.isInstance(value)) {
+              return value ? "#expand_icon" : "#collapse_icon";
+          }
+          return "";
+      }
   </script>
 </div>
 <div>
