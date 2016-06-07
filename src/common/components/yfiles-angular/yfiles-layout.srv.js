@@ -4,7 +4,7 @@
  */
 
 (function() {
-	'use strict';
+  'use strict';
   angular
     .module('ngbp')
     .factory('Layout', function() {
@@ -47,14 +47,13 @@
         },
 
         'morphLayout': function(graphControl, callback) {
-          graphControl.morphLayout(new yfiles.hierarchic.IncrementalHierarchicLayouter(), yfiles.system.TimeSpan.fromSeconds(1));
-          // if (this.canTreeLayout(graphControl.graph)) {
-          //   this.configureLayout(graphControl.graph);
-          //   graphControl.morphLayout(this.treeLayout, yfiles.system.TimeSpan.fromMilliseconds(500), callback);
-          //   this.cleanUp(graphControl.graph);
-          // } else {
-          //   graphControl.morphLayout(this.hierarchicLayout, yfiles.system.TimeSpan.fromMilliseconds(500), callback);
-          // }
+          if (this.canTreeLayout(graphControl.graph)) {
+            this.configureLayout(graphControl.graph);
+            graphControl.morphLayout(this.treeLayout, yfiles.system.TimeSpan.fromMilliseconds(500), callback);
+            this.cleanUp(graphControl.graph);
+          } else {
+            graphControl.morphLayout(this.hierarchicLayout, yfiles.system.TimeSpan.fromMilliseconds(500), callback);
+          }
         },
 
         /**
