@@ -11,7 +11,7 @@ $background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/13460/dark_wall.p
   width: 50px;
   height: 10px;
   background: #333;
-  margin: 20px auto;
+  // margin: 20px auto;
   position: relative;
   border-radius: 50px;
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
@@ -47,7 +47,7 @@ $background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/13460/dark_wall.p
   width: 80px;
   height: 30px;
   background: #333;
-  margin: 20px auto;
+  // margin: 0 auto;
   position: relative;
   border-radius: 50px;
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
@@ -454,53 +454,4 @@ $background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/13460/dark_wall.p
   box-sizing: border-box;
 }
 
-body {
-  background: $background;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  h1,
-  h2,
-  em {
-    color: #eee;
-    font-size: 30px;
-    text-align: center;
-    margin: 20px 0 0 0;
-    -webkit-font-smoothing: antialiased;
-    text-shadow: 0px 1px #000;
-  }
-  em {
-    font-size: 14px;
-    text-align: center;
-    display: block;
-    margin-bottom: 50px;
-  }
-  .ondisplay {
-    text-align: center;
-    padding: 20px 0;
-    section {
-      width: 100px;
-      height: 100px;
-      background: #555;
-      display: inline-block;
-      position: relative;
-      text-align: center;
-      margin-top: 5px;
-      border: 1px solid gray;
-      border-radius: 5px;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-      &:after {
-        /*         visibility: hidden; */
-        content: attr(title);
-        position: absolute;
-        width: 100%;
-        left: 0;
-        bottom: 3px;
-        color: #fff;
-        font-size: 12px;
-        font-weight: 400;
-        -webkit-font-smoothing: antialiased;
-        text-shadow: 0px 1px #000;
-      }
-    }
-  }
-}
+

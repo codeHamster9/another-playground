@@ -1,6 +1,6 @@
 <div class="modal-header bg-primary">
-    <i class="glyphicon glyphicon-off pull-right"></i>
-    <h3> Add Row ?</h3>
+    <i class="btn glyphicon glyphicon-off pull-right" ng-click="vm.$dismiss()"></i>
+    <h3 translate> Add Row ?</h3>
 </div>
 <div class="modal-body">
     <form action="submit" name="vm.form" ng-submit="$uibModalInstance.dismiss()">
@@ -34,7 +34,7 @@
 </div>
 <div class="modal-footer">
     <div class="btn-group">
-        <button class="btn btn-default">CANCEL</button>
-        <button type="submit" class="btn btn-success" ng-click="vm.submit(vm.form)">ADD</button>
+        <button class="btn btn-default" ng-click="vm.$dismiss()">CANCEL</button>
+        <button type="submit" class="btn btn-success" ng-click="vm.$close(vm.form)">ADD</button>
     </div>
 </div>

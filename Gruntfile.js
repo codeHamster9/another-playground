@@ -2,9 +2,12 @@ module.exports = function(grunt) {
 
   var _ = require('lodash');
   var serve = require('serve-static');
+  var gzip = require('connect-gzip');
   require('time-grunt')(grunt);
   require('jit-grunt')(grunt, {
-    prism: 'grunt-connect-prism'
+    prism: 'grunt-connect-prism',
+    nggettext_extract: 'grunt-angular-gettext',
+    nggettext_compile: 'grunt-angular-gettext'
   });
 
   /** ********************************************************************************* */
@@ -63,20 +66,19 @@ module.exports = function(grunt) {
      */
     vendor_files: {
       js: [
-
-        'vendor/yfiles/require.js',
+        'vendor/yfiles/licence.js',
+        'vendor/yfiles/yfiles.js',
+        'vendor/lodash/lodash.js',
         'vendor/angular/angular.js',
         'vendor/angular-animate/angular-animate.js',
         'vendor/angular-sanitize/angular-sanitize.js',
         'vendor/angular-bootstrap/ui-bootstrap-tpls.js',
         'vendor/angular-ui-router/release/angular-ui-router.js',
-        'vendor/lodash/lodash.js',
         'vendor/angular-smart-table/dist/smart-table.js',
         'vendor/angular-loading-bar/build/loading-bar.js',
         'vendor/ui-select-master/dist/select.js',
         'vendor/angular-local-storage/dist/angular-local-storage.js',
-        'vendor/yfiles/getYfiles.js'
-
+        'vendor/angular-gettext/dist/angular-gettext.js'
       ],
       css: [],
       assets: ['vendor/bootstrap-sass-official/assets/fonts/**/*']
@@ -122,6 +124,39 @@ module.exports = function(grunt) {
         push: false,
         pushTo: 'origin'
       }
+    },
+    wiredep: {
+
+      task: {
+
+        // Point to the files that should be updated when
+        // you run `grunt wiredep`
+        src: ['build/index.html'],
+
+        options: {
+          // See wiredep's configuration documentation for the options
+          // you may pass:
+
+          // https://github.com/taptapship/wiredep#configuration
+        }
+      }
+    },
+    nggettext_extract: {
+      pot: {
+        files: {
+          'po/template.pot': ['src/**/*.tpl.html','src/**/*.js']
+        }
+      }
+    },
+    nggettext_compile: {
+      all: {
+        options: {
+          module: 'ngbp'
+        },
+        files: {
+          'src/translations.js': ['po/*.po']
+        }
+      },
     },
 
     /**
@@ -297,6 +332,19 @@ module.exports = function(grunt) {
       }
     },
 
+    sass_import: {
+      options: {
+        basePath: 'src/'
+      },
+      dist: {
+        files: [{
+          'scss/index.scss': ['app/**/*', 'common/**/*']
+        }, {
+          'scss/modules.scss': ['scss/modules/**/*']
+        }]
+      }
+    },
+
     babel: {
       options: {
         sourceMap: true
@@ -334,6 +382,15 @@ module.exports = function(grunt) {
         reporter: require('jshint-stylish')
       }
 
+    },
+    /**gZip Compressor**/
+    compress: {
+      main: {
+        options: {
+          mode: 'gzip'
+        },
+        files: [{ expand: true, src: ['vendor/yfiles/yfiles.js'], dest: 'build/' }]
+      }
     },
 
     /**
@@ -380,6 +437,7 @@ module.exports = function(grunt) {
           '<%= vendor_files.js %>',
           '<%= build_dir %>/src/**/*.module.js',
           '<%= build_dir %>/src/**/*.js',
+          '<%= html2js.common.dest %>',
           '<%= html2js.app.dest %>',
           '<%= vendor_files.css %>',
           '<%= build_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.css'
@@ -411,6 +469,7 @@ module.exports = function(grunt) {
         middleware: function(connect) {
           return [
             require('grunt-connect-prism/middleware'),
+            //gzip.staticGzip('./' + fileConfig.build_dir)
             serve('./' + fileConfig.build_dir)
           ];
         }
@@ -466,9 +525,7 @@ module.exports = function(grunt) {
           var url = req.url.replace(/\/|\_|\?|w\>|\\|\:|\*|\||\"/g, '_');
 
           return method + url + '_' + shasum.digest('hex') + '.json';
-        }
-
-        ,
+        },
         ignoreParameters: false,
         //changeOrigin: true,
         hashFullRequest: false,
@@ -512,6 +569,7 @@ module.exports = function(grunt) {
         dir: 'karma',
         src: [
           '<%= vendor_files.js %>',
+          '<%= html2js.common.dest %>',
           '<%= html2js.app.dest %>',
           '<%= test_files.js %>'
         ]
@@ -549,12 +607,9 @@ module.exports = function(grunt) {
        */
       gruntfile: {
         files: 'Gruntfile.js',
-        tasks: ['clean:vendor',
-          'copy:build_vendorjs',
-          'index:build'
-        ],
+        tasks: ['clean:vendor','copy:build_vendorjs','index:build'],
         options: {
-          livereload: true,
+          livereload: 1337,
           reload: true
         }
       },
@@ -585,7 +640,7 @@ module.exports = function(grunt) {
        * When index.html changes, we need to compile it.
        */
       html: {
-        files: ['<%= app_files.html %>'],
+        files: ['<%= app_files.html %>,'],
         tasks: ['index:build']
       },
 
@@ -595,6 +650,7 @@ module.exports = function(grunt) {
       tpls: {
         files: [
           '<%= app_files.appTemplates %>',
+          '<%= app_files.commonTemplates %>'
         ],
         tasks: ['html2js']
       },
@@ -604,7 +660,7 @@ module.exports = function(grunt) {
        */
       scss: {
         files: ['src/**/*.scss'],
-        tasks: ['sass:build'],
+        tasks: ['sass_import', 'sass:build'],
         options: {
           livereload: false
         }
@@ -654,6 +710,7 @@ module.exports = function(grunt) {
     'clean:all',
     'html2js',
     //'jshint:src',
+    'sass_import',
     'sass:build',
     'concat:build_css',
     'copy:build_app_assets',

@@ -4,7 +4,7 @@
 
   function alertBox() {
     return {
-      scope           : {
+      scope: {
         alerts     : '=',
         alertRemove: '&'
       },

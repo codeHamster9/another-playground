@@ -37,23 +37,23 @@
         },
 
         'doLayout': function(graph) {
-          if (this.canTreeLayout(graph)) {
-            this.configureLayout(graph);
-            this.treeLayout.applyLayout(graph);
-            this.cleanUp(graph);
-          } else {
             this.hierarchicLayout.applyLayout(graph);
-          }
+          // if (this.canTreeLayout(graph)) {
+          //   this.configureLayout(graph);
+          //   this.treeLayout.applyLayout(graph);
+          //   this.cleanUp(graph);
+          // } else {
+          // }
         },
 
         'morphLayout': function(graphControl, callback) {
-          if (this.canTreeLayout(graphControl.graph)) {
-            this.configureLayout(graphControl.graph);
-            graphControl.morphLayout(this.treeLayout, yfiles.system.TimeSpan.fromMilliseconds(500), callback);
-            this.cleanUp(graphControl.graph);
-          } else {
+          // if (this.canTreeLayout(graphControl.graph)) {
+          //   this.configureLayout(graphControl.graph);
+          //   graphControl.morphLayout(this.treeLayout, yfiles.system.TimeSpan.fromMilliseconds(500), callback);
+          //   this.cleanUp(graphControl.graph);
+          // } else {
             graphControl.morphLayout(this.hierarchicLayout, yfiles.system.TimeSpan.fromMilliseconds(500), callback);
-          }
+          // }
         },
 
         /**
@@ -66,13 +66,7 @@
         }
       };
 
-      function setNodePlacers( /**yfiles.graph.INode*/ rootNode,
-        /**yfiles.model.IMapper.<yfiles.graph.INode, yfiles.tree.INodePlacer>*/
-        nodePlacerMapper,
-        /**yfiles.model.IMapper.<yfiles.graph.INode, boolean>*/
-        assistantMapper,
-        /**yfiles.graph.IGraph*/
-        tree) {
+      function setNodePlacers(rootNode, nodePlacerMapper, assistantMapper, tree) {
         var employee = rootNode.tag.item;
         if (employee !== null) {
           var /**string*/ layout = employee.layout;

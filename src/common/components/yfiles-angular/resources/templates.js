@@ -26,24 +26,41 @@
  ** SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  **
  ***************************************************************************/
-var detailTemplate = '<g>\
+var detailTemplate = '<g ng-class="\'svg\' + [item.position]">\
 <rect fill="url(#nodeGradient)" stroke="#249AE7" stroke-width="3" rx="8" ry="8" width="250" height="100"/>\
 <image ng-href="{{item.icon}}" transform="translate(5 15)" width="58px" height="66px" xlink:href="resources/usericon_female1.svg"/>\
-<text transform="translate(80 20)" style="font-size:10px; font-family:Arial; fill:#505050">{{item.name}}</text>\
-<text transform="translate(80 38)" style="font-size:8px; font-family:Arial; fill:#505050">{{item.position}}</text>\
-<text transform="translate(80 56)" style="font-size:10px; font-family:Arial; fill:#505050">{{item.email}}</text>\
-<text transform="translate(80 74)" style="font-size:10px; font-family:Arial; fill:#505050">{{item.phone}}</text>\
-<text transform="translate(80 92)" style="font-size:10px; font-family:Arial; fill:#505050">{{item.fax}}</text>\
+<text transform="translate(80 20)"  style="font-size:16px; font-family:Arial; fill:#505050">{{item.name}}</text>\
+<text transform="translate(80 38)" style="font-size:12px; font-family:Arial; fill:#505050">{{item.position}}</text>\
 </g>';
 
-var intermediateTemplate = '<g>\
+var intermediateTemplate = '<g ng-class="\'svg\' + [item.position]">\
     <rect fill="url(#nodeGradient)" stroke="#249AE7" stroke-width="3" rx="8" ry="8" width="250" height="100"/>\
     <text transform="translate(125 50)" style="font-size:22px; font-family:Arial; fill:#505050;\
     text-anchor: middle; dominant-baseline: central;">{{item.name}}</text>\
   </g>';
 
-var overviewTemplate = '<g>\
+var overviewTemplate = '<g ng-class="\'svg\' + [item.position]">\
     <rect fill="url(#nodeGradient)" stroke="#249AE7" stroke-width="3" rx="8" ry="8" width="250" height="100"/>\
     <text transform="translate(125 50)" style="font-size:26px; font-family:Arial; fill:#505050;\
     text-anchor: middle; dominant-baseline: central;" data-abbreviate="{{item.name}}"></text>\
   </g>';
+
+
+  var round_detailTemplate = '<g ng-class="\'svg\' + [item.position]">\
+	  <circle fill="url(#nodeGradient)" stroke="#249AE7" stroke-width="3" cx="8" cy="8" r="30" width="250"/>\
+	  <image ng-href="{{item.icon}}" transform="translate(5 15)" width="58px" height="66px" xlink:href="resources/usericon_female1.svg"/>\
+	  <text transform="translate(80 20)"  style="font-size:16px; font-family:Arial; fill:#505050">{{item.name}}</text>\
+	  <text transform="translate(80 38)" style="font-size:12px; font-family:Arial; fill:#505050">{{item.position}}</text>\
+  </g>';
+
+  var round_intermediateTemplate = '<g ng-class="\'svg\' + [item.position]">\
+      <circle fill="url(#nodeGradient)" stroke="#249AE7" stroke-width="3" cx="8" cy="8" r="30" width="250"/>\
+      <text transform="translate(125 50)" style="font-size:22px; font-family:Arial; fill:#505050;\
+      text-anchor: middle; dominant-baseline: central;">{{item.name}}</text>\
+    </g>';
+
+  var round_overviewTemplate = '<g ng-class="\'svg\' + [item.position]">\
+      <circle fill="url(#nodeGradient)" stroke="#249AE7" stroke-width="3" cx="8" cy="8" r="30" width="250"/>\
+      <text transform="translate(125 50)" style="font-size:26px; font-family:Arial; fill:#505050;\
+      text-anchor: middle; dominant-baseline: central;" data-abbreviate="{{item.name}}"></text>\
+    </g>';

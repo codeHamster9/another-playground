@@ -15,7 +15,7 @@ div {
 
 #center {
   position: absolute;
-  box-sizing: border-box;
+  box-sizing: border-box ;
   width: 60%;
   padding: 10px;
   left: 20%;

@@ -18,7 +18,7 @@
     };
   }
 
-  function detailTabCtrl($scope,$stateParams,$element,$transclude,$compile) {
+  function detailTabCtrl($scope, $stateParams, $element, $transclude, $compile) {
     var vm = this;
     vm.changeState = changeState;
     vm.model = 'compile this(details)!';
@@ -30,9 +30,7 @@
 
     function init() {
 
-      vm.tab = vm.getS({
-        id: $stateParams.id
-      });
+      vm.tab = vm.getS({ id: $stateParams.id });
       console.log(vm.tab);
       // let newScope = $scope.$new();
 
@@ -42,8 +40,7 @@
 
         let directiveName = _.camelCase(clone[0].tagName);
 
-        // angular.module('ngbp')
-        //   .decorator(directiveName, decoratorTab);
+        angular.decorator(directiveName, decoratorTab);
 
         // destination.append('<my-input model="vm.model"></my-input>');
         destination.append(clone);
@@ -84,4 +81,3 @@
     }
   }
 })(angular.module('ngbp.tabs'));
-

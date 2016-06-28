@@ -4,7 +4,7 @@
 
   angular
     .module('ngbp')
-    .directive('graphControl', function($compile, $filter, Layout) {
+    .directive('graphControl', function($compile, $filter, Layout, ScopeGraphSource, LevelOfDetailNodeStyle) {
       return {
         restrict: "AE",
         replace: false,
@@ -12,6 +12,7 @@
         scope: {
           'nodesSource': '=',
           'edgesSource': '=',
+          'groupsSource': '=',
           'nodeIdBinding': '@',
           'sourceNodeBinding': '@',
           'targetNodeBinding': '@',
@@ -36,7 +37,7 @@
 
           // if a nodesSource is defined, initialize the graph
           if (scope.nodesSource) {
-            var /**yfiles.binding.GraphSource*/ graphSource = new demo.ScopeGraphSource(scope);
+            var /**yfiles.binding.GraphSource*/ graphSource = new ScopeGraphSource(scope);
             // assign the bindings, if set
             if (scope.nodeIdBinding) {
               graphSource.nodeIdBinding = new yfiles.binding.Binding(scope.nodeIdBinding);
@@ -48,13 +49,24 @@
               graphSource.targetNodeBinding = new yfiles.binding.Binding(scope.targetNodeBinding);
             }
 
+            graphSource.groupBinding = new yfiles.binding.Binding("position");
+
+            graphSource.parentGroupBinding = new yfiles.binding.Binding("parent");
+            // Identifies the id property of a group node object
+            graphSource.groupIdBinding = new yfiles.binding.Binding("id");
+
             // initialize the graph defaults
             initializeGraphDefaults(graphSource.graph);
 
+            var panelNodeStyle = new yfiles.drawing.PanelNodeStyle.WithColor(yfiles.system.Color.fromArgb(255, 214, 229, 248));
+            panelNodeStyle.insets = new yfiles.geometry.InsetsD(20);
+            graphSource.groupNodeDefaults.style = panelNodeStyle;
+
             // assign the nodes and edges source - filter the nodes
-            graphSource.nodesSource = $filter('filter')(scope.nodesSource, scope.nodesFilter);
+            graphSource.nodesSource = $filter('filter')(scope.nodesSource, 'position');
             if (scope.edgesSource) {
               graphSource.edgesSource = scope.edgesSource;
+              graphSource.groupsSource = scope.groupsSource;
             }
 
             // build the graph from the source data
@@ -179,7 +191,7 @@
 
       function initializeGraphDefaults(graph) {
         // initialize the node and edge styles
-        graph.nodeDefaults.style = new demo.LevelOfDetailNodeStyle($compile, detailTemplate, intermediateTemplate, overviewTemplate);
+        graph.nodeDefaults.style = new LevelOfDetailNodeStyle($compile, detailTemplate, intermediateTemplate, overviewTemplate);
         graph.nodeDefaults.size = new yfiles.geometry.SizeD(250, 100);
 
         var edgeStyle = new yfiles.drawing.PolylineEdgeStyle();

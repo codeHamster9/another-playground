@@ -7,6 +7,7 @@
     $scope.hello = 'world';
     $scope.nodesModel = nodeData;
     $scope.edgesModel = edgeData;
+    $scope.groupsData = groupsData;
 
     init();
 

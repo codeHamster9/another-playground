@@ -1,46 +1,46 @@
-(function(app) {
-  'use strict';
+    (function(app) {
+      'use strict';
 
+      app.config(function($stateProvider, $urlRouterProvider, $compileProvider) {
+        $urlRouterProvider.otherwise('/yfiles');
+        $compileProvider.debugInfoEnabled(true);
 
+      });
 
-  app.config(function($stateProvider, $urlRouterProvider, $compileProvider) {
-    $urlRouterProvider.otherwise('/yfiles');
-    $compileProvider.debugInfoEnabled(true);
+      function decoratorTab($delegate, $controller) {
+        let directive = $delegate[0];
+        let ctrl = directive.controller;
 
+        directive.controller = function() {
 
-  });
+          if (!_.isFunction(ctrl)) ctrl = $controller(ctrl);
 
-  function decoratorTab($delegate, $controller) {
-    let directive = $delegate[0];
-    let ctrl = directive.controller;
+          angular.extend(this, ctrl);
 
-    directive.controller = function() {
-      if (!_.isFunction(ctrl)) {
-        ctrl = $controller(ctrl);
+          this.$$tabs = { set: 'sass' };
+        };
+
+        return $delegate;
+
       }
 
-      angular.extend(this, ctrl);
+      app.run(function(gettextCatalog, $rootScope) {
+        gettextCatalog.debug = true;
+        gettextCatalog.setStrings("he_IL", { 'lang1': 'אנגלית', 'lang2': 'עיברית','lang3':'גרמנית' });
+        gettextCatalog.setStrings("en", { 'lang1':'english', 'lang2':'hebrew','lang3':'german' });
+        gettextCatalog.setCurrentLanguage('en');
+      });
 
-      this.$$tabs = {
-        set: 'sass'
-      };
-    };
-
-    return $delegate;
-
-  }
-
-  app.run(function() {});
-
-}(angular.module('ngbp', [
-  'templates-app',
-  // 'templates-common',
-  'ui.router.state',
-  'ui.router',
-  'ui.bootstrap',
-  'smart-table',
-  'ngbp.tabs',
-  'ui.select',
-  'LocalStorageModule'
-])));
-
+    }(angular.module('ngbp', [
+      'templates-app',
+      'templates-common',
+      'ngAnimate',
+      'ui.router.state',
+      'ui.router',
+      'ui.bootstrap',
+      'smart-table',
+      'ngbp.tabs',
+      'ui.select',
+      'LocalStorageModule',
+      'gettext'
+    ])));

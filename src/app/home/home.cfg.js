@@ -1,7 +1,7 @@
-(function (module) {
+(function(module) {
   'use strict';
 
-  module.config(function ($stateProvider) {
+  module.config(function($stateProvider) {
     $stateProvider.state('home', {
       url: '/home',
       views: {
@@ -10,23 +10,21 @@
         }
       },
       resolve: {
-        meta: function (buildRecipe) {
+        meta: function(buildRecipe) {
           buildRecipe.items = [{
             templateKey: '<my-input></my-input>',
             title: 'First Name',
             fieldName: 'name'
-          },
-            {
-              templateKey: '<my-input></my-input>',
-              title: 'Last Name',
-              fieldName: 'last'
-            },
-            {
-              templateKey: '<multi-checkbox></multi-checkbox>',
-              title: 'priority',
-              fieldName: 'priority',
-              configObj: ['low', 'mid', 'heavy']
-            }];
+          }, {
+            templateKey: '<my-input></my-input>',
+            title: 'Last Name',
+            fieldName: 'last'
+          }, {
+            templateKey: '<multi-checkbox></multi-checkbox>',
+            title: 'priority',
+            fieldName: 'priority',
+            configObj: ['low', 'mid', 'heavy']
+          }];
         }
       },
       data: {

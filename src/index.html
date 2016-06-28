@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <base href="/">
+
 <head>
     <title ng-bind="pageTitle"></title>
     <!-- font awesome from BootstrapCDN -->
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!-- <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> -->
     <!-- compiled CSS -->
     <% styles.forEach( function ( file ) { %>
         <link rel="stylesheet" type="text/css" href="<%= file %>" />
@@ -15,40 +16,8 @@
                 <% }); %>
 </head>
 
-<body>
-    <nav class="navbar navbar-fixed-top navbar-inverse">
-        <div class="container">
-            <div class="navbar-header">
-                <input type="checkbox" ng-model="master" class="hidden" id="hamburger-toggle">
-                <label class="navbar-toggle collapsed" for="hamburger-toggle">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </label>
-                <a class="navbar-brand" href="#">playground.io</a>
-            </div>
-            <div class="collapse navbar-collapse" ng-class="{'in':master}">
-                <ul class="nav navbar-nav navbar-right">
-                    <li ui-sref-active="active">
-                        <a ui-sref="yfiles">yFiles</a>
-                    </li>
-                    <li ui-sref-active="active">
-                        <a ui-sref="home">Builder</a>
-                    </li>
-                    <li ui-sref-active="active">
-                        <a ui-sref="login">Login</a>
-                    </li>
-                    <li ui-sref-active="active">
-                        <a ui-sref="tables">Tables</a>
-                    </li>
-                    <li ui-sref-active="active">
-                        <a ui-sref="tabs">Tabs</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<body ng-app="ngbp">
+    <nav-bar></nav-bar>
     <div class="" ui-view="main"></div>
     <footer>
         <center>(c)

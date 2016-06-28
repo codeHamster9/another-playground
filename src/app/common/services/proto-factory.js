@@ -8,7 +8,6 @@
 
   function protoFactory() {
 
-
     return function(name) {
 
       var localVar = 5;

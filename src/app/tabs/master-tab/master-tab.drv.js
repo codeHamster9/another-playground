@@ -41,7 +41,7 @@
       }, {
         id: 2,
         state: false,
-        title: 'moshi',
+        title: 'sagi',
         class: '"btn-danger"'
       });
     }

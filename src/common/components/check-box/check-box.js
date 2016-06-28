@@ -36,7 +36,7 @@
       },
       controller: checkbox,
       controllerAs: 'vm',
-      template: '<div ng-class="vm.cssClass" ng-click="vm.onChange({model:vm.model})">\n' +
+      template: '<div ng-class="vm.cssClass" style="display:inline-block" ng-click="vm.onChange({model:vm.model})">\n' +
         '<input type="checkbox" ng-checked="vm.model"/>\n' +
         '<label ></label>\n' +
         '</div>'
