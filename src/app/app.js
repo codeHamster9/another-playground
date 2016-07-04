@@ -40,7 +40,6 @@
       'ui.bootstrap',
       'smart-table',
       'ngbp.tabs',
-      'ui.select',
       'LocalStorageModule',
       'gettext'
     ])));

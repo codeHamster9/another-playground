@@ -22,7 +22,7 @@
     "grunt-karma": "^0.12",
     "grunt-ng-annotate": "^2.0.0",
     "grunt-sass": "^1.1.0",
-    "grunt-sass-import": "^0.1.0",
+    "grunt-sass-import": "0.1.0",
     "jasmine-given": "^2.6.2",
     "jit-grunt": "^0.10.0",
     "jshint-stylish": "^1.0.0",

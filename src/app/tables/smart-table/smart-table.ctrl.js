@@ -2,7 +2,7 @@
   'use strict';
   module.controller('smartTableWrapperController', smartTableWrapperController);
 
-  function smartTableWrapperController($uibModal, $rootScope, $scope, localStorageService, $timeout) {
+  function smartTableWrapperController($uibModal, $rootScope, $scope, localStorageService, $timeout ,categorySrv) {
 
     const vm = this;
     let preEdit;
@@ -66,8 +66,36 @@
       file = angular.element(doc).find('TABLE')[0];
       file = angular.element(file).find('TABLE').find('tbody')[0].rows;
       fillTable(file);
+      categorySrv.match(vm.rowCollection);
       vm.selected = vm.selectedCard = null;
       console.log('parsed');
+    }
+
+    function extractGroups(file) {
+      if (!file) return;
+      var doc = new DOMParser().parseFromString(file, 'text/html');
+      file = angular.element(doc).find('TABLE')[1];
+      file = angular.element(file).find('tbody').children();
+      let dict = {},
+        prevKey = '';
+      _.forEach(file, (child, idx) => {
+        if (child.className === "parent_row") {
+
+          prevKey = child.children[0].textContent;
+
+          if (!dict[prevKey]) {
+            dict[prevKey] = [];
+          }
+        } else {
+          let val = child.children[1].textContent
+          dict[prevKey].push(val.trim());
+          // _.forEach(rows, (r) => { dict[prev].push(r.children()[1]) })
+        }
+
+      });
+
+      localStorageService.set('cat',dict);
+
     }
 
     vm.update = function(model) {
@@ -110,10 +138,12 @@
         vm.subTotal += vm.rowCollection[i].minisum;
       }
 
+      categorySrv.match(vm.rowCollection);
+
       vm.categories = _(vm.rowCollection)
         .groupBy('category')
         .keys()
-        .pull(undefined,'')
+        .pull(undefined, '')
         .concat(vm.categories)
         .value();
     }

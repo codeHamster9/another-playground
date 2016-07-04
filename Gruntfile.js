@@ -2,7 +2,6 @@ module.exports = function(grunt) {
 
   var _ = require('lodash');
   var serve = require('serve-static');
-  var gzip = require('connect-gzip');
   require('time-grunt')(grunt);
   require('jit-grunt')(grunt, {
     prism: 'grunt-connect-prism',
@@ -78,7 +77,9 @@ module.exports = function(grunt) {
         'vendor/angular-loading-bar/build/loading-bar.js',
         'vendor/ui-select-master/dist/select.js',
         'vendor/angular-local-storage/dist/angular-local-storage.js',
-        'vendor/angular-gettext/dist/angular-gettext.js'
+        'vendor/angular-gettext/dist/angular-gettext.js',
+        'vendor/file-saver.js/FileSaver.js',
+        'vendor/angular-file-saver/dist/angular-file-saver.bundle.js'
       ],
       css: [],
       assets: ['vendor/bootstrap-sass-official/assets/fonts/**/*']
@@ -144,7 +145,7 @@ module.exports = function(grunt) {
     nggettext_extract: {
       pot: {
         files: {
-          'po/template.pot': ['src/**/*.tpl.html','src/**/*.js']
+          'po/template.pot': ['src/**/*.tpl.html', 'src/**/*.js']
         }
       }
     },
@@ -383,15 +384,6 @@ module.exports = function(grunt) {
       }
 
     },
-    /**gZip Compressor**/
-    compress: {
-      main: {
-        options: {
-          mode: 'gzip'
-        },
-        files: [{ expand: true, src: ['vendor/yfiles/yfiles.js'], dest: 'build/' }]
-      }
-    },
 
     /**
      * HTML2JS is a Grunt plugin that takes all of your template files and
@@ -469,7 +461,6 @@ module.exports = function(grunt) {
         middleware: function(connect) {
           return [
             require('grunt-connect-prism/middleware'),
-            //gzip.staticGzip('./' + fileConfig.build_dir)
             serve('./' + fileConfig.build_dir)
           ];
         }
@@ -607,7 +598,16 @@ module.exports = function(grunt) {
        */
       gruntfile: {
         files: 'Gruntfile.js',
-        tasks: ['clean:vendor','copy:build_vendorjs','index:build'],
+        tasks: ['clean:vendor', 'copy:build_vendorjs', 'index:build'],
+        options: {
+          livereload: 1337,
+          reload: true
+        }
+      },
+
+      vendor: {
+        files: 'bower.json',
+        tasks: ['clean:vendor', 'copy:build_vendorjs', 'index:build'],
         options: {
           livereload: 1337,
           reload: true
