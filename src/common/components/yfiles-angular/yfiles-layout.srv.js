@@ -37,23 +37,23 @@
         },
 
         'doLayout': function(graph) {
-          if (this.canTreeLayout(graph)) {
-            this.configureLayout(graph);
-            this.treeLayout.applyLayout(graph);
-            this.cleanUp(graph);
-          } else {
+          // if (this.canTreeLayout(graph)) {
+          //   this.configureLayout(graph);
+          //   this.treeLayout.applyLayout(graph);
+          //   this.cleanUp(graph);
+          // } else {
             this.hierarchicLayout.applyLayout(graph);
-          }
+          // }
         },
 
         'morphLayout': function(graphControl, callback) {
-          if (this.canTreeLayout(graphControl.graph)) {
-            this.configureLayout(graphControl.graph);
-            graphControl.morphLayout(this.treeLayout, yfiles.system.TimeSpan.fromMilliseconds(500), callback);
-            this.cleanUp(graphControl.graph);
-          } else {
+          // if (this.canTreeLayout(graphControl.graph)) {
+          //   this.configureLayout(graphControl.graph);
+          //   graphControl.morphLayout(this.treeLayout, yfiles.system.TimeSpan.fromMilliseconds(500), callback);
+          //   this.cleanUp(graphControl.graph);
+          // } else {
             graphControl.morphLayout(this.hierarchicLayout, yfiles.system.TimeSpan.fromMilliseconds(500), callback);
-          }
+          // }
         },
 
         /**

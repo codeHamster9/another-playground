@@ -12,6 +12,7 @@
         scope: {
           'nodesSource': '=',
           'edgesSource': '=',
+          'groupsSource': '=',
           'nodeIdBinding': '@',
           'sourceNodeBinding': '@',
           'targetNodeBinding': '@',

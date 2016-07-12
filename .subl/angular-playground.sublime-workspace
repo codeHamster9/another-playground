@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"boo",
+				"bootstrap-sass-official/"
+			],
+			[
 				"graph",
 				"graphControl"
 			],
@@ -21,11 +25,11 @@
 			],
 			[
 				"Scope",
-				"ScopeTreeSource	(ScopeGraphSource.js)"
+				"ScopeTreeSource\t(ScopeGraphSource.js)"
 			],
 			[
 				"compl",
-				"complete	(licence.js)"
+				"complete\t(licence.js)"
 			],
 			[
 				"local",
@@ -37,19 +41,19 @@
 			],
 			[
 				"op",
-				"opacity	opacity()"
+				"opacity\topacity()"
 			],
 			[
 				"nav-",
-				"nav-pills	 _navs.scss"
+				"nav-pills\t _navs.scss"
 			],
 			[
 				"btn-",
-				"btn-info	 _theme.scss"
+				"btn-info\t _theme.scss"
 			],
 			[
 				"boot",
-				"bootstrap-sass-official	(main.scss)"
+				"bootstrap-sass-official\t(main.scss)"
 			],
 			[
 				"angu",
@@ -57,19 +61,19 @@
 			],
 			[
 				"forn",
-				"form-control	 _forms.scss"
+				"form-control\t _forms.scss"
 			],
 			[
 				"birth",
-				"birthDate	(smart-table.ctrl.js)"
+				"birthDate\t(smart-table.ctrl.js)"
 			],
 			[
 				"last",
-				"lastName	(smart-table.ctrl.js)"
+				"lastName\t(smart-table.ctrl.js)"
 			],
 			[
 				"firs",
-				"firstName	(smart-table.ctrl.js)"
+				"firstName\t(smart-table.ctrl.js)"
 			],
 			[
 				"Grun",
@@ -81,11 +85,11 @@
 			],
 			[
 				"tem",
-				"templates-app	(app.js)"
+				"templates-app\t(app.js)"
 			],
 			[
 				"P",
-				"p	padding"
+				"p\tpadding"
 			],
 			[
 				"toggle",
@@ -93,11 +97,11 @@
 			],
 			[
 				"show",
-				"showGrowlMessage	(instance-details.drv.js)"
+				"showGrowlMessage\t(instance-details.drv.js)"
 			],
 			[
 				"cu",
-				"cur	cursor: ${pointer};"
+				"cur\tcursor: ${pointer};"
 			],
 			[
 				"return",
@@ -105,15 +109,15 @@
 			],
 			[
 				"att",
-				"attachList	(attach-list.drv.js)"
+				"attachList\t(attach-list.drv.js)"
 			],
 			[
 				"imo",
-				"import	@import"
+				"import\t@import"
 			],
 			[
 				"data",
-				"data-title	(instance-details.tpl.html)"
+				"data-title\t(instance-details.tpl.html)"
 			],
 			[
 				"fin",
@@ -137,7 +141,7 @@
 			],
 			[
 				"_for",
-				"_forEach	Iterates over elements of a collection, executing the callback for each element."
+				"_forEach\tIterates over elements of a collection, executing the callback for each element."
 			],
 			[
 				"get",
@@ -145,7 +149,7 @@
 			],
 			[
 				"securit",
-				"securityGroups	(instances.service.js)"
+				"securityGroups\t(instances.service.js)"
 			],
 			[
 				"ex",
@@ -177,19 +181,19 @@
 			],
 			[
 				"_isE",
-				"_isEqual	Performs a deep comparison between two values to determine if they are equivalent to each other."
+				"_isEqual\tPerforms a deep comparison between two values to determine if they are equivalent to each other."
 			],
 			[
 				"teml",
-				"templates	(Gruntfile.js)"
+				"templates\t(Gruntfile.js)"
 			],
 			[
 				"exp",
-				"exp	expect"
+				"exp\texpect"
 			],
 			[
 				"after",
-				"aftereach	After Each"
+				"aftereach\tAfter Each"
 			],
 			[
 				"req",
@@ -197,15 +201,15 @@
 			],
 			[
 				"desc",
-				"desc	describe"
+				"desc\tdescribe"
 			],
 			[
 				"root",
-				"$rootScope	AngularJS"
+				"$rootScope\tAngularJS"
 			],
 			[
 				"befor",
-				"beforeeach	Before Each"
+				"beforeeach\tBefore Each"
 			],
 			[
 				"sass",
@@ -213,11 +217,11 @@
 			],
 			[
 				"ng-mouse",
-				"ng-mouseover	AngularJS"
+				"ng-mouseover\tAngularJS"
 			],
 			[
 				"_index",
-				"_indexOf	Gets the index at which the first occurrence of value is found."
+				"_indexOf\tGets the index at which the first occurrence of value is found."
 			],
 			[
 				"meta",
@@ -233,7 +237,7 @@
 			],
 			[
 				"polic",
-				"policySrv	(policy-srv.js)"
+				"policySrv\t(policy-srv.js)"
 			],
 			[
 				"selec",
@@ -249,7 +253,7 @@
 			],
 			[
 				"agent",
-				"agentMetadata	(instance-details.tpl.html)"
+				"agentMetadata\t(instance-details.tpl.html)"
 			],
 			[
 				"tables",
@@ -261,11 +265,11 @@
 			],
 			[
 				"templa",
-				"templateUrl	(instances.drv.js)"
+				"templateUrl\t(instances.drv.js)"
 			],
 			[
 				"server",
-				"serverInstanceCtrl	(instances.drv.js)"
+				"serverInstanceCtrl\t(instances.drv.js)"
 			],
 			[
 				"serve",
@@ -277,7 +281,7 @@
 			],
 			[
 				"deat",
-				"dome9_feature_blacklist	AngularJS"
+				"dome9_feature_blacklist\tAngularJS"
 			],
 			[
 				"$state",
@@ -285,11 +289,11 @@
 			],
 			[
 				"glyphicon-plus",
-				"glyphicon-plus-sign	 _glyphicons.scss"
+				"glyphicon-plus-sign\t _glyphicons.scss"
 			],
 			[
 				"inp",
-				"input-group	 _button-groups.scss"
+				"input-group\t _button-groups.scss"
 			],
 			[
 				"text-",
@@ -323,7 +327,97 @@
 			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/yfiles-graph-control.drv.js",
 			"settings":
 			{
-				"buffer_size": 27252,
+				"buffer_size": 8523,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/yfiles-layout.srv.js",
+			"settings":
+			{
+				"buffer_size": 6392,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/Gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 23725,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/yfiles.tpl.html",
+			"settings":
+			{
+				"buffer_size": 3659,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/data.js",
+			"settings":
+			{
+				"buffer_size": 14818,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/templates/ronud-detail-node.tpl.html",
+			"settings":
+			{
+				"buffer_size": 933,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/templates/detail-node.tpl.html",
+			"settings":
+			{
+				"buffer_size": 449,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/templates.js",
+			"settings":
+			{
+				"buffer_size": 3104,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 88 files for \"detailTemplate\"\n\nC:\\Users\\Idan\\Workspace\\sandbox\\another-playground\\src\\app\\yfiles\\LevelOfDetailNodeStyle.js:\n   35        return yfiles.lang.Class('LevelOfDetailNodeStyle', {\n   36          $extends: yfiles.drawing.SimpleAbstractNodeStyle,\n   37:         constructor: function($compile, detailTemplate, intermediateTemplate, overviewTemplate) {\n   38:           yfiles.drawing.SimpleAbstractNodeStyle.call(this, yfiles.drawing.DefaultVisual.$class), this.$compile = $compile, this.templates = [detailTemplate, intermediateTemplate, overviewTemplate], this.detailThreshold = 0.7, this.intermediateThreshold = 0.4\n   39          },\n   40          createVisual: function(node, renderContext) {\n\nC:\\Users\\Idan\\Workspace\\sandbox\\another-playground\\src\\common\\components\\yfiles-angular\\yfiles-graph-control.drv.js:\n  192        function initializeGraphDefaults(graph) {\n  193          // initialize the node and edge styles\n  194:         graph.nodeDefaults.style = new LevelOfDetailNodeStyle($compile, detailTemplate, intermediateTemplate, overviewTemplate);\n  195          graph.nodeDefaults.size = new yfiles.geometry.SizeD(250, 100);\n  196  \n\nC:\\Users\\Idan\\Workspace\\sandbox\\another-playground\\src\\common\\components\\yfiles-angular\\resources\\templates.js:\n   27   **\n   28   ***************************************************************************/\n   29: var detailTemplate = '<g ng-class=\"\\'svg\\' + [item.position]\">\\\n   30  <rect fill=\"url(#nodeGradient)\" stroke=\"#249AE7\" stroke-width=\"3\" rx=\"8\" ry=\"8\" width=\"250\" height=\"100\"/>\\\n   31  <image ng-href=\"{{item.icon}}\" transform=\"translate(5 15)\" width=\"58px\" height=\"66px\" xlink:href=\"resources/usericon_female1.svg\"/>\\\n   ..\n   47  \n   48  \n   49:   var round_detailTemplate = '<g ng-class=\"\\'svg\\' + [item.position]\">\\\n   50  \t  <circle fill=\"url(#nodeGradient)\" stroke=\"#249AE7\" stroke-width=\"3\" cx=\"8\" cy=\"8\" r=\"30\" width=\"250\"/>\\\n   51  \t  <image ng-href=\"{{item.icon}}\" transform=\"translate(5 15)\" width=\"58px\" height=\"66px\" xlink:href=\"resources/usericon_female1.svg\"/>\\\n\n5 matches across 3 files\n\n\nSearching 88 files for \"detailTemplate\"\n\nC:\\Users\\Idan\\Workspace\\sandbox\\another-playground\\src\\app\\yfiles\\LevelOfDetailNodeStyle.js:\n   35        return yfiles.lang.Class('LevelOfDetailNodeStyle', {\n   36          $extends: yfiles.drawing.SimpleAbstractNodeStyle,\n   37:         constructor: function($compile, detailTemplate, intermediateTemplate, overviewTemplate) {\n   38:           yfiles.drawing.SimpleAbstractNodeStyle.call(this, yfiles.drawing.DefaultVisual.$class), this.$compile = $compile, this.templates = [detailTemplate, intermediateTemplate, overviewTemplate], this.detailThreshold = 0.7, this.intermediateThreshold = 0.4\n   39          },\n   40          createVisual: function(node, renderContext) {\n\nC:\\Users\\Idan\\Workspace\\sandbox\\another-playground\\src\\common\\components\\yfiles-angular\\yfiles-graph-control.drv.js:\n  192        function initializeGraphDefaults(graph) {\n  193          // initialize the node and edge styles\n  194:         graph.nodeDefaults.style = new LevelOfDetailNodeStyle($compile, detailTemplate, intermediateTemplate, overviewTemplate);\n  195          graph.nodeDefaults.size = new yfiles.geometry.SizeD(250, 100);\n  196  \n\nC:\\Users\\Idan\\Workspace\\sandbox\\another-playground\\src\\common\\components\\yfiles-angular\\resources\\templates.js:\n   27   **\n   28   ***************************************************************************/\n   29: var detailTemplate = '<g ng-class=\"\\'svg\\' + [item.position]\">\\\n   30  <rect fill=\"url(#nodeGradient)\" stroke=\"#249AE7\" stroke-width=\"3\" rx=\"8\" ry=\"8\" width=\"250\" height=\"100\"/>\\\n   31  <image ng-href=\"{{item.icon}}\" transform=\"translate(5 15)\" width=\"58px\" height=\"66px\" xlink:href=\"resources/usericon_female1.svg\"/>\\\n   ..\n   47  \n   48  \n   49:   var round_detailTemplate = '<g ng-class=\"\\'svg\\' + [item.position]\">\\\n   50  \t  <circle fill=\"url(#nodeGradient)\" stroke=\"#249AE7\" stroke-width=\"3\" cx=\"8\" cy=\"8\" r=\"30\" width=\"250\"/>\\\n   51  \t  <image ng-href=\"{{item.icon}}\" transform=\"translate(5 15)\" width=\"58px\" height=\"66px\" xlink:href=\"resources/usericon_female1.svg\"/>\\\n\n5 matches across 3 files\n",
+			"settings":
+			{
+				"buffer_size": 4170,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/LevelOfDetailNodeStyle.js",
+			"settings":
+			{
+				"buffer_size": 4559,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.scss",
+			"settings":
+			{
+				"buffer_size": 439,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/ScopeGraphSource.js",
+			"settings":
+			{
+				"buffer_size": 3732,
 				"line_ending": "Windows"
 			}
 		}
@@ -335,10 +429,62 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 469.0,
-		"last_filter": "",
+		"height": 443.0,
+		"last_filter": "gichc",
 		"selected_items":
 		[
+			[
+				"gichc",
+				"Git: Checkout Current File"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"color",
+				"Color Picker"
+			],
+			[
+				"console",
+				"consolewrap"
+			],
+			[
+				"git:sta",
+				"Git: Status"
+			],
+			[
+				"git:difftoo",
+				"Git: Diff Tool Current File"
+			],
+			[
+				"gitdiff",
+				"Git: Diff Current File"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"set Syntax:javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"AngularJS: Prune Cache"
+			],
 			[
 				"remove",
 				"Package Control: Remove Package"
@@ -350,10 +496,6 @@
 			[
 				"trailc",
 				"Trailing Spaces: Delete Trailing Spaces"
-			],
-			[
-				"list",
-				"Package Control: List Packages"
 			],
 			[
 				"matchi",
@@ -414,10 +556,6 @@
 			[
 				"diable",
 				"Package Control: Disable Package"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"git:d",
@@ -578,10 +716,6 @@
 			[
 				"css",
 				"CSS Completions: Delete Cache"
-			],
-			[
-				"enable",
-				"Package Control: Enable Package"
 			],
 			[
 				"remoce",
@@ -810,13 +944,9 @@
 			[
 				"compare",
 				"Snippet: Creates an object composed of keys generated from the results of running each element of a collection through the callback."
-			],
-			[
-				"package:re",
-				"Package Control: Remove Package"
 			]
 		],
-		"width": 641.0
+		"width": 637.0
 	},
 	"console":
 	{
@@ -844,51 +974,74 @@
 	[
 		"/C/Users/Idan/Workspace/sandbox/another-playground",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/build",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/build/assets",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/build/assets/bootstrap",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/build/src/common",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/build/src/common/components",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/build/vendor",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/build/vendor/yfiles",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/assets",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/templates",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/scss",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/scss/modules",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib"
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles"
 	],
 	"file_history":
 	[
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/templates/detail-node.tpl.html",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/scss/main.scss",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/yfiles.scss",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/LevelOfDetailNodeStyle.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/app.css",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/yfiles.tpl.html",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/smart-table.scss",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/.sass-lint.yml",
+		"/C/Users/Idan/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/.jsbeautifyrc",
+		"/C/Users/Idan/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/templates/ronud-detail-node.tpl.html",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/yfiles-utils.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/yfiles.ctrl.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/templates.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/yfiles.cfg.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/yfiles-layout.srv.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/data.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/.yo-rc.json",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/Gruntfile.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/.subl/.jshintrc",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/.gitignore",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/ScopeGraphSource.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/LevelOfDetailNodeStyle.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/LabelSizeConstraintProvider.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/LabelInsetsProvider.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/bootup.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/yfiles-graph-control.drv.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/smart-table.ctrl.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/sample.graphml",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/ScopeGraphSource.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/yfiles.css",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/app.css",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/vendor/yfiles/yfiles.css",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/scss/modules.scss",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/scss/index.scss",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/licence.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/yfiles.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/require.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/getYfiles.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/build/vendor/yfiles/getYfiles.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/yfiles-graph-control.drv.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/build/assets/sample.graphml",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/LabelSizeConstraintProvider.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/build/src/common/components/yfiles-angular/LabelInsetsProvider.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/LevelOfDetailNodeStyle.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/LabelInsetsProvider.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/ScopeGraphSource.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/test.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/yfiles-layout.srv.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/build/resources/sample.graphml",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib/yfiles/algorithms.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/sample.graphml",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/.subl/.jshintrc",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/check-box/check-box.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/smart-table.tpl.html",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/smart-table.ctrl.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/scss/modules/checkbox.scss",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/.subl/.sass-lint.yml",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/multi-checkbox/multi-checkbox.tpl.html",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/.subl/.htmlhintrc",
-		"/C/Users/Idan/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/Gruntfile.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/.jshintignore",
 		"/C/Users/Idan/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/build/vendor/yfiles/lib/yfiles/licence.js",
@@ -898,25 +1051,20 @@
 		"/C/Users/Idan/Workspace/sandbox/another-playground/.npmignore",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/.subl/jscs.json",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib/yfiles/canvas-core.impl.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/.yo-rc.json",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/.czrc",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/csscomb.json",
 		"/C/Users/Idan/AppData/Roaming/Sublime Text 3/Packages/CSScomb/README.md",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/build/vendor/yfiles/licence.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/scss/main.scss",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/data.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/.jshintrc",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/tables.tpl.html",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/smart-table.drv.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/build/index.html",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/yfiles.tpl.html",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/app.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib/yfiles/complete.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/build/vendor/yfiles/lib/yfiles/complete.mapping.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/build/vendor/yfiles/lib/yfiles/complete.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/build/vendor/yfiles/license.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib/license.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/yfiles-utils.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/build/yfiles/license.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/index.html",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/index.html",
@@ -925,15 +1073,12 @@
 		"/C/Users/Idan/.sublime/history/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/2016-05-25_13.49.28.ScopeGraphSource.js",
 		"/C/Users/Idan/.sublime/history/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/2016-05-25_16.19.09.ScopeGraphSource.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/build/yfiles/licence.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/yfiles.cfg.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.cfg.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/yfiles.ctrl.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/build/vendor/yfiles/require.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/build/resources/data.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.scss",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/build/yfiles/lang.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib/yfiles/es5-shim.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/require.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib/yfiles/core-lib.js",
 		"/C/Users/Idan/.sublime/history/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib/2016-05-25_12.40.35.licence.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.drv.js",
@@ -944,7 +1089,6 @@
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib/yfiles/complete-mapping.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib/yfiles/graph-graphml.impl.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib/yfiles/complete.mapping.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/.jsbeautifyrc",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/_component-animations.scss",
 		"/C/Users/Idan/.sublime/history/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/2016-05-07_09.07.47.smart-table.tpl.html",
 		"/C/Users/Idan/.sublime/history/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/2016-05-07_09.07.11.smart-table.ctrl.js",
@@ -973,30 +1117,11 @@
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/angular-bootstrap/ui-bootstrap.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/angular-ui-router/src/resolve.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/tables.drv.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/ui-select-master/dist/select.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/package.json",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/multi-checkbox/multi-checkbox.ctrl.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/build/src/app/home/home.cfg.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/.gitignore",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/angular-ui-select3/src/select3.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/multi-checkbox/multi-checkbox.spec.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/build/assets/ngbp-0.0.2.css",
-		"/C/Users/Idan/AppData/Roaming/Sublime Text 3/Packages/User/CSScomb.sublime-settings",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/.sass-lint.yml",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/bootstrap-sass-official/bower.json",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/.scss-lint.yml",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/multi-checkbox/multi-checkbox.drv.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/karma/karma-unit.tpl.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/node_modules/time-grunt/package.json",
-		"/C/Users/Idan/Workspace/Dome9/webapp-master/node_modules/time-grunt/package.json",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/common/services/pureFactory.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/build/templates-app.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/build/src/app/app.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/.babelrc"
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/ui-select-master/dist/select.js"
 	],
 	"find":
 	{
-		"height": 47.0
+		"height": 58.0
 	},
 	"find_in_files":
 	{
@@ -1020,6 +1145,37 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"watch:",
+			"detailTemplate",
+			"round_intermediateTemplate",
+			"nodeGradient",
+			"round",
+			"round-detai",
+			".svg",
+			"linearGradient",
+			"yfiles",
+			"\"--config\",\n                    \"\"",
+			"transform",
+			"c",
+			"command",
+			"abbreviate",
+			"demo",
+			"LevelOfDetailNodeStyle",
+			"demo.",
+			"yfiles",
+			"createNode",
+			"demo",
+			"require(",
+			"NodeStyleTemplate",
+			"round_detailTemplate",
+			"transform",
+			"intermediateTemplate",
+			"detailTemplate",
+			"$compile",
+			"lodash",
+			"lang",
+			"lang.js",
+			"lang",
 			"currentLayouter",
 			"lorraine",
 			"loraine",
@@ -1116,38 +1272,7 @@
 			"locationProvider",
 			"vendor/yfiles/lib/",
 			"vendor/yFiles/lib/",
-			"lang",
-			"body",
-			"head",
-			"tablesController",
-			",",
-			"true",
-			"',\n",
-			"jshint",
-			"2",
-			"md",
-			"button",
-			"displatcollection",
-			"rowCollection",
-			"| currency : '₪'",
-			"downpaymnet",
-			"item",
-			"email",
-			"balance",
-			"birthDate",
-			"lastName",
-			"innerText",
-			"\"",
-			"span",
-			"center",
-			"1.4.4",
-			"exampleInputEmail1",
-			"modal",
-			"promiseChain",
-			"class=\"input-sm form-control\"",
-			"gruntfile:",
-			"indent",
-			"build_dir"
+			"lang"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1160,12 +1285,12 @@
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
-		"wrap": true
+		"wrap": false
 	},
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -1174,20 +1299,19 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 27252,
+						"buffer_size": 8523,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								23718,
-								23718
+								107,
+								107
 							]
 						],
 						"settings":
 						{
-							"BracketHighlighterBusy": false,
 							"auto_complete_triggers":
 							[
 								{
@@ -1195,90 +1319,1608 @@
 									"selector": "text.html"
 								},
 								{
+									"characters": ".",
+									"selector": "source.js"
+								},
+								{
 									"characters": ".#",
 									"selector": "text.html"
 								}
 							],
-							"bh_regions":
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										167,
+										168
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										99,
+										100
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
 							[
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bs_sintax": "javascriptnext",
+							"buffer_scroll_name": "c78031c5",
+							"color_scheme": "Packages/User/Color Highlighter/themes/cobalt2.tmTheme",
+							"spell_check": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 4455.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/yfiles-layout.srv.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6392,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5827,
+								5827
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".",
+									"selector": "source.js"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										6254,
+										6255
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										5826,
+										5827
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
-								"bh_tag_content"
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
 							],
 							"bs_sintax": "javascriptnext",
-							"buffer_scroll_name": "c78031c5",
-							"color_helper.file_palette":
+							"buffer_scroll_name": "a7900532",
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2916.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/Gruntfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23725,
+						"regions":
+						{
+						},
+						"selection":
+						[
 							[
+								19597,
+								19597
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".",
+									"selector": "source.js"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
 							],
-							"color_helper.scan":
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
 							{
-								"current_ext": ".js",
-								"current_syntax": "JavaScriptNext - ES6 Syntax/JavaScriptNext",
-								"enabled": false,
-								"last_updated": 1465068389.64
+								"close":
+								{
+									"1":
+									[
+										19596,
+										19597
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/single_quote.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										19590,
+										19591
+									]
+								},
+								"unmatched":
+								{
+								}
 							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bs_sintax": "gruntfile js",
+							"buffer_scroll_name": "62521ac1",
+							"syntax": "Packages/Theme - SoDaReloaded/settings/langs/Gruntfile JS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 18427.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/yfiles.tpl.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3659,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								233,
+								233
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".",
+									"selector": "source.js"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										246,
+										247
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										233,
+										234
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bs_sintax": "html",
+							"buffer_scroll_name": "a7714af7",
+							"spell_check": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/data.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14818,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								724,
+								689
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".",
+									"selector": "source.js"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bs_sintax": "javascriptnext",
+							"buffer_scroll_name": "5f27bce2",
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/templates/ronud-detail-node.tpl.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 933,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								315,
+								315
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".",
+									"selector": "source.js"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										319,
+										320
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										311,
+										312
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bs_sintax": "html",
+							"buffer_scroll_name": "3a380813",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/templates/detail-node.tpl.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 449,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								440,
+								440
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".",
+									"selector": "source.js"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bs_sintax": "html",
+							"buffer_scroll_name": "e5d4a605",
+							"spell_check": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/templates.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3104,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1755,
+								1755
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".",
+									"selector": "source.js"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										2128,
+										2129
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/single_quote.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1610,
+										1611
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bs_sintax": "javascriptnext",
+							"buffer_scroll_name": "4783f574",
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 668.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4170,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										312,
+										326
+									],
+									[
+										519,
+										533
+									],
+									[
+										1022,
+										1036
+									],
+									[
+										1385,
+										1399
+									],
+									[
+										1741,
+										1755
+									],
+									[
+										2398,
+										2412
+									],
+									[
+										2605,
+										2619
+									],
+									[
+										3108,
+										3122
+									],
+									[
+										3471,
+										3485
+									],
+									[
+										3827,
+										3841
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								2404,
+								2404
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										2452,
+										2453
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										2387,
+										2388
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bs_sintax": "find results",
+							"color_scheme": "Packages/User/Color Highlighter/themes/cobalt2.tmTheme",
+							"default_dir": "C:\\Users\\Idan\\Workspace\\sandbox\\another-playground",
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 2,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 864.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/LevelOfDetailNodeStyle.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4559,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1818,
+								1818
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".",
+									"selector": "source.js"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										4541,
+										4542
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1758,
+										1759
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bs_sintax": "javascriptnext",
+							"buffer_scroll_name": "1052fb3a",
 							"spell_check": false,
 							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 6709.0,
+						"translation.y": 497.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 439,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								70,
+								70
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".",
+									"selector": "source.js"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bs_sintax": "scss",
+							"buffer_scroll_name": "7ea32aa9",
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/ScopeGraphSource.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3732,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								1783
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".",
+									"selector": "source.js"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										2975,
+										2976
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1782,
+										1783
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bs_sintax": "javascriptnext",
+							"buffer_scroll_name": "09fe75ff",
+							"color_scheme": "Packages/User/Color Highlighter/themes/cobalt2.tmTheme",
+							"spell_check": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 810.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
 					"type": "text"
 				}
 			]
@@ -1353,16 +2995,44 @@
 		"selected_items":
 		[
 			[
+				"grunt",
+				"Gruntfile.js"
+			],
+			[
+				"te",
+				"src\\common\\components\\yfiles-angular\\resources\\templates.js"
+			],
+			[
+				"dat.",
+				"src\\common\\components\\yfiles-angular\\resources\\data.js"
+			],
+			[
+				"main",
+				"src\\scss\\main.scss"
+			],
+			[
+				"leve",
+				"src\\app\\yfiles\\LevelOfDetailNodeStyle.js"
+			],
+			[
+				"gru",
+				"Gruntfile.js"
+			],
+			[
+				"main.scss",
+				"src\\scss\\main.scss"
+			],
+			[
+				"smart",
+				"src\\app\\tables\\smart-table\\smart-table.ctrl.js"
+			],
+			[
 				"jshint",
 				".subl\\.jshintrc"
 			],
 			[
 				"check",
 				"src\\common\\components\\check-box\\check-box.js"
-			],
-			[
-				"grunt",
-				"Gruntfile.js"
 			],
 			[
 				"grun",
@@ -1379,10 +3049,6 @@
 			[
 				"scss",
 				"src\\scss\\main.scss"
-			],
-			[
-				"smart",
-				"src\\app\\tables\\smart-table\\smart-table.ctrl.js"
 			],
 			[
 				"scopegraphsource",
@@ -1423,10 +3089,6 @@
 			[
 				"index",
 				"src\\index.html"
-			],
-			[
-				"main",
-				"src\\scss\\main.scss"
 			],
 			[
 				"grut",
@@ -1617,10 +3279,6 @@
 				"bower.json"
 			],
 			[
-				"gru",
-				"Gruntfile.js"
-			],
-			[
 				"user.mana",
 				"src\\app\\users-management\\users.management.styl"
 			],
@@ -1789,10 +3447,6 @@
 				"src\\app\\welcome\\welcome.html"
 			],
 			[
-				"main.scss",
-				"src\\scss\\main.scss"
-			],
-			[
 				"sg-deta",
 				"src\\app\\security-group\\security-group-details\\sg-details-ctrl.js"
 			],
@@ -1849,7 +3503,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 459.0,
+	"side_bar_width": 397.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
