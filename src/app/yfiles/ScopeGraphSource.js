@@ -35,24 +35,52 @@
 
   var ScopeGraphSource = yfiles.lang.Class('ScopeGraphSource', {
     $extends: yfiles.binding.GraphSource,
-    constructor: function(scope) { yfiles.binding.GraphSource.call(this), this.scope = scope },
-    createNode: function(groupedGraph, parent, location, labelData, data) {
-      var node = ScopeGraphSource.$super.createNode.call(this, groupedGraph, parent, location, labelData, data),
-        childScope = this.scope.$new(!1);
-      return childScope.item = data, node.tag = childScope, node
-    },
-    createGroupNode: function(groupedGraph, data) {
-      var node = ScopeGraphSource.$super.createGroupNode.call(this, groupedGraph, data),
-        childScope = this.scope.$new(!1);
-      return childScope.item = data, node.tag = childScope, node
-    },
-    updateNode: function(groupedGraph, node, parent, location, labelData, data) {
-      var scope = node.tag;
-      ScopeGraphSource.$super.updateNode.call(this, groupedGraph, node, parent, location, labelData, data), scope.item = data, node.tag = scope
-    },
-    updateGroupNode: function(groupedGraph, groupNode, data) {
-      var scope = groupNode.tag;
-      ScopeGraphSource.$super.updateGroupNode.call(this, groupedGraph, groupNode, data), scope.item = data, groupNode.tag = scope
-    }
+    constructor: function(scope) {
+     yfiles.binding.GraphSource.call(this);
+     this.scope = scope;
+   },
+    'createNode': function (groupedGraph, parent, location, labelData, data) {
+        // call the super method
+        var node = ScopeGraphSource.$super.createNode.call(this, groupedGraph, parent, location, labelData, data);
+        // create a new child scope
+        var childScope = this.scope.$new(false);
+        // assign the business data
+        childScope.item = data;
+        // put the child scope in the node's tag
+        node.tag = childScope;
+        return node;
+      },
+
+      'createGroupNode': function (groupedGraph, data) {
+        // call the super method
+        var node = ScopeGraphSource.$super.createGroupNode.call(this, groupedGraph, data);
+        // create a new child scope
+        var childScope = this.scope.$new(false);
+        // assign the business data
+        childScope.item = data;
+        // put the child scope in the node's tag
+        node.tag = childScope;
+        return node;
+      },
+
+      'updateNode': function (groupedGraph, node, parent, location, labelData, data) {
+        // get the scope from the node's tag
+        var scope = node.tag;
+        // call the super method (replaces 'the' tag with the data)
+        ScopeGraphSource.$super.updateNode.call(this, groupedGraph, node, parent, location, labelData, data);
+        // assign the business data
+        scope.item = data;
+        node.tag = scope;
+      },
+
+      'updateGroupNode': function (groupedGraph, groupNode, data) {
+        // get the scope from the node's tag
+        var scope = groupNode.tag;
+        // call the super method (replaces the 'tag' with the data)
+        ScopeGraphSource.$super.updateGroupNode.call(this, groupedGraph, groupNode, data);
+        // assign the business data
+        scope.item = data;
+        groupNode.tag = scope;
+      }
   });
 })();

@@ -35,36 +35,62 @@
       return yfiles.lang.Class('LevelOfDetailNodeStyle', {
         $extends: yfiles.drawing.SimpleAbstractNodeStyle,
         constructor: function($compile, detailTemplate, intermediateTemplate, overviewTemplate) {
-          yfiles.drawing.SimpleAbstractNodeStyle.call(this, yfiles.drawing.DefaultVisual.$class), this.$compile = $compile, this.templates = [detailTemplate, intermediateTemplate, overviewTemplate], this.detailThreshold = 0.7, this.intermediateThreshold = 0.4
+          yfiles.drawing.SimpleAbstractNodeStyle.call(this, yfiles.drawing.DefaultVisual.$class);
+          this.$compile = $compile;
+          this.templates = [detailTemplate, intermediateTemplate, overviewTemplate];
+          this.detailThreshold = 0.7;
+          this.intermediateThreshold = 0.4;
         },
-        createVisual: function(node, renderContext) {
+        'createVisual': function( /**yfiles.graph.INode*/ node, /**yfiles.drawing.IRenderContext*/ renderContext) {
+          // get scope previously stored in node tag at node creation
           var scope = node.tag;
-          if (scope.item.position === 'Instance') {
-            var detailTpl = $templateCache.get('components/yfiles-angular/resources/templates/ronud-detail-node.tpl.html');
-            this.templates[0] = detailTpl;
+
+          if (!scope) {
+            return null;
           }
 
-          if (!scope) return null;
-          var zoom = renderContext.zoom,
-            templateMode = this.getTemplateMode(zoom),
-            template = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">' + this.templates[templateMode] + '</svg>',
-            templateElement = this.$compile(template)(scope)[0];
+          var zoom = renderContext.zoom;
+          // find out which template to use
+          var templateMode = this.getTemplateMode(zoom);
+          // wrap template in svg element, compile and digest scope
+          var template = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">' + this.templates[templateMode] + '</svg>';
+          var templateElement = this.$compile(template)(scope)[0];
           scope.$digest();
-          var g = window.document.createElementNS('http://www.w3.org/2000/svg', 'g');
-          return g.setAttributeNS(null, 'transform', 'translate(' + node.layout.x + ' ' + node.layout.y + ')'), g.appendChild(templateElement.firstChild), g['data-templateMode'] = templateMode, new yfiles.drawing.DefaultVisual(g)
+
+          // create a container holding all elements
+          var g = window.document.createElementNS("http://www.w3.org/2000/svg", "g");
+          // transform it to node location
+          g.setAttributeNS(null, "transform", "translate(" + node.layout.x + " " + node.layout.y + ")");
+          g.appendChild(templateElement.firstChild);
+
+          // remember template mode for updating
+          g["data-templateMode"] = templateMode;
+
+          // return new visual with container
+          return new yfiles.drawing.DefaultVisual(g);
         },
-        updateVisual: function(node, renderContext, oldVisual) {
+
+        'updateVisual': function( /**yfiles.graph.INode*/ node, /**yfiles.drawing.IRenderContext*/ renderContext,
+          /**yfiles.drawing.DefaultVisual*/
+          oldVisual) {
           if (oldVisual && oldVisual.svgElement) {
-            var g = oldVisual.svgElement,
-              oldTemplateMode = g['data-templateMode'],
-              zoom = renderContext.zoom,
-              newTemplateMode = this.getTemplateMode(zoom);
-            if (oldTemplateMode === newTemplateMode) return g.setAttributeNS(null, 'transform', 'translate(' + node.layout.x + ' ' + node.layout.y + ')'), oldVisual
+            var g = oldVisual.svgElement;
+            var oldTemplateMode = g["data-templateMode"];
+            var zoom = renderContext.zoom;
+            var newTemplateMode = this.getTemplateMode(zoom);
+            // if template mode did not change
+            if (oldTemplateMode === newTemplateMode) {
+              // update the element's location
+              g.setAttributeNS(null, "transform", "translate(" + node.layout.x + " " + node.layout.y + ")");
+              return oldVisual;
+            }
           }
+          // otherwise, re-create the visual
           return this.createVisual(node, renderContext);
         },
-        getTemplateMode: function(zoom) {
-          return zoom > this.detailThreshold ? 0 : zoom > this.intermediateThreshold ? 1 : 2
+
+        'getTemplateMode': function(zoom) {
+          return zoom > this.detailThreshold ? 0 : zoom > this.intermediateThreshold ? 1 : 2;
         }
       });
     });

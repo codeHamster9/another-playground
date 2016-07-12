@@ -111,34 +111,35 @@
    * Abbreviates the given name and sets it as textContent.
    * @yjs:keep
    */
-  module.directive('abbreviate', function () {
-    return {
-      restrict: "A",
-      replace: false,
-      scope: {
-        'abbreviate': '@'
-      },
-      link: function (scope, $element, attrs) {
-        abbreviate(scope.abbreviate, $element);
-        scope.$watch("abbreviate", function (newVal, oldVal) {
-          if (oldVal === newVal) {
-            return;
-          }
-          abbreviate(newVal, $element);
-        });
-      }
-    };
+   module.directive('abbreviate', function () {
+       return {
+         restrict: "A",
+         replace: false,
+         scope: {
+           'abbreviate': '@'
+         },
+         link: function (scope, $element, attrs) {
+           abbreviate(scope.abbreviate, $element);
+           scope.$watch("abbreviate", function (newVal, oldVal) {
+             if (oldVal === newVal) {
+               return;
+             }
+             abbreviate(newVal, $element);
+           });
+         }
+       };
 
-    function abbreviate(newVal, $element) {
-      var s = newVal;
-      if (s) {
-        var strings = s.split(' ');
-        var converted = strings[0].substr(0, 1) + ".";
-        for (var i = 1; i < strings.length; i++) {
-          converted += " " + strings[i];
-        }
-        $element[0].textContent = converted;
-      }
-    }
-  });
+       function abbreviate(newVal, $element) {
+         var s = newVal;
+         if (s) {
+           var strings = s.split(' ');
+           var converted = strings[0].substr(0, 1) + ".";
+           for (var i = 1; i < strings.length; i++) {
+             converted += " " + strings[i];
+           }
+           $element[0].textContent = converted;
+         }
+       }
+     });
+
 })()

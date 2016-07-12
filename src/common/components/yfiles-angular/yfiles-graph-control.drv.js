@@ -12,7 +12,6 @@
         scope: {
           'nodesSource': '=',
           'edgesSource': '=',
-          'groupsSource': '=',
           'nodeIdBinding': '@',
           'sourceNodeBinding': '@',
           'targetNodeBinding': '@',
@@ -166,7 +165,7 @@
         if (graphControl.inputMode instanceof yfiles.input.GraphViewerInputMode) {
           var inputMode = graphControl.inputMode;
           inputMode.toolTipItems = yfiles.graph.GraphItemTypes.NODE;
-          inputMode.addQueryItemToolTipListener((function(src, eventArgs) {
+          inputMode.addQueryItemToolTipListener((function (src, eventArgs) {
             if (eventArgs.handled) {
               return;
             }
@@ -190,15 +189,16 @@
       }
 
       function initializeGraphDefaults(graph) {
-        // initialize the node and edge styles
-        graph.nodeDefaults.style = new LevelOfDetailNodeStyle($compile, detailTemplate, intermediateTemplate, overviewTemplate);
-        graph.nodeDefaults.size = new yfiles.geometry.SizeD(250, 100);
+            // initialize the node and edge styles
+            graph.nodeDefaults.style = new LevelOfDetailNodeStyle($compile, detailTemplate, intermediateTemplate,
+                overviewTemplate);
+            graph.nodeDefaults.size = new yfiles.geometry.SizeD(250, 100);
 
-        var edgeStyle = new yfiles.drawing.PolylineEdgeStyle();
-        edgeStyle.pen = new yfiles.system.Pen.FromBrushAndThickness(new yfiles.system.SolidColorBrush(
-          yfiles.system.Color.fromArgb(255, 36, 154, 231)), 2);
-        edgeStyle.targetArrow = yfiles.drawing.DefaultArrow.NONE;
-        graph.edgeDefaults.style = edgeStyle;
+            var edgeStyle = new yfiles.drawing.PolylineEdgeStyle();
+            edgeStyle.pen = new yfiles.system.Pen.FromBrushAndThickness(new yfiles.system.SolidColorBrush(
+                yfiles.system.Color.fromArgb(255, 36, 154, 231)), 2);
+            edgeStyle.targetArrow = yfiles.drawing.DefaultArrow.NONE;
+            graph.edgeDefaults.style = edgeStyle;
       }
     });
 })();
