@@ -1,4 +1,3 @@
-<div>
 <script type="text/yfiles-template">
   <g id="NodeStyleTemplate">
     <rect stroke="none" fill="lightgray" rx="4" ry="4" width="{TemplateBinding width}"
@@ -6,72 +5,106 @@
     <text data-content="{Binding name}"></text>
   </g>
 </script>
-</div>
-<div>
-  <div id="right" class="sidebar">
-    <div class="sidebar-content">
-      <div class="demo-collapsible-pane-header">Employee Details</div>
+<div class="row clarity">
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Explore your Enviroment for clear network understanding</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <input type="search" placeholder="Search Account/Region" class="form-control" ng-model="vm.search">
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row sort-lists">
+            <div class="col-md-4">
+                <h4>Accounts</h4>
+                <ul class="list-group  border-top-higlight">
+                    <li ng-repeat="key in vm.accKeys | filter:vm.search track by key" class="list-group-item repeated-item">
+                        <span uib-dropdown ng-click="vm.selectedAccount = {name:key , val: vm.accounts[key]}">
+                      <a href  uib-dropdown-toggle>
+                       {{key + ' (' + vm.getLength(vm.accounts[key]) + ')'}}
+                      </a>
+                      <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+                        <li ng-repeat="(key,value) in vm.selectedAccount.val" ng-click="vm.select(key,vm.accounts)">
+                          <a href>{{key + ' (' + value.length + ')'}}</a>
+                        </li>
+                      </ul>
+                    </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 ">
+                <h4>Regions</h4>
+                <ul class="list-group border-top-higlight">
+                    <li ng-repeat="key in vm.regKeys | filter:vm.search track by key" class="list-group-item repeated-item">
+                        <span uib-dropdown ng-click="vm.selectedAccount = {name:key , val: vm.regions[key]}">
+                          <a href  uib-dropdown-toggle>
+                            {{key + ' (' + vm.getLength(vm.regions[key]) + ')'}}
+                          </a>
+                          <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+                            <li ng-repeat="(key,value) in vm.selectedAccount.val" ng-click="vm.select(key,vm.regions)">
+                              <a href>{{key + ' (' + value.length + ')'}}</a>
+                            </li>
+                          </ul>
+                    </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="group shadow ">
+                    <div>
+                        <h4>Cloud Formation</h4>
+                        <div class="form-inline margin-bottom-10">
+                            <label for="uploadCloudFormation" class="btn btn-sm btn-default">Browse
+                            </label>
+                            <input type="file" id="uploadCloudFormation" style="display: none;">
+                        </div>
+                        <span style="color: red;"></span>
+                        <ul></ul>
+                    </div>
+                    <div>
+                        <br>
+                        <p style="margin: 5px;">You can upload <a href="http://aws.amazon.com/cloudformation/"> AWS CloudFormation</a>’s templates to Dome9 Clarity, visualize the security relations, inspect the architectural layout and optimize security configuration before they are deployed to the live system.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div style="height:700px">
+            <div class="center-block">
+                <div id="center">
 
-      <div id="node-view" ng-cloak="">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="-10 -10 270 120">
-          <rect fill="url(#nodeGradient)" stroke="#0f0" stroke-width="6" rx="8" ry="8" width="250" height="100"></rect>
-          <g ng-if="currentNode">
-            <image ng-href="{{currentNode.icon}}" transform="translate(5 15)" width="58px" height="66px" xlink:href="assets/usericon_female1.svg"></image>
-            <text transform="translate(80 20)" style="font-size:10px; font-family:Arial; fill:#505050">{{currentNode.name}}</text>
-            <text transform="translate(80 38)" style="font-size:8px; font-family:Arial; fill:#505050">{{currentNode.position}}</text>
-            <text transform="translate(80 56)" style="font-size:10px; font-family:Arial; fill:#505050">{{currentNode.email}}</text>
-            <text transform="translate(80 74)" style="font-size:10px; font-family:Arial; fill:#505050">{{currentNode.phone}}</text>
-            <text transform="translate(80 92)" style="font-size:10px; font-family:Arial; fill:#505050">{{currentNode.fax}}</text>
-          </g>
+                  <div id="graphContainer">
+                    <!-- the graphControl directive -->
+                    <graph-control id="graphControl"
+                                    nodes-source="nodesModel"
+                                    edges-source="edgesModel"
+                                    groups-source="groupsData"
+                                    nodes-filter="nodesFilter"
+                                    current-node="currentNode"
+                                    node-id-binding="name"
+                                    source-node-binding="from"
+                                    target-node-binding="to"/>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <svg style="visibility: hidden" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <lineargradient id="nodeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color:rgb(204,255,255);"></stop>
+              <stop offset="100%" style="stop-color:rgb(153,204,255);"></stop>
+            </lineargradient>
+          </defs>
         </svg>
-      </div>
-
-      <div class="demo-collapsible-pane-header">Employees</div>
-
-      <div class="demo-collapsible-pane-content" style="padding: 0;">
-        <div id="node-filter">
-          <label for="nodeFilter">Filter</label> <input id="nodeFilter" type="text" data-ng-model="nodesFilter.name">
-        </div>
-      </div>
-
-      <div id="nodes-list" ng-cloak="">
-          <ul>
-            <li ng-repeat="node in nodesModel | filter: nodesFilter | orderBy: 'name'" ng-class="{'item-selected': node===currentNode}" ng-click="$parent.currentNode=node" style="position:relative;">
-              <span ng-if="!editing || node !== currentNode">{{node.name}}</span>
-              <button ng-if="!editing && node === currentNode" ng-click="$parent.editing=!$parent.editing" ng-disabled="!currentNode">Edit
-              </button>
-              <input type="text" ng-if="editing && node === currentNode" ng-model="node.name" enter-press="$parent.editing=false">
-            </li>
-          </ul>
-        </div>
-
     </div>
-  </div>
-
-  <div id="center">
-
-    <div id="graphContainer">
-      <!-- the graphControl directive -->
-      <graph-control id="graphControl"
-                      nodes-source="nodesModel"
-                      edges-source="edgesModel"
-                      groups-source="groupsData"
-                      nodes-filter="nodesFilter"
-                      current-node="currentNode"
-                      node-id-binding="name"
-                      source-node-binding="from"
-                      target-node-binding="to">
-      </graph-control>
-    </div>
-  </div>
-
-  <!-- a hidden SVG that stores the gradients used in the node templates -->
-  <svg style="visibility: hidden" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <defs>
-      <lineargradient id="nodeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%" style="stop-color:rgb(204,255,255);"></stop>
-        <stop offset="100%" style="stop-color:rgb(153,204,255);"></stop>
-      </lineargradient>
-    </defs>
-  </svg>
 </div>

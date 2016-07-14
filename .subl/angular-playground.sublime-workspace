@@ -324,58 +324,18 @@
 	"buffers":
 	[
 		{
-			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/yfiles-graph-control.drv.js",
+			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/add-row-modal.tpl.html",
 			"settings":
 			{
-				"buffer_size": 8523,
+				"buffer_size": 1887,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/yfiles-layout.srv.js",
+			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/yfiles.scss",
 			"settings":
 			{
-				"buffer_size": 6392,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/Gruntfile.js",
-			"settings":
-			{
-				"buffer_size": 23725,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/yfiles.tpl.html",
-			"settings":
-			{
-				"buffer_size": 3659,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/data.js",
-			"settings":
-			{
-				"buffer_size": 14818,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/templates/ronud-detail-node.tpl.html",
-			"settings":
-			{
-				"buffer_size": 933,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/templates/detail-node.tpl.html",
-			"settings":
-			{
-				"buffer_size": 449,
+				"buffer_size": 8831,
 				"line_ending": "Windows"
 			}
 		},
@@ -383,15 +343,15 @@
 			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/templates.js",
 			"settings":
 			{
-				"buffer_size": 3104,
+				"buffer_size": 4212,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "Searching 88 files for \"detailTemplate\"\n\nC:\\Users\\Idan\\Workspace\\sandbox\\another-playground\\src\\app\\yfiles\\LevelOfDetailNodeStyle.js:\n   35        return yfiles.lang.Class('LevelOfDetailNodeStyle', {\n   36          $extends: yfiles.drawing.SimpleAbstractNodeStyle,\n   37:         constructor: function($compile, detailTemplate, intermediateTemplate, overviewTemplate) {\n   38:           yfiles.drawing.SimpleAbstractNodeStyle.call(this, yfiles.drawing.DefaultVisual.$class), this.$compile = $compile, this.templates = [detailTemplate, intermediateTemplate, overviewTemplate], this.detailThreshold = 0.7, this.intermediateThreshold = 0.4\n   39          },\n   40          createVisual: function(node, renderContext) {\n\nC:\\Users\\Idan\\Workspace\\sandbox\\another-playground\\src\\common\\components\\yfiles-angular\\yfiles-graph-control.drv.js:\n  192        function initializeGraphDefaults(graph) {\n  193          // initialize the node and edge styles\n  194:         graph.nodeDefaults.style = new LevelOfDetailNodeStyle($compile, detailTemplate, intermediateTemplate, overviewTemplate);\n  195          graph.nodeDefaults.size = new yfiles.geometry.SizeD(250, 100);\n  196  \n\nC:\\Users\\Idan\\Workspace\\sandbox\\another-playground\\src\\common\\components\\yfiles-angular\\resources\\templates.js:\n   27   **\n   28   ***************************************************************************/\n   29: var detailTemplate = '<g ng-class=\"\\'svg\\' + [item.position]\">\\\n   30  <rect fill=\"url(#nodeGradient)\" stroke=\"#249AE7\" stroke-width=\"3\" rx=\"8\" ry=\"8\" width=\"250\" height=\"100\"/>\\\n   31  <image ng-href=\"{{item.icon}}\" transform=\"translate(5 15)\" width=\"58px\" height=\"66px\" xlink:href=\"resources/usericon_female1.svg\"/>\\\n   ..\n   47  \n   48  \n   49:   var round_detailTemplate = '<g ng-class=\"\\'svg\\' + [item.position]\">\\\n   50  \t  <circle fill=\"url(#nodeGradient)\" stroke=\"#249AE7\" stroke-width=\"3\" cx=\"8\" cy=\"8\" r=\"30\" width=\"250\"/>\\\n   51  \t  <image ng-href=\"{{item.icon}}\" transform=\"translate(5 15)\" width=\"58px\" height=\"66px\" xlink:href=\"resources/usericon_female1.svg\"/>\\\n\n5 matches across 3 files\n\n\nSearching 88 files for \"detailTemplate\"\n\nC:\\Users\\Idan\\Workspace\\sandbox\\another-playground\\src\\app\\yfiles\\LevelOfDetailNodeStyle.js:\n   35        return yfiles.lang.Class('LevelOfDetailNodeStyle', {\n   36          $extends: yfiles.drawing.SimpleAbstractNodeStyle,\n   37:         constructor: function($compile, detailTemplate, intermediateTemplate, overviewTemplate) {\n   38:           yfiles.drawing.SimpleAbstractNodeStyle.call(this, yfiles.drawing.DefaultVisual.$class), this.$compile = $compile, this.templates = [detailTemplate, intermediateTemplate, overviewTemplate], this.detailThreshold = 0.7, this.intermediateThreshold = 0.4\n   39          },\n   40          createVisual: function(node, renderContext) {\n\nC:\\Users\\Idan\\Workspace\\sandbox\\another-playground\\src\\common\\components\\yfiles-angular\\yfiles-graph-control.drv.js:\n  192        function initializeGraphDefaults(graph) {\n  193          // initialize the node and edge styles\n  194:         graph.nodeDefaults.style = new LevelOfDetailNodeStyle($compile, detailTemplate, intermediateTemplate, overviewTemplate);\n  195          graph.nodeDefaults.size = new yfiles.geometry.SizeD(250, 100);\n  196  \n\nC:\\Users\\Idan\\Workspace\\sandbox\\another-playground\\src\\common\\components\\yfiles-angular\\resources\\templates.js:\n   27   **\n   28   ***************************************************************************/\n   29: var detailTemplate = '<g ng-class=\"\\'svg\\' + [item.position]\">\\\n   30  <rect fill=\"url(#nodeGradient)\" stroke=\"#249AE7\" stroke-width=\"3\" rx=\"8\" ry=\"8\" width=\"250\" height=\"100\"/>\\\n   31  <image ng-href=\"{{item.icon}}\" transform=\"translate(5 15)\" width=\"58px\" height=\"66px\" xlink:href=\"resources/usericon_female1.svg\"/>\\\n   ..\n   47  \n   48  \n   49:   var round_detailTemplate = '<g ng-class=\"\\'svg\\' + [item.position]\">\\\n   50  \t  <circle fill=\"url(#nodeGradient)\" stroke=\"#249AE7\" stroke-width=\"3\" cx=\"8\" cy=\"8\" r=\"30\" width=\"250\"/>\\\n   51  \t  <image ng-href=\"{{item.icon}}\" transform=\"translate(5 15)\" width=\"58px\" height=\"66px\" xlink:href=\"resources/usericon_female1.svg\"/>\\\n\n5 matches across 3 files\n",
+			"contents": "Searching 88 files for \"$compile(\"\n\nC:\\Users\\Idan\\Workspace\\sandbox\\another-playground\\src\\app\\tabs\\master-tab\\tabs-detail\\tabs-detail.drv.js:\n   50  \n   51        // destination.append($transclude($scope));\n   52:       // $compile(destination)($scope);\n   53      }\n   54  \n\nC:\\Users\\Idan\\Workspace\\sandbox\\another-playground\\src\\app\\yfiles\\LevelOfDetailNodeStyle.js:\n   55            // wrap template in svg element, compile and digest scope\n   56            var template = '<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">' + this.templates[templateMode] + '</svg>';\n   57:           var templateElement = this.$compile(template)(scope)[0];\n   58            scope.$digest();\n   59  \n\nC:\\Users\\Idan\\Workspace\\sandbox\\another-playground\\src\\common\\components\\multi-checkbox\\multi-checkbox.spec.js:\n   16  \n   17              element = angular.element('<multi-checkbox model=\"outerModel\" change=\"cb\" config-obj=\"config\"></multi-checkbox>'); //jshint ignore:line\n   18:             $compile(element)(scope);\n   19              scope.$digest();\n   20  \n\n3 matches across 3 files\n\n\nSearching 88 files for \"$template\"\n\nC:\\Users\\Idan\\Workspace\\sandbox\\another-playground\\src\\app\\yfiles\\LevelOfDetailNodeStyle.js:\n   31    angular\n   32      .module('ngbp')\n   33:     .factory('LevelOfDetailNodeStyle', function($templateCache) {\n   34  \n   35        return yfiles.lang.Class('LevelOfDetailNodeStyle', {\n\nC:\\Users\\Idan\\Workspace\\sandbox\\another-playground\\src\\common\\README.md:\n    9  end in `.spec.js` as source files to be included in the final build, all\n   10  `*.spec.js` files as unit tests to be executed, and all `*.tpl.html` files as\n   11: templates to compiled into the `$templateCache`. There is currently no way to\n   12  handle components that do not meet this pattern.\n   13  \n\nC:\\Users\\Idan\\Workspace\\sandbox\\another-playground\\src\\common\\components\\dynamic-builder\\d-builder.drv.js:\n    6    module.directive('dBuilder', dBuilder);\n    7  \n    8:   function dBuilder($templateCache, $injector) {\n    9  \n   10      function compile(tElem, tAttrs) {\n   ..\n   23  \n   24        buildRecipe.items.forEach(function (item, idx) {\n   25:         var template = $templateCache.get(item.templateKey),\n   26              jElem, wrapper;\n   27  \n\nC:\\Users\\Idan\\Workspace\\sandbox\\another-playground\\src\\common\\components\\yfiles-angular\\yfiles-graph-control.drv.js:\n    5    angular\n    6      .module('ngbp')\n    7:     .directive('graphControl', function($compile, $filter, Layout, ScopeGraphSource, LevelOfDetailNodeStyle,$templateCache) {\n    8        return {\n    9          restrict: \"AE\",\n   ..\n  192        function initializeGraphDefaults(graph) {\n  193              // initialize the node and edge styles\n  194:             let detailTemplate = $templateCache.get('components/yfiles-angular/resources/templates/detail-node.tpl.html');\n  195              graph.nodeDefaults.style = new LevelOfDetailNodeStyle($compile, detailTemplate, intermediateTemplate, overviewTemplate);\n  196              graph.nodeDefaults.size = new yfiles.geometry.SizeD(250, 100);\n\n6 matches across 4 files\n\n\nSearching 88 files for \"$templateCa\"\n\nC:\\Users\\Idan\\Workspace\\sandbox\\another-playground\\src\\app\\yfiles\\LevelOfDetailNodeStyle.js:\n   31    angular\n   32      .module('ngbp')\n   33:     .factory('LevelOfDetailNodeStyle', function($templateCache) {\n   34  \n   35        return yfiles.lang.Class('LevelOfDetailNodeStyle', {\n\nC:\\Users\\Idan\\Workspace\\sandbox\\another-playground\\src\\common\\README.md:\n    9  end in `.spec.js` as source files to be included in the final build, all\n   10  `*.spec.js` files as unit tests to be executed, and all `*.tpl.html` files as\n   11: templates to compiled into the `$templateCache`. There is currently no way to\n   12  handle components that do not meet this pattern.\n   13  \n\nC:\\Users\\Idan\\Workspace\\sandbox\\another-playground\\src\\common\\components\\dynamic-builder\\d-builder.drv.js:\n    6    module.directive('dBuilder', dBuilder);\n    7  \n    8:   function dBuilder($templateCache, $injector) {\n    9  \n   10      function compile(tElem, tAttrs) {\n   ..\n   23  \n   24        buildRecipe.items.forEach(function (item, idx) {\n   25:         var template = $templateCache.get(item.templateKey),\n   26              jElem, wrapper;\n   27  \n\nC:\\Users\\Idan\\Workspace\\sandbox\\another-playground\\src\\common\\components\\yfiles-angular\\yfiles-graph-control.drv.js:\n    5    angular\n    6      .module('ngbp')\n    7:     .directive('graphControl', function($compile, $filter, Layout, ScopeGraphSource, LevelOfDetailNodeStyle,$templateCache) {\n    8        return {\n    9          restrict: \"AE\",\n   ..\n  192        function initializeGraphDefaults(graph) {\n  193              // initialize the node and edge styles\n  194:             let detailTemplate = $templateCache.get('components/yfiles-angular/resources/templates/detail-node.tpl.html');\n  195              graph.nodeDefaults.style = new LevelOfDetailNodeStyle($compile, detailTemplate, intermediateTemplate, overviewTemplate);\n  196              graph.nodeDefaults.size = new yfiles.geometry.SizeD(250, 100);\n\n6 matches across 4 files\n",
 			"settings":
 			{
-				"buffer_size": 4170,
+				"buffer_size": 5147,
 				"line_ending": "Windows",
 				"name": "Find Results",
 				"scratch": true
@@ -402,22 +362,6 @@
 			"settings":
 			{
 				"buffer_size": 4559,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.scss",
-			"settings":
-			{
-				"buffer_size": 439,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/ScopeGraphSource.js",
-			"settings":
-			{
-				"buffer_size": 3732,
 				"line_ending": "Windows"
 			}
 		}
@@ -974,42 +918,48 @@
 	[
 		"/C/Users/Idan/Workspace/sandbox/another-playground",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/build",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/assets",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/assets/bootstrap",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/assets",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/templates",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/scss",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles"
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/templates"
 	],
 	"file_history":
 	[
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/yfiles-layout.srv.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/yfiles.tpl.html",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/ScopeGraphSource.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.scss",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/yfiles-graph-control.drv.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/templates-common.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/templates/detail-node.tpl.html",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/LevelOfDetailNodeStyle.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/build/templates-app.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/templates.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/data.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.ctrl.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/yfiles.ctrl.js",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/templates/ronud-detail-node.tpl.html",
+		"/C/Users/Idan/Workspace/sandbox/another-playground/Gruntfile.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/scss/main.scss",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/yfiles.scss",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/LevelOfDetailNodeStyle.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/app.css",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/yfiles.tpl.html",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/smart-table.scss",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/.sass-lint.yml",
 		"/C/Users/Idan/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/.jsbeautifyrc",
 		"/C/Users/Idan/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/templates/ronud-detail-node.tpl.html",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/yfiles-utils.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/yfiles.ctrl.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/templates.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/yfiles.cfg.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/yfiles-layout.srv.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/data.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/.yo-rc.json",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/Gruntfile.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/.subl/.jshintrc",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/.gitignore",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/ScopeGraphSource.js",
@@ -1017,10 +967,8 @@
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/LabelSizeConstraintProvider.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/LabelInsetsProvider.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/bootup.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/yfiles-graph-control.drv.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/smart-table.ctrl.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/sample.graphml",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/ScopeGraphSource.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/yfiles.css",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/app.css",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/build/vendor/yfiles/yfiles.css",
@@ -1076,7 +1024,6 @@
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.cfg.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/build/vendor/yfiles/require.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/build/resources/data.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.scss",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/build/yfiles/lang.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib/yfiles/es5-shim.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib/yfiles/core-lib.js",
@@ -1084,7 +1031,6 @@
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.drv.js",
 		"/C/Users/Idan/.sublime/history/C/Users/Idan/Workspace/sandbox/another-playground/2016-05-25_12.43.00.Gruntfile.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib/licence.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.ctrl.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/tables.ctrl.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib/yfiles/complete-mapping.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/yfiles/lib/yfiles/graph-graphml.impl.js",
@@ -1115,9 +1061,7 @@
 		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.spec.js",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss",
 		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/angular-bootstrap/ui-bootstrap.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/angular-ui-router/src/resolve.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/tables.drv.js",
-		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/ui-select-master/dist/select.js"
+		"/C/Users/Idan/Workspace/sandbox/another-playground/vendor/angular-ui-router/src/resolve.js"
 	],
 	"find":
 	{
@@ -1145,6 +1089,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"$templateCa",
+			"$template",
+			"$compile(",
 			"watch:",
 			"detailTemplate",
 			"round_intermediateTemplate",
@@ -1269,10 +1216,7 @@
 			"lang",
 			"lang.js",
 			"lang",
-			"locationProvider",
-			"vendor/yfiles/lib/",
-			"vendor/yFiles/lib/",
-			"lang"
+			"locationProvider"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1290,24 +1234,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/yfiles-graph-control.drv.js",
+					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/tables/smart-table/add-row-modal.tpl.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8523,
+						"buffer_size": 1887,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								107,
-								107
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1325,6 +1269,22 @@
 								{
 									"characters": ".#",
 									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
 								}
 							],
 							"bracket_highlighter.busy": false,
@@ -1334,15 +1294,15 @@
 								{
 									"1":
 									[
-										167,
-										168
+										158,
+										161
 									]
 								},
 								"icon":
 								{
 									"1":
 									[
-										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"Packages/BracketHighlighter/icons/tag.png",
 										"brackethighlighter.default"
 									]
 								},
@@ -1350,8 +1310,8 @@
 								{
 									"1":
 									[
-										99,
-										100
+										1,
+										4
 									]
 								},
 								"unmatched":
@@ -1360,46 +1320,36 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -1410,178 +1360,51 @@
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content"
 							],
-							"bs_sintax": "javascriptnext",
-							"buffer_scroll_name": "c78031c5",
-							"color_scheme": "Packages/User/Color Highlighter/themes/cobalt2.tmTheme",
+							"bs_sintax": "html",
+							"buffer_scroll_name": "ff44093c",
 							"spell_check": false,
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": -0.0,
-						"translation.y": 4455.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/yfiles-layout.srv.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6392,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5827,
-								5827
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".",
-									"selector": "source.js"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								}
-							],
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										6254,
-										6255
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										5826,
-										5827
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content"
-							],
-							"bs_sintax": "javascriptnext",
-							"buffer_scroll_name": "a7900532",
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2916.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/Gruntfile.js",
+					"buffer": 1,
+					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/yfiles.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 23725,
+						"buffer_size": 8831,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								19597,
-								19597
+								2361,
+								2073
 							]
 						],
 						"settings":
@@ -1608,144 +1431,8 @@
 								{
 									"1":
 									[
-										19596,
-										19597
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/single_quote.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										19590,
-										19591
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content"
-							],
-							"bs_sintax": "gruntfile js",
-							"buffer_scroll_name": "62521ac1",
-							"syntax": "Packages/Theme - SoDaReloaded/settings/langs/Gruntfile JS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": -0.0,
-						"translation.y": 18427.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/yfiles.tpl.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3659,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								233,
-								233
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".",
-									"selector": "source.js"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								}
-							],
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										246,
-										247
+										2360,
+										2361
 									]
 								},
 								"icon":
@@ -1760,8 +1447,8 @@
 								{
 									"1":
 									[
-										233,
-										234
+										2168,
+										2169
 									]
 								},
 								"unmatched":
@@ -1770,46 +1457,36 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -1820,418 +1497,51 @@
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content"
 							],
-							"bs_sintax": "html",
-							"buffer_scroll_name": "a7714af7",
+							"bs_sintax": "scss",
+							"buffer_scroll_name": "d2ab3470",
 							"spell_check": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3564.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/data.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 14818,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								724,
-								689
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".",
-									"selector": "source.js"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								}
-							],
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content"
-							],
-							"bs_sintax": "javascriptnext",
-							"buffer_scroll_name": "5f27bce2",
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/templates/ronud-detail-node.tpl.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 933,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								315,
-								315
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".",
-									"selector": "source.js"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								}
-							],
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										319,
-										320
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/double_quote.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										311,
-										312
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content"
-							],
-							"bs_sintax": "html",
-							"buffer_scroll_name": "3a380813",
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/templates/detail-node.tpl.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 449,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								440,
-								440
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".",
-									"selector": "source.js"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								}
-							],
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content"
-							],
-							"bs_sintax": "html",
-							"buffer_scroll_name": "e5d4a605",
-							"spell_check": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
+					"buffer": 2,
 					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/common/components/yfiles-angular/resources/templates.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3104,
+						"buffer_size": 4212,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1755,
-								1755
+								2314,
+								2207
 							]
 						],
 						"settings":
@@ -2249,6 +1559,22 @@
 								{
 									"characters": ".#",
 									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
 								}
 							],
 							"bracket_highlighter.busy": false,
@@ -2258,8 +1584,8 @@
 								{
 									"1":
 									[
-										2128,
-										2129
+										4210,
+										4211
 									]
 								},
 								"icon":
@@ -2274,8 +1600,8 @@
 								{
 									"1":
 									[
-										1610,
-										1611
+										3853,
+										3854
 									]
 								},
 								"unmatched":
@@ -2342,23 +1668,24 @@
 							],
 							"bs_sintax": "javascriptnext",
 							"buffer_scroll_name": "4783f574",
+							"spell_check": false,
 							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": -0.0,
-						"translation.y": 668.0,
+						"translation.x": 47.0,
+						"translation.y": 643.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 3,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4170,
+						"buffer_size": 5147,
 						"regions":
 						{
 							"match":
@@ -2367,44 +1694,64 @@
 								"regions":
 								[
 									[
-										312,
-										326
+										224,
+										233
 									],
 									[
-										519,
-										533
+										650,
+										659
 									],
 									[
-										1022,
-										1036
+										1017,
+										1026
 									],
 									[
-										1385,
-										1399
+										1343,
+										1352
 									],
 									[
-										1741,
-										1755
+										1713,
+										1722
 									],
 									[
-										2398,
-										2412
+										2015,
+										2024
 									],
 									[
-										2605,
-										2619
+										2203,
+										2212
 									],
 									[
-										3108,
-										3122
+										2561,
+										2570
 									],
 									[
-										3471,
-										3485
+										2791,
+										2800
 									],
 									[
-										3827,
-										3841
+										3361,
+										3372
+									],
+									[
+										3731,
+										3742
+									],
+									[
+										4033,
+										4044
+									],
+									[
+										4221,
+										4232
+									],
+									[
+										4579,
+										4590
+									],
+									[
+										4809,
+										4820
 									]
 								],
 								"scope": ""
@@ -2413,135 +1760,8 @@
 						"selection":
 						[
 							[
-								2404,
-								2404
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										2452,
-										2453
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/round_bracket.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										2387,
-										2388
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content"
-							],
-							"bs_sintax": "find results",
-							"color_scheme": "Packages/User/Color Highlighter/themes/cobalt2.tmTheme",
-							"default_dir": "C:\\Users\\Idan\\Workspace\\sandbox\\another-playground",
-							"detect_indentation": false,
-							"line_numbers": false,
-							"output_tag": 2,
-							"result_base_dir": "",
-							"result_file_regex": "^([^ \t].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 864.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/LevelOfDetailNodeStyle.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4559,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1818,
-								1818
+								4813,
+								4813
 							]
 						],
 						"settings":
@@ -2559,6 +1779,14 @@
 								{
 									"characters": ".#",
 									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
 								}
 							],
 							"bracket_highlighter.busy": false,
@@ -2566,74 +1794,54 @@
 							{
 								"close":
 								{
-									"1":
-									[
-										4541,
-										4542
-									]
 								},
 								"icon":
 								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"brackethighlighter.default"
-									]
 								},
 								"open":
 								{
-									"1":
-									[
-										1758,
-										1759
-									]
 								},
 								"unmatched":
 								{
+									"1":
+									[
+										4709,
+										4710
+									]
 								}
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -2644,6 +1852,155 @@
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bs_sintax": "find results",
+							"color_scheme": "Packages/User/Color Highlighter/themes/cobalt2.tmTheme",
+							"default_dir": "C:\\Users\\Idan\\Workspace\\sandbox\\another-playground",
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 3,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2133.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/LevelOfDetailNodeStyle.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4559,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								4559
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".",
+									"selector": "source.js"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
@@ -2658,269 +2015,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 497.0,
+						"translation.y": 1667.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/home/home.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 439,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								70,
-								70
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".",
-									"selector": "source.js"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								}
-							],
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content"
-							],
-							"bs_sintax": "scss",
-							"buffer_scroll_name": "7ea32aa9",
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "/C/Users/Idan/Workspace/sandbox/another-playground/src/app/yfiles/ScopeGraphSource.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3732,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								1783
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".",
-									"selector": "source.js"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								}
-							],
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										2975,
-										2976
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										1782,
-										1783
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content"
-							],
-							"bs_sintax": "javascriptnext",
-							"buffer_scroll_name": "09fe75ff",
-							"color_scheme": "Packages/User/Color Highlighter/themes/cobalt2.tmTheme",
-							"spell_check": false,
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": -0.0,
-						"translation.y": 810.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -2995,6 +2093,22 @@
 		"selected_items":
 		[
 			[
+				"temp",
+				"src\\common\\components\\yfiles-angular\\resources\\templates.js"
+			],
+			[
+				"temo",
+				"src\\app\\tables\\smart-table\\add-row-modal.tpl.html"
+			],
+			[
+				"level",
+				"src\\app\\yfiles\\LevelOfDetailNodeStyle.js"
+			],
+			[
+				"data",
+				"src\\common\\components\\yfiles-angular\\resources\\data.js"
+			],
+			[
 				"grunt",
 				"Gruntfile.js"
 			],
@@ -3043,10 +2157,6 @@
 				"src\\app\\app.js"
 			],
 			[
-				"data",
-				"src\\common\\components\\yfiles-angular\\resources\\data.js"
-			],
-			[
 				"scss",
 				"src\\scss\\main.scss"
 			],
@@ -3057,10 +2167,6 @@
 			[
 				"yfile-",
 				"src\\common\\components\\yfiles-angular\\yfiles-angular.js"
-			],
-			[
-				"level",
-				"src\\common\\components\\yfiles-angular\\LevelOfDetailNodeStyle.js"
 			],
 			[
 				"yfiles-a",
@@ -3503,7 +2609,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 397.0,
+	"side_bar_width": 363.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

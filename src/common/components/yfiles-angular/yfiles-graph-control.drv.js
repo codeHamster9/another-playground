@@ -4,7 +4,7 @@
 
   angular
     .module('ngbp')
-    .directive('graphControl', function($compile, $filter, Layout, ScopeGraphSource, LevelOfDetailNodeStyle) {
+    .directive('graphControl', function($compile, $filter, Layout, ScopeGraphSource, LevelOfDetailNodeStyle,$templateCache) {
       return {
         restrict: "AE",
         replace: false,
@@ -191,8 +191,8 @@
 
       function initializeGraphDefaults(graph) {
             // initialize the node and edge styles
-            graph.nodeDefaults.style = new LevelOfDetailNodeStyle($compile, detailTemplate, intermediateTemplate,
-                overviewTemplate);
+            let detailTemplate = $templateCache.get('components/yfiles-angular/resources/templates/detail-node.tpl.html');
+            graph.nodeDefaults.style = new LevelOfDetailNodeStyle($compile, detailTemplate, intermediateTemplate, overviewTemplate);
             graph.nodeDefaults.size = new yfiles.geometry.SizeD(250, 100);
 
             var edgeStyle = new yfiles.drawing.PolylineEdgeStyle();

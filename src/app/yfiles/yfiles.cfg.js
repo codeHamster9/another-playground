@@ -7,7 +7,7 @@
       views: {
         'main': {
           templateUrl: 'yfiles/yfiles.tpl.html',
-          controller:'yfiles'
+          controller:'yfiles as vm'
         }
       },
       resolve: {},

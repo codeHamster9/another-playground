@@ -135,7 +135,7 @@ thead > tr {
 .repeated-item.ng-enter,
 .repeated-item.ng-move {
     // transition: all 0.5s linear;
-    animation: 0.4s slideIn;
+    animation: 0.2s slideIn;
     // opacity: 0;
 }
 
@@ -160,7 +160,7 @@ thead > tr {
 */
 
 .repeated-item.ng-leave {
-    animation: 0.4s slideOut;
+    animation: 0.2s slideOut;
 }
 
 @keyframes slideOut {
