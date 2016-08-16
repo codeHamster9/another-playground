@@ -1,41 +1,103 @@
 .svgInstance {
-  rect {
-    stroke: #000066;
-    fill: #00cc00;
-  }
+    rect {
+        stroke: #000066;
+        fill: #00cc00;
+    }
 }
 
 .svgVPC {
-  rect {
-    stroke: #000066;
-    fill: #c06;
-  }
-  text {
-    font-size: 12px;
-    font-family: Arial;
-    fill: #505050;
-  }
+    rect {
+        stroke: #000066;
+        fill: #c06;
+    }
+    text {
+        font-size: 12px;
+        font-family: Arial;
+        fill: #505050;
+    }
 }
 
 .svgRegion {
-  rect {
-    stroke: #000066;
-    fill: #f30;
-  }
+    rect {
+        stroke: #000066;
+        fill: #f30;
+    }
 }
 
 .homeClass {
-  margin: 0;
+    margin: 0;
 }
 
 .my-head {
-  // text-align: left;
+    // text-align: left;
 }
 
 .st-sort-ascent:before {
-  content: '\25B2';
+    content: '\25B2';
 }
 
 .st-sort-descent:before {
-  content: '\25BC';
+    content: '\25BC';
+}
+
+.container-flex {
+    display: table;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    padding: 0;
+    box-shadow: 0 0 50px rgba(65, 64, 66, .87);
+}
+
+.item-flex {
+    display: table-cell;
+    // border: solid 2px #000;
+}
+
+.grow {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    // center {
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    // }
+    // h1 {
+    //     // font-size: 6em;
+    // }
+}
+
+.side {
+    vertical-align: top;
+    height: 100%;
+    ul {
+        height: 100%;
+    }
+}
+
+uib-tabset,
+uib-tab,
+.tab-content,
+.tab-pane {
+    height: 100%;
+}
+
+.texture {
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+    .list-group-item:hover {
+        background-color: rgba(212, 28, 212, .35);
+        cursor: pointer;
+    }
+}
+
+.side-boot {
+    float: left;
+    height: 100%;
+    ul {
+        height: 100%;
+    }
 }

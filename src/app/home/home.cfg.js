@@ -30,16 +30,6 @@
       data: {
         pageTitle: 'Home'
       }
-    }).state('login', {
-      url: '/login',
-      views: {
-        'main': {
-          template: '<div></div>'
-        }
-      },
-      data: {
-        pageTitle: 'Login'
-      }
     });
   });
 }(angular.module('ngbp')));

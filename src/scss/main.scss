@@ -30,7 +30,8 @@ body {
 }
 
 .container-fluid {
-  overflow-y: hidden;
+  overflow-y: auto;
+  overflow-x:hidden;
   height: 100%;
   padding: 0;
   box-shadow: 0 0 50px rgba(65, 64, 66, .87);
@@ -66,6 +67,12 @@ body {
   background-color: #fff;
   margin-top: 70px;
   // overflow-y: auto;
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
 }
 
 

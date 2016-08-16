@@ -65,8 +65,8 @@ module.exports = function(grunt) {
      */
     vendor_files: {
       js: [
-        'vendor/yfiles/licence.js',
-        'vendor/yfiles/yfiles.js',
+        //'vendor/yfiles/licence.js',
+        //'vendor/yfiles/yfiles.js',
         'vendor/lodash/lodash.js',
         'vendor/angular/angular.js',
         'vendor/angular-animate/angular-animate.js',
