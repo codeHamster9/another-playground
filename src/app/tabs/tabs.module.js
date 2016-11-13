@@ -22,6 +22,6 @@
       });
   }
 
- 
+
 })(angular.module('ngbp.tabs', ['ui.router']));
 

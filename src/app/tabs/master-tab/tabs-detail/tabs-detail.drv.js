@@ -32,7 +32,7 @@
 
       vm.tab = vm.getS({ id: $stateParams.id });
       console.log(vm.tab);
-      // let newScope = $scope.$new();
+      let newScope = $scope.$new();
 
       let destination = $element.find('section');
 

@@ -32,6 +32,7 @@
       bindings: {
         onChange: '&',
         model: '<',
+        otherModel: '<',
         cssClass: '@'
       },
       controller: checkbox,

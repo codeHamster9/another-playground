@@ -1,0 +1,66 @@
+.animate-section {
+	position: relative;
+	// overflow: hidden;
+	height: 100%;
+}
+
+.right {
+	background-color: red;
+}
+
+.left {
+	background-color: green;
+}
+.animate-if {
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 100%;
+    position:absolute;
+    right:0;
+    top:35px;
+    display: block;
+}
+
+.animate-if.right.ng-enter,
+.animate-if.right.ng-leave {
+    transition: 400ms linear all;
+}
+
+.animate-if.right.ng-enter {
+    right: -100%;
+}
+
+.animate-if.right.ng-enter.animate-if.right.ng-enter-active {
+    right: 0;
+}
+
+.animate-if.right.ng-leave {
+    right: 0;
+}
+
+.animate-if.right.ng-leave.animate-if.right.ng-leave-active {
+    right: -100%;
+}
+
+.animate-if.left.ng-enter,
+.animate-if.left.ng-leave {
+    transition: 400ms linear all;
+}
+
+.animate-if.left.ng-enter {
+    left: -100%;
+}
+
+.animate-if.left.ng-enter.animate-if.left.ng-enter-active {
+    left: 0;
+}
+
+.animate-if.left.ng-leave {
+    left: 0;
+}
+
+.animate-if.left.ng-leave.animate-if.left.ng-leave-active {
+    left: -100%;
+}
+

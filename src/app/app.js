@@ -34,6 +34,7 @@
     }(angular.module('ngbp', [
       'templates-app',
       'templates-common',
+      'ngbp.animateo',
       'ngAnimate',
       'ui.router.state',
       'ui.router',
