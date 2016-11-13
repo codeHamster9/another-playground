@@ -58,4 +58,4 @@
       console.log('accKeys ', vm.accKeys);
     }
   }
-})(angular.module('ngbp'));
+})(angular.module('ngbp.yfiles'));

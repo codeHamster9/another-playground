@@ -1,20 +1,36 @@
 <div class="animate-section">
-    <form class="form-inline">
-        <div class="form-group">
-            <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-primary" ng-class="{'active':vm.left}">
-                    <input type="checkbox" ng-model="vm.left" ng-change="vm.right = false;" autocomplete="off"> Left
-                </label>
-                <label class="btn btn-primary" ng-class="{'active':vm.right}">
-                    <input type="checkbox" ng-model="vm.right" ng-change="vm.left = false;" autocomplete="off"> Right
-                </label>
-                <label class="btn btn-primary">
-                    <input type="checkbox" autocomplete="off" ng-model="vm.animate"> animate
-                </label>
-            </div>
-            <input type="text" class="form-control" ng-model="vm.url">
+    <div class="row">
+        <div class="col-md-12">
+            <form action="" class="form-inline">
+                <div class="form-group">
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary" ng-class="{'active':vm.left}">
+                            <input type="checkbox" ng-model="vm.left" ng-change="vm.right = false;" autocomplete="off"> Left
+                        </label>
+                        <label class="btn btn-primary" ng-class="{'active':vm.right}">
+                            <input type="checkbox" ng-model="vm.right" ng-change="vm.left = false;" autocomplete="off"> Right
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="checkbox" autocomplete="off" ng-model="vm.animate"> animate
+                        </label>
+                    </div>
+                    <input type="text" class="form-control" ng-model="vm.url">
+                </div>
+                <button class="btn btn-danger" ng-click="vm.clickRoute(vm.url)">Change Url!</button>
+            </form>
         </div>
-        <button class="btn btn-danger" ng-click="vm.clickRoute(vm.url)">Go!</button>
-    </form>
-    <div class="animate-if" ng-if="vm.animate" ng-class="{'right':vm.right,'left':vm.left}"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="animate-if" ng-if="vm.animate" ng-class="{'right':vm.right,'left':vm.left}"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="list-group">
+                <li class="list-group-item" ng-class="{'active': vm.url-1 === $index}" ng-repeat="item in vm.items" ng-click="vm.clickRoute(item)">Item {{item}}
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>

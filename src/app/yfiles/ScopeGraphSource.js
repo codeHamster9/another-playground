@@ -28,7 +28,7 @@
  ***************************************************************************/
 (function() {
   angular
-    .module('ngbp')
+    .module('ngbp.yfiles')
     .factory('ScopeGraphSource', function() {
       return ScopeGraphSource;
     });

@@ -29,7 +29,7 @@
  ***************************************************************************/
 (function() {
   angular
-    .module('ngbp')
+    .module('ngbp.yfiles')
     .factory('LevelOfDetailNodeStyle', function($templateCache) {
 
       return yfiles.lang.Class('LevelOfDetailNodeStyle', {

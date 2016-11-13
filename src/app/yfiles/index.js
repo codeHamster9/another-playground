@@ -16,4 +16,4 @@
       }
     });
   });
-}(angular.module('ngbp')));
+}(angular.module('ngbp.yfiles',[])));

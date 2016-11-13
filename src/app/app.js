@@ -34,13 +34,13 @@
     }(angular.module('ngbp', [
       'templates-app',
       'templates-common',
-      'ngbp.animateo',
       'ngAnimate',
       'ui.router.state',
       'ui.router',
       'ui.bootstrap',
       'smart-table',
-      'ngbp.tabs',
       'LocalStorageModule',
-      'gettext'
+      'gettext',
+      'ngbp.animateo',
+      'ngbp.tabs'
     ])));

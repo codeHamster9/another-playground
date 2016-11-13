@@ -250,7 +250,8 @@ module.exports = function(grunt) {
         },
         src: [
           'module.prefix',
-          '<%= build_dir %>/src/**/*.module.js',
+          '<%= build_dir %>/src/app.js',
+          '<%= build_dir %>/src/**/*.index.js',
           '<%= build_dir %>/src/**/*.js',
           '<%= html2js.common.dest %>',
           '<%= html2js.app.dest %>',
@@ -427,7 +428,8 @@ module.exports = function(grunt) {
         dir: '<%= build_dir %>',
         src: [
           '<%= vendor_files.js %>',
-          '<%= build_dir %>/src/**/*.module.js',
+          'src/app.js',
+          '<%= build_dir %>/src/**/*.index.js',
           '<%= build_dir %>/src/**/*.js',
           '<%= html2js.common.dest %>',
           '<%= html2js.app.dest %>',

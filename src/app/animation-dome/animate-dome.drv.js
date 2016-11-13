@@ -1,6 +1,6 @@
 (function() {
   angular
-    .module('ngbp.animateo', [])
+    .module('ngbp.animateo')
     .component('animateSection', {
       bindings: {},
       controller: animateDomeCtrl,
@@ -12,27 +12,21 @@
     const vm = this;
 
     $scope.$on('$locationChangeSuccess', (event) => {
-      console.log('$locationChangeSuccess', event);
+      console.log('$locationChangeSuccess');
       vm.url = $stateParams.id;
     });
-
-    $scope.$on('$stateChangeStart', function(event, next, current) {
-      console.log('$stateChangeStart');
-    });
-
-    $scope.$on('$stateChangeSucces', function(event, next, current) {
-      console.log('$stateChangeSucces');
-    });
-
 
     init();
 
     function init() {
       console.log('init!');
+      vm.url = $stateParams.id;
+      vm.items = [1,2,3,4];
+
     }
 
     vm.clickRoute = (url) => {
-      $state.go('.', { id: url }, { notify: true, reload: false });
+      $state.go('.', { id: url });
     };
   }
 
