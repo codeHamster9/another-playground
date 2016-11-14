@@ -25,7 +25,13 @@ module.exports = function(grunt) {
      * stylesheet, and 'unit' contains our app's unit tests.
      */
     app_files: {
-      js: ['src/**/*.js', '!src/**/*.spec.js', '!src/assets/**/*.js'],
+      js: [
+        'src/**/*.index.js',
+        'src/app.js',
+        'src/**/*.js',
+        '!src/**/*.spec.js',
+        '!src/assets/**/*.js'
+      ],
       jsunit: ['src/**/*.spec.js'],
 
       appTemplates: ['src/app/**/*.tpl.html'],
@@ -249,13 +255,12 @@ module.exports = function(grunt) {
           banner: '<%= meta.banner %>'
         },
         src: [
-          'module.prefix',
-          '<%= build_dir %>/src/app.js',
-          '<%= build_dir %>/src/**/*.index.js',
-          '<%= build_dir %>/src/**/*.js',
-          '<%= html2js.common.dest %>',
+          '<%= build_dir %>/src/**/index.js',
+          '<%= build_dir %>/src/app/app.js',
+          '<%= build_dir %>/src/app/**/*.js',
+          '<%= build_dir %>/src/common/lib/**/*.js',
           '<%= html2js.app.dest %>',
-          'module.suffix'
+          '<%= html2js.common.dest %>'
         ],
         dest: '<%= compile_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.js'
       },
@@ -427,14 +432,12 @@ module.exports = function(grunt) {
       build: {
         dir: '<%= build_dir %>',
         src: [
-          '<%= vendor_files.js %>',
-          'src/app.js',
-          '<%= build_dir %>/src/**/*.index.js',
-          '<%= build_dir %>/src/**/*.js',
-          '<%= html2js.common.dest %>',
-          '<%= html2js.app.dest %>',
-          '<%= vendor_files.css %>',
-          '<%= build_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.css'
+        '<%= vendor_files.js %>',
+        '<%= app_files.js %>',
+        '<%= html2js.common.dest %>',
+        '<%= html2js.app.dest %>',
+        '<%= vendor_files.css %>',
+        '<%= build_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.css'
         ]
       },
 

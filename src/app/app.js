@@ -41,6 +41,7 @@
       'smart-table',
       'LocalStorageModule',
       'gettext',
-      'ngbp.animateo',
-      'ngbp.tabs'
+      'ngbp',
+      'ngbp.tabs',
+      'ngbp.gaia'
     ])));

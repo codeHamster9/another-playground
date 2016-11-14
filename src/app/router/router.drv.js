@@ -1,11 +1,11 @@
 (function() {
   angular
-    .module('ngbp.animateo')
+    .module('ngbp.gaia')
     .component('animateSection', {
       bindings: {},
       controller: animateDomeCtrl,
       controllerAs: 'vm',
-      templateUrl: 'animation-dome/animate-dome.tpl.html'
+      templateUrl: 'router/animate-dome.tpl.html'
     });
 
   function animateDomeCtrl($state, $scope, $rootScope, $stateParams) {
