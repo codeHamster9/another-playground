@@ -7,7 +7,7 @@
       this.state = {};
     }
   }
-  
+
   class HomeController extends baseController {
 
     constructor($timeout) {
@@ -30,6 +30,9 @@
       delete this.state[alert];
       console.log('send to service:', this.state);
 
+    }
+    change(chg) {
+      console.log(chg);
     }
   }
 
