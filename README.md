@@ -1,7 +1,7 @@
 # Ngbp
 
-A simplified version of the ngBoilerplate angular project template.
+  A simplified version of the ngBoilerplate angular project template.
 
 ***
 
-## Quick Start
+          ## Quick Start
